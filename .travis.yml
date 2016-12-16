@@ -8,9 +8,8 @@ language: java
 addons:
   sonarqube:
     token: $SONARAUTH
-    branches :
-    - DEV
   branches:
+    - master
     - develop
 script:
   - sonar-scanner
