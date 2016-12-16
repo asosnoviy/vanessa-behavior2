@@ -12,7 +12,7 @@ addons:
     - master
     - develop
 script:
-  - sonar-scanner
+  - sonar-scanner -Dsonar.host.url=http://sonar.silverbulleters.org
 
 cache:
   directories:
