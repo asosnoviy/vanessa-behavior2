@@ -1,0 +1,20 @@
+sudo: false
+
+jdk:
+  - oraclejdk8
+
+language: java
+
+addons:
+  sonarqube:
+    token: $SONARAUTH
+  branches:
+    - master
+    - develop
+script:
+  - sonar-scanner
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
