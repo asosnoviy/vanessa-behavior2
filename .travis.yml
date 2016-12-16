@@ -1,0 +1,8 @@
+addons:
+  sonarqube:
+    token: $SONARAUTH
+  branches:
+    - develop
+script:
+  - sonar-scanner
+  
