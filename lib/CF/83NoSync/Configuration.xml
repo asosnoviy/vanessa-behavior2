@@ -86,14 +86,6 @@
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">LocalNotification</v8:Key>
 					<v8:Value xsi:type="xs:boolean">false</v8:Value>
 				</v8:pair>
-				<v8:pair>
-					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Print</v8:Key>
-					<v8:Value xsi:type="xs:boolean">false</v8:Value>
-				</v8:pair>
-				<v8:pair>
-					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">InAppPurchases</v8:Key>
-					<v8:Value xsi:type="xs:boolean">false</v8:Value>
-				</v8:pair>
 			</RequiredMobileApplicationPermissions>
 			<DefaultInterface/>
 			<DefaultStyle/>
@@ -106,7 +98,7 @@
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>DontUse</ModalityUseMode>
-			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<SynchronousExtensionAndAddInCallUseMode>DontUse</SynchronousExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<CompatibilityMode>DontUse</CompatibilityMode>
 			<DefaultConstantsForm/>
@@ -117,6 +109,7 @@
 			<Subsystem>Склады</Subsystem>
 			<Role>Админ</Role>
 			<Role>НедоступнаяРоль</Role>
+			<CommonModule>СлужебныйМодуль</CommonModule>
 			<CommonCommand>ОбщаяКомандаДляСправочника1</CommonCommand>
 			<Constant>ПутьКVanessaBehavior</Constant>
 			<Constant>СлужебныйСчетчик</Constant>
@@ -127,11 +120,13 @@
 			<Catalog>СправочникСТаблицейЗначенийНаФорме</Catalog>
 			<Catalog>Товары</Catalog>
 			<Document>Документ1</Document>
+			<Document>ПриходнаяНакладая</Document>
 			<Enum>Перечисление1</Enum>
 			<Report>КомпоновкаТест</Report>
 			<Report>ОтчетПереносСтрок</Report>
 			<DataProcessor>ОткрытьVanessaBehavior</DataProcessor>
 			<DataProcessor>МаксимизироватОкноПриОткрытии</DataProcessor>
+			<DataProcessor>ВыполнитьПроизвольноеВыражение</DataProcessor>
 			<InformationRegister>РегистрСведений1</InformationRegister>
 		</ChildObjects>
 	</Configuration>
