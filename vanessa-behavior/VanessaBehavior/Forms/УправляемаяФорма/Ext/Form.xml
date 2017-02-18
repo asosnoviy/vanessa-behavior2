@@ -1830,219 +1830,254 @@
 											</ToolTip>
 											<ExtendedTooltip name="СтраницыОтчетыОЗапускеРасширеннаяПодсказка" id="1387"/>
 											<ChildItems>
-												<UsualGroup name="ГруппаОтчетыОЗапуске" id="144">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Отчёты о запуске сценариев</v8:content>
-														</v8:item>
-													</Title>
+												<UsualGroup name="ГруппаСкриншоты" id="1534">
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Группа отчеты о запуске</v8:content>
+															<v8:content>Группа скриншоты</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="ГруппаСкриншотыРасширеннаяПодсказка" id="1535"/>
+													<ChildItems>
+														<CheckBoxField name="ДелатьСкриншотПриВозникновенииОшибки" id="507">
+															<DataPath>Объект.ДелатьСкриншотПриВозникновенииОшибки</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Формировать скриншот при ошибке</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Create screnshoots on exception</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДелатьСкриншотПриВозникновенииОшибкиКонтекстноеМеню" id="508"/>
+															<ExtendedTooltip name="ДелатьСкриншотПриВозникновенииОшибкиРасширеннаяПодсказка" id="1391"/>
+														</CheckBoxField>
+														<InputField name="КаталогOutputСкриншоты" id="510">
+															<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Временный каталог сохранения скриншотов</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Temp directory for screenshoots</v8:content>
+																</v8:item>
+															</Title>
+															<ChoiceButton>true</ChoiceButton>
+															<ClearButton>true</ClearButton>
+															<ContextMenu name="КаталогOutputСкриншотыКонтекстноеМеню" id="511"/>
+															<ExtendedTooltip name="КаталогOutputСкриншотыРасширеннаяПодсказка" id="1395"/>
+															<Events>
+																<Event name="StartChoice">КаталогOutputСкриншотыНачалоВыбора</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаAllure" id="1536">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа allure</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="ГруппаAllureРасширеннаяПодсказка" id="1537"/>
+													<ChildItems>
+														<CheckBoxField name="ДелатьОтчетВФорматеАллюр" id="138">
+															<DataPath>Объект.ДелатьОтчетВФорматеАллюр</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Формировать данные для отчета Allure</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Create data for Allure QA Report</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДелатьОтчетВФорматеАллюрКонтекстноеМеню" id="139"/>
+															<ExtendedTooltip name="ДелатьОтчетВФорматеАллюрРасширеннаяПодсказка" id="1392"/>
+														</CheckBoxField>
+														<InputField name="КаталогOutputAllure" id="141">
+															<DataPath>Объект.КаталогOutputAllure</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Временный каталог файлов результатов Allure</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Temp dir for Allure test suite files</v8:content>
+																</v8:item>
+															</Title>
+															<ChoiceButton>true</ChoiceButton>
+															<ClearButton>true</ClearButton>
+															<ContextMenu name="КаталогOutputAllureКонтекстноеМеню" id="142"/>
+															<ExtendedTooltip name="КаталогOutputAllureРасширеннаяПодсказка" id="1396"/>
+															<Events>
+																<Event name="StartChoice">КаталогOutputAllureНачалоВыбора</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаjUnit" id="1538">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группаj unit</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="ГруппаjUnitРасширеннаяПодсказка" id="1539"/>
+													<ChildItems>
+														<CheckBoxField name="ДелатьОтчетВФорматеxUnit" id="367">
+															<DataPath>Объект.ДелатьОтчетВФорматеjUnit</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Формировать отчет в формате jUnit</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Create report on jUnit format </v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДелатьОтчетВФорматеxUnitКонтекстноеМеню" id="368"/>
+															<ExtendedTooltip name="ДелатьОтчетВФорматеxUnitРасширеннаяПодсказка" id="1393"/>
+														</CheckBoxField>
+														<InputField name="КаталогOutputxUnit" id="370">
+															<DataPath>Объект.КаталогOutputjUnit</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Временный каталог для файлов JUnit</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Temp dir for JUnit xml files</v8:content>
+																</v8:item>
+															</Title>
+															<ChoiceButton>true</ChoiceButton>
+															<ClearButton>true</ClearButton>
+															<ContextMenu name="КаталогOutputxUnitКонтекстноеМеню" id="371"/>
+															<ExtendedTooltip name="КаталогOutputxUnitРасширеннаяПодсказка" id="1397"/>
+															<Events>
+																<Event name="StartChoice">КаталогOutputxUnitНачалоВыбора</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаCucumber" id="1540">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа cucumber</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="ГруппаCucumberРасширеннаяПодсказка" id="1541"/>
+													<ChildItems>
+														<CheckBoxField name="ДелатьОтчетВФорматеCucumberJson" id="1461">
+															<DataPath>Объект.ДелатьОтчетВФорматеCucumberJson</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Create report on jUnit format </v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Формировать отчет в формате Cucumber</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДелатьОтчетВФорматеCucumberJsonКонтекстноеМеню" id="1462"/>
+															<ExtendedTooltip name="ДелатьОтчетВФорматеCucumberJsonРасширеннаяПодсказка" id="1463"/>
+														</CheckBoxField>
+														<InputField name="КаталогOutputCucumberJson" id="1464">
+															<DataPath>Объект.КаталогOutputCucumberJson</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Временный каталог для файлов Cucumber</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Temp dir for JUnit xml files</v8:content>
+																</v8:item>
+															</Title>
+															<ChoiceButton>true</ChoiceButton>
+															<ClearButton>true</ClearButton>
+															<ContextMenu name="КаталогOutputCucumberJsonКонтекстноеМеню" id="1465"/>
+															<ExtendedTooltip name="КаталогOutputCucumberJsonРасширеннаяПодсказка" id="1466"/>
+															<Events>
+																<Event name="StartChoice">КаталогOutputCucumberJsonНачалоВыбора</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаЛогТекст" id="1542">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа лог текст</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>StrongSeparation</Representation>
+													<ExtendedTooltip name="ГруппаЛогТекстРасширеннаяПодсказка" id="1543"/>
+													<ChildItems>
+														<CheckBoxField name="ДелатьЛогВыполненияСценариевВТекстовыйФайл" id="1544">
+															<DataPath>Объект.ДелатьЛогВыполненияСценариевВТекстовыйФайл</DataPath>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДелатьЛогВыполненияСценариевВТекстовыйФайлКонтекстноеМеню" id="1545"/>
+															<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВТекстовыйФайлРасширеннаяПодсказка" id="1546"/>
+														</CheckBoxField>
+														<InputField name="ИмяФайлаЛогВыполненияСценариев" id="1547">
+															<DataPath>Объект.ИмяФайлаЛогВыполненияСценариев</DataPath>
+															<ContextMenu name="ИмяФайлаЛогВыполненияСценариевКонтекстноеМеню" id="1548"/>
+															<ExtendedTooltip name="ИмяФайлаЛогВыполненияСценариевРасширеннаяПодсказка" id="1549"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа3" id="918">
+													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаОтчетыОЗапускеРасширеннаяПодсказка" id="1388"/>
+													<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="1398"/>
 													<ChildItems>
-														<UsualGroup name="Группа1" id="916">
-															<Group>Horizontal</Group>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="1389"/>
-															<ChildItems>
-																<UsualGroup name="Группа2" id="378">
-																	<Group>Vertical</Group>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="1390"/>
-																	<ChildItems>
-																		<CheckBoxField name="ДелатьСкриншотПриВозникновенииОшибки" id="507">
-																			<DataPath>Объект.ДелатьСкриншотПриВозникновенииОшибки</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Формировать скриншот при ошибке</v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Create screnshoots on exception</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>Right</TitleLocation>
-																			<CheckBoxType>Auto</CheckBoxType>
-																			<ContextMenu name="ДелатьСкриншотПриВозникновенииОшибкиКонтекстноеМеню" id="508"/>
-																			<ExtendedTooltip name="ДелатьСкриншотПриВозникновенииОшибкиРасширеннаяПодсказка" id="1391"/>
-																		</CheckBoxField>
-																		<CheckBoxField name="ДелатьОтчетВФорматеАллюр" id="138">
-																			<DataPath>Объект.ДелатьОтчетВФорматеАллюр</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Формировать данные для отчета Allure</v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Create data for Allure QA Report</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>Right</TitleLocation>
-																			<CheckBoxType>Auto</CheckBoxType>
-																			<ContextMenu name="ДелатьОтчетВФорматеАллюрКонтекстноеМеню" id="139"/>
-																			<ExtendedTooltip name="ДелатьОтчетВФорматеАллюрРасширеннаяПодсказка" id="1392"/>
-																		</CheckBoxField>
-																		<CheckBoxField name="ДелатьОтчетВФорматеxUnit" id="367">
-																			<DataPath>Объект.ДелатьОтчетВФорматеjUnit</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Формировать отчет в формате jUnit</v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Create report on jUnit format </v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>Right</TitleLocation>
-																			<CheckBoxType>Auto</CheckBoxType>
-																			<ContextMenu name="ДелатьОтчетВФорматеxUnitКонтекстноеМеню" id="368"/>
-																			<ExtendedTooltip name="ДелатьОтчетВФорматеxUnitРасширеннаяПодсказка" id="1393"/>
-																		</CheckBoxField>
-																		<CheckBoxField name="ДелатьОтчетВФорматеCucumberJson" id="1461">
-																			<DataPath>Объект.ДелатьОтчетВФорматеCucumberJson</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Create report on jUnit format </v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Формировать отчет в формате Cucumber</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>Right</TitleLocation>
-																			<CheckBoxType>Auto</CheckBoxType>
-																			<ContextMenu name="ДелатьОтчетВФорматеCucumberJsonКонтекстноеМеню" id="1462"/>
-																			<ExtendedTooltip name="ДелатьОтчетВФорматеCucumberJsonРасширеннаяПодсказка" id="1463"/>
-																		</CheckBoxField>
-																	</ChildItems>
-																</UsualGroup>
-																<UsualGroup name="Группа5" id="505">
-																	<Group>Vertical</Group>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="1394"/>
-																	<ChildItems>
-																		<InputField name="КаталогOutputСкриншоты" id="510">
-																			<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Временный каталог сохранения скриншотов</v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Temp directory for screenshoots</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ChoiceButton>true</ChoiceButton>
-																			<ClearButton>true</ClearButton>
-																			<ContextMenu name="КаталогOutputСкриншотыКонтекстноеМеню" id="511"/>
-																			<ExtendedTooltip name="КаталогOutputСкриншотыРасширеннаяПодсказка" id="1395"/>
-																			<Events>
-																				<Event name="StartChoice">КаталогOutputСкриншотыНачалоВыбора</Event>
-																			</Events>
-																		</InputField>
-																		<InputField name="КаталогOutputAllure" id="141">
-																			<DataPath>Объект.КаталогOutputAllure</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Временный каталог файлов результатов Allure</v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Temp dir for Allure test suite files</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ChoiceButton>true</ChoiceButton>
-																			<ClearButton>true</ClearButton>
-																			<ContextMenu name="КаталогOutputAllureКонтекстноеМеню" id="142"/>
-																			<ExtendedTooltip name="КаталогOutputAllureРасширеннаяПодсказка" id="1396"/>
-																			<Events>
-																				<Event name="StartChoice">КаталогOutputAllureНачалоВыбора</Event>
-																			</Events>
-																		</InputField>
-																		<InputField name="КаталогOutputxUnit" id="370">
-																			<DataPath>Объект.КаталогOutputjUnit</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Временный каталог для файлов JUnit</v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Temp dir for JUnit xml files</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ChoiceButton>true</ChoiceButton>
-																			<ClearButton>true</ClearButton>
-																			<ContextMenu name="КаталогOutputxUnitКонтекстноеМеню" id="371"/>
-																			<ExtendedTooltip name="КаталогOutputxUnitРасширеннаяПодсказка" id="1397"/>
-																			<Events>
-																				<Event name="StartChoice">КаталогOutputxUnitНачалоВыбора</Event>
-																			</Events>
-																		</InputField>
-																		<InputField name="КаталогOutputCucumberJson" id="1464">
-																			<DataPath>Объект.КаталогOutputCucumberJson</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Временный каталог для файлов Cucumber</v8:content>
-																				</v8:item>
-																				<v8:item>
-																					<v8:lang>en</v8:lang>
-																					<v8:content>Temp dir for JUnit xml files</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ChoiceButton>true</ChoiceButton>
-																			<ClearButton>true</ClearButton>
-																			<ContextMenu name="КаталогOutputCucumberJsonКонтекстноеМеню" id="1465"/>
-																			<ExtendedTooltip name="КаталогOutputCucumberJsonРасширеннаяПодсказка" id="1466"/>
-																			<Events>
-																				<Event name="StartChoice">КаталогOutputCucumberJsonНачалоВыбора</Event>
-																			</Events>
-																		</InputField>
-																	</ChildItems>
-																</UsualGroup>
-															</ChildItems>
-														</UsualGroup>
-														<UsualGroup name="Группа3" id="918">
-															<Group>Horizontal</Group>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="1398"/>
-															<ChildItems>
-																<CheckBoxField name="ДелатьОтчетВоВнутреннемФормате" id="375">
-																	<DataPath>Объект.ДелатьОтчетВоВнутреннемФормате</DataPath>
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Формировать отчет о запуске во внутреннем формате</v8:content>
-																		</v8:item>
-																		<v8:item>
-																			<v8:lang>en</v8:lang>
-																			<v8:content>Create report in internal format</v8:content>
-																		</v8:item>
-																	</Title>
-																	<TitleLocation>Right</TitleLocation>
-																	<CheckBoxType>Auto</CheckBoxType>
-																	<ContextMenu name="ДелатьОтчетВоВнутреннемФорматеКонтекстноеМеню" id="376"/>
-																	<ExtendedTooltip name="ДелатьОтчетВоВнутреннемФорматеРасширеннаяПодсказка" id="1399"/>
-																</CheckBoxField>
-															</ChildItems>
-														</UsualGroup>
+														<CheckBoxField name="ДелатьОтчетВоВнутреннемФормате" id="375">
+															<DataPath>Объект.ДелатьОтчетВоВнутреннемФормате</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Формировать отчет о запуске во внутреннем формате</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Create report in internal format</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДелатьОтчетВоВнутреннемФорматеКонтекстноеМеню" id="376"/>
+															<ExtendedTooltip name="ДелатьОтчетВоВнутреннемФорматеРасширеннаяПодсказка" id="1399"/>
+														</CheckBoxField>
 													</ChildItems>
 												</UsualGroup>
 											</ChildItems>
