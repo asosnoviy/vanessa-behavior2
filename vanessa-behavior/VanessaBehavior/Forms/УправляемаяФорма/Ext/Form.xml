@@ -315,6 +315,17 @@
 														</Title>
 														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктОткрытьФичаФайлРасширеннаяПодсказка" id="1266"/>
 													</Button>
+													<Button name="ДеревоТестовКонтекстноеМенюОткрытьКаталогФичи" id="1550">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ОткрытьКаталогФичи</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Открыть каталог feature</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюОткрытьКаталогФичиРасширеннаяПодсказка" id="1551"/>
+													</Button>
 												</ChildItems>
 											</ButtonGroup>
 											<ButtonGroup name="ЧастичноеВыполнениеСценариев" id="1020">
@@ -4743,6 +4754,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СброситьКешИзвестныхStepDefinition</Action>
+		</Command>
+		<Command name="ОткрытьКаталогФичи" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог фичи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог фичи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьКаталогФичи</Action>
 		</Command>
 	</Commands>
 </Form>
