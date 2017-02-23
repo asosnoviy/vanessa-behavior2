@@ -9,7 +9,7 @@ real_path=`pwd`$stripped
 
 mode=$1
 if [ -z "$mode" ]; then
-    mode="../lib/CF/83NoSync"
+    mode="../lib/CF/83NoSync310"
 fi
 
 connstring=

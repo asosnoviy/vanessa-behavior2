@@ -17,6 +17,8 @@ USERPWD=
 #connstring=--ibname /F"~/projects/onec/itil"
 #USERPWD=--db-user base --db-pwd 234567890
 export RUNNER_ENV=production
-export VANESSA_commandscreenshot="import -window root " 
+#export VANESSA_commandscreenshot="import -window root " 
+export VANESSA_commandscreenshot="dbus-send --type=method_call --print-reply --dest=org.gnome.Shell.Screenshot /org/gnome/Shell/Screenshot org.gnome.Shell.Screenshot.Screenshot boolean:true boolean:false string:"
+export VANESSA_onerrorscreenshot=1
 
-oscript $real_path/runner.os vanessa --path "$real_path/../build/out/vanessa-behavior.epf" --pathsettings "$mode" $connstring $USERPWD
+oscript $real_path/runner.os vanessa

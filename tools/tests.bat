@@ -18,5 +18,6 @@ IF "%~1"=="" (
 
 
 echo "vanessa"
+oscript %mypath%/runner.os run --execute "./build/out/tools/epf/init.epf" --command "InitDataBase;VBParams=$instrumentsRoot/init.json"
 oscript %mypath%/runner.os vanessa --pathvanessa "%BUILDPATH%/out/vanessa-behavior.epf" --vanessasettings "%mode%"
 exit /B

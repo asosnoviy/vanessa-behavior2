@@ -1,0 +1,41 @@
+﻿{
+   "ИмяСборки":"Сборка 8.3.10 UF",
+   "ВерсияПлатформы":"8.3.10",
+   "ВыводитьСообщенияВФайл": "$workspaceRoot/../message.txt",
+   "EpfДляИнициализацияБазы": "$workspaceRoot/epf/init.epf",
+   "ПараметрыДляИнициализацияБазы": "$workspaceRoot/epf/init.json",
+   "ПутьКVanessaBehavior": "$workspaceRoot/vanessa-behavior.epf",
+   "КаталогФич": "$workspaceRoot/features/",
+   "КаталогиБиблиотек":[
+   "$workspaceRoot/features/Libraries/"
+   ],
+   "ВыполнитьСценарии": "Истина",
+   "ЗавершитьРаботуСистемы": "Истина",
+   "ЗакрытьTestClientПослеЗапускаСценариев": "Истина",
+   "ДелатьЛогВыполненияСценариевВЖР": "Истина",
+   "ДелатьОтчетВФорматеАллюр": "Истина",
+   "ДелатьОтчетВФорматеjUnit": "Истина",
+   "ДелатьОтчетВФорматеCucumberJson": "Истина",
+   "ДелатьЛогВыполненияСценариевВТекстовыйФайл": "Истина",
+   "КаталогOutputAllureБазовый": "$workspaceRoot/../allurereport",
+   "КаталогOutputjUnit": "$workspaceRoot/../junitreport",
+   "КаталогOutputCucumberJson": "$workspaceRoot/../cucumber",
+   "СоздаватьПодкаталогВКаталогеAllureДляЭтойСборки": "Ложь",
+   "ДелатьСкриншотПриВозникновенииОшибки": "Истина",
+   "КаталогOutputСкриншоты": "$workspaceRoot/../allurereport/screen",
+   "ИмяФайлаЛогВыполненияСценариев": "$workspaceRoot/../vanessaonline.txt",
+   "КомандаСделатьСкриншот": "nircmd.exe savescreenshot ",
+   "ВыгружатьСтатусВыполненияСценариевВФайл": "Истина",
+   "ДобавлятьКИмениСценарияУловияВыгрузки": "Ложь",
+   "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "$workspaceRoot/../buildstatus.log",
+   "СписокТеговИсключение":[
+   "IgnoreOnCIMainBuild",
+   "IgnoreOn837",
+   "IgnoreOn82Builds",
+   "IgnoreOnOFBuilds",
+   "IgnoreOnUFBuilds", 
+   "Ignore"
+    ],
+    "СписокТеговОтбор":[
+   ]
+}

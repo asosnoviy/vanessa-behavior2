@@ -10,5 +10,5 @@ USERPWD=
 export RUNNER_ENV=production
 
 pushd $dir
-oscript runner.os compileepf ./ ./build/out/ $connstring $USERPWD
+oscript runner.os compileepf
 popd
