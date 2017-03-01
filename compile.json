@@ -5,7 +5,7 @@
             "user":"", 
             "password":"", 
             "inDir":"./features/", 
-            "outDir":"./build/out/features/",
+            "outDir":"./build/features/",
             "name":"srcfeatures",
             "autoupdate":[
                 {"autoupdate":"epfsrcfeatures"}
@@ -19,7 +19,7 @@
             "connectionstring":"/F./build/ibservice", 
             "user":"", 
             "password":"", 
-            "inDir":"./build/out/features/", 
+            "inDir":"./build/features/", 
             "outDir":"./features/",
             "name":"epfsrcfeatures",
             "autoupdate": "srcfeatures" 
@@ -31,8 +31,8 @@
             "connectionstring":"/F./build/ibservice", 
             "user":"", 
             "password":"", 
-            "inDir":"./vanessa-behavior/", 
-            "outDir":"./build/out/",
+            "inDir":"./epf/", 
+            "outDir":"./build/epf/",
             "name":"srcvanessa",
             "autoupdate": "epfsrcvanessa"
         }
@@ -43,8 +43,8 @@
             "connectionstring":"/F./build/ibservice", 
             "user":"", 
             "password":"", 
-            "inDir":"./build/out/vanessa-behavior.epf", 
-            "outDir":"./",
+            "inDir":"./build/epf", 
+            "outDir":"./epf",
             "name":"epfsrcvanessa",
             "autoupdate": "srcvanessa" 
         }
@@ -59,31 +59,6 @@
             "autoupdate":"true"
         }
 
-    },
-    {
-        "srctoepf" : {
-            "connectionstring":"/F./build/ibservice", 
-            "user":"", 
-            "password":"", 
-            "inDir":"./vbFeatureReader/", 
-            "outDir":"./build/out/",
-            "name":"srcfeaturereader",
-            "autoupdate": "epfsrcvbFeatureReader"
-        }
-
-    },
-    {
-        "epftosrc" : {
-            "connectionstring":"/F./build/ibservice", 
-            "user":"", 
-            "password":"", 
-            "inDir":"./build/out/vbFeatureReader.epf", 
-            "outDir":"./",
-            "name":"epfsrcvbFeatureReader",
-            "autoupdate": "srcfeaturereader" 
-        }
-
-    }
-    
+    }    
 ]
    
