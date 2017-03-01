@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.9600.16518"></meta></head><body>
+<p><font size="3" face="Arial">Vanessa-Behavior - это фреймворк для разработки в 1С используя методологию BDD.</font></p>
+<p><font size="3" face="Arial">Страница проекта: <a href="https://github.com/silverbulleters/vanessa-behavior">https://github.com/silverbulleters/vanessa-behavior</a></font></p>
+<p><font size="3" face="Arial">Vanessa-Behavior является аналогом Cucumber для разработки на платформе 1С:Предприятие.</font></p>
+<p><font size="3" face="Arial"></font> </p>
+<p><font size="3" face="Arial"></font> </p>
+<p><font size="3" face="Arial">Разделы справки:</font></p>
+<p>1 . <a href="#ПравилаНаписанияfeatureФайлов">Правила написания feature файлов.</a></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p><a href="#Основные секции feature файла.">1.1 Основные секции feature файла.</a></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p><a href="#Заголовок">1.1.1 Заголовок feature</a></p>
+<p><a href="#Сценарии">1.1.2 Сценарии</a></p>
+<p><a href="#Структура сценария">1.1.3 Структура сценария</a></p></blockquote>
+<p dir="ltr"><a href="#Тег @tree">1.2 Тег @tree</a></p>
+<p><a href="#Тег @exportscenarios">1.3 Тег @exportscenarios</a></p>
+<p>1.4 Передача в шаг таблицы.</p>
+<p>1.5 Вызов структуры сценария как вложенного сценария.</p>
+<p>1.6 Передача параметра таблицы (таблиц) во вложенный сценарий.</p></blockquote>
+<p dir="ltr"><a href="#Как загрузить feature файл.">2. Как загрузить feature файл. Тэги.</a></p>
+<p>3. Как запустить feature файл на выполнение. Отладка.</p>
+<p>4. Как создать epf файл.</p>
+<p>5. Асинхронные вызовы</p>
+<p>6. Как получить отчет Allure, jUnit, Cucmber report.</p>
+<p>7. Как накликать фича файл.</p>
+<p>8. Как получить состояние формы TestClient.</p>
+<p>9. Как подключить свою библиотеку.</p>
+<p>10. Как поделиться своими шагами с коллегами при групповой разработке.</p>
+<p>11. Как создать автоинструкцию в формате HTML, MD.</p>
+<p>12. Как создать автовидеоинструкцию.</p>
+<p>13. Список экспортных процедур и функций.</p>
+<p>14. Запуск Vanessa-Behavior на CI.</p>
+<p> </p>
+<p> </p>
+<p><a name="ПравилаНаписанияfeatureФайлов"><font size="4">1 . Правила написания feature файлов.</font></a></p>
+<p><font size="2"><a name="Основные секции feature файла."><strong>1.1 Основные секции feature файла.</strong></a></font></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p><font size="1">Feature файл должен быть написан на языке <strong>Gherkin</strong>.</font></p>
+<p>Feature файл содержит в себе две основные секции - это заголовок фичи и её сценарии.</p>
+<p align="center"><strong><font size="5"><a name="Заголовок">Заголовок</a></font>.</strong></p>
+<p>Заголовок фичи содержит в себе служебную секцию с директивой, указывающими на язык (русский, английский и т.д.) фичи.</p>
+<p align="center"><img src="_files/Директива.png"></img></p>
+<p>Далее в заголовке обычно идут теги, которые относятся ко всей фиче (ещё бывают теги, которые относятся к конкретному сценарию).</p>
+<p align="center"><img src="_files/Теги.png"></img></p>
+<p>Далее идёт часть, в которой используется ключевое слово <strong>Функционал</strong> или <strong>Функциональность </strong>и далее идёт название фичи.</p>
+<p align="center"><img src="_files/ИмяФичи.png"></img></p>
+<p>Далее идёт часть, в которой коротко даётся ответ на три вопроса: кто хочет, что он хочет и зачем это надо (бизнес польза).</p>
+<p align="center"><img src="_files/КтоЧтоЗачем.png"></img></p>
+<p>Далее идёт необязательная секция <strong>Контекст</strong>. В ней обычно описывают шаги, которые подготавливают выполнения сценария, но непосредсвенно к нему не относятся.</p>
+<p>В одном feature файле может быть много сценариев, и секция <strong>Контекст</strong> будет выполняться перед каждым сценарием.</p>
+<p align="center"><img src="_files/Контекст.png"></img></p>
+<p> </p>
+<p>Далее идёт часть в которой могут распологаться либо простые сценарии, либо сценарии специального формата, которые в русском переводе "<strong>Scenario Outline"</strong> получили название "<strong>Структура сценария"</strong>.</p>
+<p> </p>
+<p align="center"><font size="5"><strong><a name="Сценарии">Сценарии</a></strong></font>.</p>
+<p>Обычный сценарий начинается с ключевого слова "<strong>Сценарий:</strong>", затем идёт имя сценария.</p>
+<p align="center"><img src="_files/ИмяСценария.png"></img></p>
+<p> </p>
+<p>Далее идут шаги сценария. Каждый шаг должен начинаться с ключевого слова, такого как <strong>Дано</strong>, <strong>Когда</strong>, <strong>Тогда</strong>, <strong>И</strong>, <strong>Затем</strong> и т.д.</p>
+<p>Полный список ключевых слов для каждого языка можно посмотреть здесь: <a href="https://github.com/cucumber/gherkin/blob/master/gherkin-languages.json#L2372">https://github.com/cucumber/gherkin/blob/master/gherkin-languages.json#L2372</a></p>
+<p>Ограничений на количество использований ключевых слов шагов нет. </p>
+<p align="center"><img src="_files/Шаги.png"></img></p>
+<p>У шагов могут быть параметры простых типов - число, строка, дата.</p>
+<p dir="ltr">Числа записываются как есть.</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p align="center"><img src="_files/Числа.png"></img></p>
+<p> </p></blockquote>
+<p dir="ltr">Даты могут быть указны в двух форматах</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p align="center"><img src="_files/Даты.png"></img></p></blockquote>
+<p dir="ltr">Строки должны быть заключены либо в апострофы, либо в кавычки.</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p align="center"><img src="_files/Строки2.png"></img></p></blockquote>
+<p> </p>
+<p><font size="2"><strong>Для строк действуют правила экранирования спецсимволов.</strong></font></p>
+<p><font size="2"><strong>\' - означает апсотроф</strong></font></p>
+<p><font size="2"><strong>\" - означает кавычку</strong></font></p>
+<p><font size="2"><strong>\\ - означает одинарный слеш (\)</strong></font></p>
+<p align="center"><img src="_files/Апостроф.png"></img></p>
+<p> </p>
+<p align="center"><strong><font size="5"><a name="Структура сценария">Структура сценария</a></font></strong></p><font size="1">
+<p dir="ltr">Структура сценария допускает, что некторые параметры в шагах указываются в специальных скобках.</p>
+<p dir="ltr">Такие параметры должны быть описаны в таблице, которая идёт после структуры сценария и начинается с ключевого слова <strong>"Примеры"</strong>.</p>
+<p dir="ltr">Таким образом для каждой строки таблицы <strong>Примеров</strong> будет выполнен <strong>свой</strong> сценарий со <strong>своим</strong> набором параметров.</p>
+<p dir="ltr" align="center"><img src="_files/Outline01.png"></img></p></font>
+<p align="center"><strong><font size="5"></font></strong> </p>
+<p align="center"><strong><font size="5"></font></strong> </p>
+<p> </p></blockquote>
+<p dir="ltr"><a name="Тег @tree"><font size="2"><strong>1.2 Тег @tree</strong></font></a></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>Vanessa-Behavior умеет работать с <strong>расширенным</strong> синтаксисом языка сценариев <strong>Gherkin</strong>. Назовём его <strong>Turbo Gherkin</strong>.</p>
+<p>Если в заголовке фичи указан тег <strong>@tree</strong>, тогда парсер фич будет особым образом интерпритировать отступы (символы Tab, пробелы недопустимы!!!) в тексте.</p>
+<p>Шаги будут образовывать дерево шагов. Т.е. шаги с большим значением отступа будут считаться вложенными. Как в python.</p>
+<p>Это помогает структурировать текст feature файла.</p>
+<p align="center"><img src="_files/tree.png" width="1160" height="258"></img></p>
+<p> </p>
+<p align="center"><img src="_files/tree2.png"></img></p>
+<p> </p>
+<p>Таким образом часть шагов оказалась внутри других шагов. Шаг, который является веткой дерева (выделен рамкой на картинке) - выполняться не будет.</p>
+<p> </p></blockquote>
+<p dir="ltr"><a name="Тег @exportscenarios"><font size="2"><strong>1.3 Тег @exportscenarios</strong></font></a></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>Если в заголовке фичи указан тег @exportscenarios, тогда становится возможным вызывать один сценарий из другого (и передавать в него свои параметры).</p>
+<p>Например есть такой сценарий, содержащий шаг <strong>"Когда Я открываю Visual Studio Code"</strong>:</p>
+<p align="center"><img src="_files/export01.png"></img></p>
+<p align="left">И рядом с ним (или в подчиенном каталоге, или в каталоге библиотек) лежит другой feature файл, у которого указан тег <strong>@exportscenarios</strong> и в нём есть сценарий с именем <strong>"Я открываю Visual studio code"</strong>.</p>
+<p align="center"><img src="_files/export02.png"></img></p>
+<p align="left">Тогда если загрузить первый сценарий в Vanessa-Behavior - шаг <strong>"Когда Я открываю Visual Studio Code" </strong>загрузится как ветка дерева.</p>
+<p align="center"><img src="_files/export03.png"></img></p>
+<p align="left"> </p>
+<p align="left">Чтобы передать обычный параметр в подчиненный сценарий - надо чтобы строка с именем сценария содержала параметры. Например, есть вот такой сценарий:</p>
+<p align="center"><img src="_files/export05.png"></img></p>
+<p align="left">В него можно передать свой параметр <strong>"ИмяФайла"</strong>. </p>
+<p align="center"><img src="_files/export06.png"></img></p>
+<p align="left"> </p>
+<p align="left">Тогда в Vanessa-Behavior это отобразится вот так:</p>
+<p align="center"><img src="_files/export07.png"></img></p>
+<p align="left"> </p>
+<p align="left"> </p>
+<p align="left"><font size="2"><strong>2. <a name="Как загрузить feature файл.">Как загрузить feature файл. Тэги.</a></strong></font></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p align="left"><font size="1">Vanessa-Behavior позволяет загрузить либо один feature файл (Ctrl+F2), либо feature файлы из каталога (Alt+F2).</font></p>
+<p align="center"><img src="_files/LoadFeature01.png"></img></p>
+<p align="left">Если выбран пункт "Загрузить один файл" - тогда feature файл будет загружен не смотря на наличие в нём тегов.</p>
+<p align="left">Если выбран пункт "Загрузить файлы из каталога" - тогда возможны варианты, в зависимости от указанных тегов в настройках Vanessa-Behavior.</p>
+<p align="center"><img src="_files/Tags01.png"></img></p>
+<p align="left">Если заполнен список "Список исключаемых тэгов" - тогда если в feature файле указан такой тэг в заголовке feature, весь feature файл не будет загружен. Если тэг был указан у одного или несклольких сценариев, <br>данные сценарии не будет загружены, а остальные загрузятся.</p>
+<p align="left">Если заполнен список "Тэги для запуска" - тогда если в feature данный тэг не встречается нигде - весь feature файл будет проигнорирован. Если тэг есть в заголовке feature, тогда будут загружены все сценарии из feature.<br>Если тэг указан у одного или нескольких сценариев - тогда будут загружены только эти сценарии.<br><br></p></blockquote></blockquote></body></html>
