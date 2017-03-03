@@ -27,7 +27,7 @@
 					<xr:Abs>Picture.png</xr:Abs>
 					<xr:LoadTransparent>false</xr:LoadTransparent>
 				</Picture>
-				<ExtendedTooltip name="ПодменюЗагрузитьФичиExtendedTooltip" id="1553"/>
+				<ExtendedTooltip name="ПодменюЗагрузитьФичиРасширеннаяПодсказка" id="1252"/>
 				<ChildItems>
 					<ButtonGroup name="ГруппаКнопокЗагрузитьФичи" id="1249">
 						<ToolTip>
@@ -36,7 +36,7 @@
 								<v8:content>Группа кнопок загрузить фичи</v8:content>
 							</v8:item>
 						</ToolTip>
-						<ExtendedTooltip name="ГруппаКнопокЗагрузитьФичиExtendedTooltip" id="1554"/>
+						<ExtendedTooltip name="ГруппаКнопокЗагрузитьФичиРасширеннаяПодсказка" id="1253"/>
 						<ChildItems>
 							<Button name="ФормаЗагрузитьФичиИзКаталога" id="64">
 								<Type>CommandBarButton</Type>
@@ -51,7 +51,7 @@
 										<v8:content>Load features files from directory</v8:content>
 									</v8:item>
 								</Title>
-								<ExtendedTooltip name="ФормаЗагрузитьФичиИзКаталогаExtendedTooltip" id="1555"/>
+								<ExtendedTooltip name="ФормаЗагрузитьФичиИзКаталогаРасширеннаяПодсказка" id="1254"/>
 							</Button>
 							<Button name="ФормаЗагрузитьОднуФичу" id="65">
 								<Type>CommandBarButton</Type>
@@ -66,7 +66,7 @@
 										<v8:content>Load one feature file</v8:content>
 									</v8:item>
 								</Title>
-								<ExtendedTooltip name="ФормаЗагрузитьОднуФичуExtendedTooltip" id="1556"/>
+								<ExtendedTooltip name="ФормаЗагрузитьОднуФичуРасширеннаяПодсказка" id="1255"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
@@ -77,7 +77,7 @@
 								<v8:content>Группа кнопок недавно загруженные фичи</v8:content>
 							</v8:item>
 						</ToolTip>
-						<ExtendedTooltip name="ГруппаКнопокНедавноЗагруженныеФичиExtendedTooltip" id="1557"/>
+						<ExtendedTooltip name="ГруппаКнопокНедавноЗагруженныеФичиРасширеннаяПодсказка" id="1256"/>
 					</ButtonGroup>
 				</ChildItems>
 			</Popup>
@@ -99,7 +99,7 @@
 						<v8:content>Reload scenario</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ПерезагрузитьExtendedTooltip" id="1558"/>
+				<ExtendedTooltip name="ПерезагрузитьРасширеннаяПодсказка" id="1257"/>
 			</Button>
 			<Button name="кнВыполнитьСценарии" id="61">
 				<Type>CommandBarButton</Type>
@@ -119,7 +119,7 @@
 						<v8:content>Run scenario</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="кнВыполнитьСценарииExtendedTooltip" id="1559"/>
+				<ExtendedTooltip name="кнВыполнитьСценарииРасширеннаяПодсказка" id="1258"/>
 			</Button>
 			<Button name="ФормаПерезагрузитьИВыполнить" id="151">
 				<Type>CommandBarButton</Type>
@@ -134,12 +134,12 @@
 						<v8:content>Reload and run</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ФормаПерезагрузитьИВыполнитьExtendedTooltip" id="1560"/>
+				<ExtendedTooltip name="ФормаПерезагрузитьИВыполнитьРасширеннаяПодсказка" id="1259"/>
 			</Button>
 			<Button name="ФормаСправка" id="1552">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.Help</CommandName>
-				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="1561"/>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="1553"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -165,7 +165,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаФункциональностиExtendedTooltip" id="1562"/>
+			<ExtendedTooltip name="ГруппаФункциональностиРасширеннаяПодсказка" id="1260"/>
 			<ChildItems>
 				<Pages name="ФункциональностьЗакладки" id="45">
 					<Title>
@@ -181,7 +181,7 @@
 						</v8:item>
 					</ToolTip>
 					<PagesRepresentation>TabsOnRightHorizontal</PagesRepresentation>
-					<ExtendedTooltip name="ФункциональностьЗакладкиExtendedTooltip" id="1563"/>
+					<ExtendedTooltip name="ФункциональностьЗакладкиРасширеннаяПодсказка" id="1261"/>
 					<ChildItems>
 						<Page name="ГруппаЗапускТестов" id="44">
 							<Title>
@@ -200,7 +200,7 @@
 									<v8:content>Группа запуск тестов</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаЗапускТестовExtendedTooltip" id="1564"/>
+							<ExtendedTooltip name="ГруппаЗапускТестовРасширеннаяПодсказка" id="1262"/>
 							<ChildItems>
 								<Table name="ДеревоТестов" id="66">
 									<Representation>Tree</Representation>
@@ -233,7 +233,7 @@
 														<v8:content>Основная</v8:content>
 													</v8:item>
 												</ToolTip>
-												<ExtendedTooltip name="ОсновнаяExtendedTooltip" id="1565"/>
+												<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="1263"/>
 												<ChildItems>
 													<Button name="ДеревоТестовКонтекстноеМенюВыполнитьДанныйСценарийСТекущегоШага" id="1471">
 														<Type>CommandBarButton</Type>
@@ -244,7 +244,7 @@
 																<v8:content>Выполнить данный сценарий с текущего шага</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнитьДанныйСценарийСТекущегоШагаExtendedTooltip" id="1566"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнитьДанныйСценарийСТекущегоШагаРасширеннаяПодсказка" id="1472"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюВыполнитьДанныйСценарийСТекущегоШагаСПродолжением" id="1473">
 														<Type>CommandBarButton</Type>
@@ -255,7 +255,7 @@
 																<v8:content>Выполнить данный сценарий с текущего шага с продолжением</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнитьДанныйСценарийСТекущегоШагаСПродолжениемExtendedTooltip" id="1567"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнитьДанныйСценарийСТекущегоШагаСПродолжениемРасширеннаяПодсказка" id="1474"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюПунктВыполнитьСценарий" id="1016">
 														<Type>CommandBarButton</Type>
@@ -270,7 +270,7 @@
 																<v8:content>Invoke only selected scenario</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктВыполнитьСценарийExtendedTooltip" id="1568"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктВыполнитьСценарийРасширеннаяПодсказка" id="1264"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюПунктВыполнитьФичу" id="1247">
 														<Type>CommandBarButton</Type>
@@ -281,12 +281,12 @@
 																<v8:content>Выполнить сценарии этой фичи</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктВыполнитьФичуExtendedTooltip" id="1569"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктВыполнитьФичуРасширеннаяПодсказка" id="1265"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюВыполнитьОдинШаг" id="1484">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ВыполнитьОдинШаг</CommandName>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнитьОдинШагExtendedTooltip" id="1570"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнитьОдинШагРасширеннаяПодсказка" id="1485"/>
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
@@ -303,7 +303,7 @@
 														<v8:content>Открыть фича файл в редакторе</v8:content>
 													</v8:item>
 												</ToolTip>
-												<ExtendedTooltip name="ОткрытьФичаФайлВРедактореExtendedTooltip" id="1571"/>
+												<ExtendedTooltip name="ОткрытьФичаФайлВРедактореРасширеннаяПодсказка" id="1470"/>
 												<ChildItems>
 													<Button name="ДеревоТестовКонтекстноеМенюПунктОткрытьФичаФайл" id="1018">
 														<Type>CommandBarButton</Type>
@@ -318,7 +318,7 @@
 																<v8:content>Open feature file in editor</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктОткрытьФичаФайлExtendedTooltip" id="1572"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктОткрытьФичаФайлРасширеннаяПодсказка" id="1266"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюОткрытьКаталогФичи" id="1550">
 														<Type>CommandBarButton</Type>
@@ -329,7 +329,7 @@
 																<v8:content>Открыть каталог feature</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюОткрытьКаталогФичиExtendedTooltip" id="1573"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюОткрытьКаталогФичиРасширеннаяПодсказка" id="1551"/>
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
@@ -346,7 +346,7 @@
 														<v8:content>Частичное выполнение сценариев</v8:content>
 													</v8:item>
 												</ToolTip>
-												<ExtendedTooltip name="ЧастичноеВыполнениеСценариевExtendedTooltip" id="1574"/>
+												<ExtendedTooltip name="ЧастичноеВыполнениеСценариевРасширеннаяПодсказка" id="1267"/>
 												<ChildItems>
 													<Button name="ДеревоТестовКонтекстноеМенюВыполнятьСценарийСЭтогоШага" id="1022">
 														<Type>CommandBarButton</Type>
@@ -361,7 +361,7 @@
 																<v8:content>Run scenario from that step</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнятьСценарийСЭтогоШагаExtendedTooltip" id="1575"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнятьСценарийСЭтогоШагаРасширеннаяПодсказка" id="1268"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюВыполнятьСценарииСначала" id="1024">
 														<Type>CommandBarButton</Type>
@@ -376,7 +376,7 @@
 																<v8:content>Run scenario from first step</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнятьСценарииСначалаExtendedTooltip" id="1576"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюВыполнятьСценарииСначалаРасширеннаяПодсказка" id="1269"/>
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
@@ -393,7 +393,7 @@
 														<v8:content>Свернуть</v8:content>
 													</v8:item>
 												</ToolTip>
-												<ExtendedTooltip name="СвернутьExtendedTooltip" id="1577"/>
+												<ExtendedTooltip name="СвернутьРасширеннаяПодсказка" id="1270"/>
 												<ChildItems>
 													<Button name="ДеревоТестовКонтекстноеМенюСвернутьДоФич" id="1028">
 														<Type>CommandBarButton</Type>
@@ -408,7 +408,7 @@
 																<v8:content>Switch to features</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюСвернутьДоФичExtendedTooltip" id="1578"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюСвернутьДоФичРасширеннаяПодсказка" id="1271"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюСвернутьДоСценариев" id="1030">
 														<Type>CommandBarButton</Type>
@@ -423,7 +423,7 @@
 																<v8:content>Switch to scenarios</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюСвернутьДоСценариевExtendedTooltip" id="1579"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюСвернутьДоСценариевРасширеннаяПодсказка" id="1272"/>
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
@@ -440,12 +440,12 @@
 														<v8:content>Брейпоинты</v8:content>
 													</v8:item>
 												</ToolTip>
-												<ExtendedTooltip name="БрейпоинтыExtendedTooltip" id="1580"/>
+												<ExtendedTooltip name="БрейпоинтыРасширеннаяПодсказка" id="1479"/>
 												<ChildItems>
 													<Button name="ДеревоТестовКонтекстноеМенюБрейкпоинт" id="1480">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.Брейкпоинт</CommandName>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюБрейкпоинтExtendedTooltip" id="1581"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюБрейкпоинтРасширеннаяПодсказка" id="1481"/>
 													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюБрейпоинтУбратьВсе" id="1482">
 														<Type>CommandBarButton</Type>
@@ -456,7 +456,7 @@
 																<v8:content>Убрать все брейкпоинты</v8:content>
 															</v8:item>
 														</Title>
-														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюБрейпоинтУбратьВсеExtendedTooltip" id="1582"/>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюБрейпоинтУбратьВсеРасширеннаяПодсказка" id="1483"/>
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
@@ -465,30 +465,30 @@
 									<AutoCommandBar name="ДеревоТестовКоманднаяПанель" id="68">
 										<Autofill>false</Autofill>
 									</AutoCommandBar>
-									<ExtendedTooltip name="ДеревоТестовExtendedTooltip" id="1583"/>
-									<SearchStringAddition name="ДеревоТестовSearchString" id="1584">
+									<ExtendedTooltip name="ДеревоТестовРасширеннаяПодсказка" id="1273"/>
+									<SearchStringAddition name="ДеревоТестовСтрокаПоиска" id="1274">
 										<AdditionSource>
 											<Item>ДеревоТестов</Item>
 											<Type>SearchStringRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="ДеревоТестовSearchStringContextMenu" id="1585"/>
-										<ExtendedTooltip name="ДеревоТестовSearchStringExtendedTooltip" id="1586"/>
+										<ContextMenu name="ДеревоТестовСтрокаПоискаКонтекстноеМеню" id="1275"/>
+										<ExtendedTooltip name="ДеревоТестовСтрокаПоискаРасширеннаяПодсказка" id="1276"/>
 									</SearchStringAddition>
-									<ViewStatusAddition name="ДеревоТестовViewStatus" id="1587">
+									<ViewStatusAddition name="ДеревоТестовСостояниеПросмотра" id="1277">
 										<AdditionSource>
 											<Item>ДеревоТестов</Item>
 											<Type>ViewStatusRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="ДеревоТестовViewStatusContextMenu" id="1588"/>
-										<ExtendedTooltip name="ДеревоТестовViewStatusExtendedTooltip" id="1589"/>
+										<ContextMenu name="ДеревоТестовСостояниеПросмотраКонтекстноеМеню" id="1278"/>
+										<ExtendedTooltip name="ДеревоТестовСостояниеПросмотраРасширеннаяПодсказка" id="1279"/>
 									</ViewStatusAddition>
-									<SearchControlAddition name="ДеревоТестовSearchControl" id="1590">
+									<SearchControlAddition name="ДеревоТестовУправлениеПоиском" id="1280">
 										<AdditionSource>
 											<Item>ДеревоТестов</Item>
 											<Type>SearchControl</Type>
 										</AdditionSource>
-										<ContextMenu name="ДеревоТестовSearchControlContextMenu" id="1591"/>
-										<ExtendedTooltip name="ДеревоТестовSearchControlExtendedTooltip" id="1592"/>
+										<ContextMenu name="ДеревоТестовУправлениеПоискомКонтекстноеМеню" id="1281"/>
+										<ExtendedTooltip name="ДеревоТестовУправлениеПоискомРасширеннаяПодсказка" id="1282"/>
 									</SearchControlAddition>
 									<Events>
 										<Event name="BeforeAddRow">ДеревоТестовПередНачаломДобавления</Event>
@@ -515,7 +515,7 @@
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<ContextMenu name="ДеревоТестовБрейкпоинтКонтекстноеМеню" id="1476"/>
-											<ExtendedTooltip name="ДеревоТестовБрейкпоинтExtendedTooltip" id="1593"/>
+											<ExtendedTooltip name="ДеревоТестовБрейкпоинтРасширеннаяПодсказка" id="1477"/>
 										</PictureField>
 										<InputField name="ДеревоТестовИмя" id="69">
 											<DataPath>Объект.ДеревоТестов.Имя</DataPath>
@@ -532,7 +532,7 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДеревоТестовИмяКонтекстноеМеню" id="70"/>
-											<ExtendedTooltip name="ДеревоТестовИмяExtendedTooltip" id="1594"/>
+											<ExtendedTooltip name="ДеревоТестовИмяРасширеннаяПодсказка" id="1283"/>
 										</InputField>
 										<InputField name="ДеревоТестовПолныйПуть" id="73">
 											<DataPath>Объект.ДеревоТестов.ПолныйПуть</DataPath>
@@ -549,7 +549,7 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДеревоТестовПолныйПутьКонтекстноеМеню" id="74"/>
-											<ExtendedTooltip name="ДеревоТестовПолныйПутьExtendedTooltip" id="1595"/>
+											<ExtendedTooltip name="ДеревоТестовПолныйПутьРасширеннаяПодсказка" id="1284"/>
 										</InputField>
 										<InputField name="ДеревоТестовСтатус" id="497">
 											<DataPath>Объект.ДеревоТестов.Статус</DataPath>
@@ -566,7 +566,7 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДеревоТестовСтатусКонтекстноеМеню" id="498"/>
-											<ExtendedTooltip name="ДеревоТестовСтатусExtendedTooltip" id="1596"/>
+											<ExtendedTooltip name="ДеревоТестовСтатусРасширеннаяПодсказка" id="1285"/>
 										</InputField>
 										<InputField name="ДеревоТестовСнипет" id="75">
 											<DataPath>Объект.ДеревоТестов.Снипет</DataPath>
@@ -583,7 +583,7 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДеревоТестовСнипетКонтекстноеМеню" id="76"/>
-											<ExtendedTooltip name="ДеревоТестовСнипетExtendedTooltip" id="1597"/>
+											<ExtendedTooltip name="ДеревоТестовСнипетРасширеннаяПодсказка" id="1286"/>
 										</InputField>
 										<InputField name="ДеревоТестовАдресСнипета" id="77">
 											<DataPath>Объект.ДеревоТестов.АдресСнипета</DataPath>
@@ -599,7 +599,7 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДеревоТестовАдресСнипетаКонтекстноеМеню" id="78"/>
-											<ExtendedTooltip name="ДеревоТестовАдресСнипетаExtendedTooltip" id="1598"/>
+											<ExtendedTooltip name="ДеревоТестовАдресСнипетаРасширеннаяПодсказка" id="1287"/>
 										</InputField>
 										<InputField name="ДеревоТестовСтрокаРеальнойПроцедуры" id="79">
 											<DataPath>Объект.ДеревоТестов.СтрокаРеальнойПроцедуры</DataPath>
@@ -615,7 +615,7 @@
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДеревоТестовСтрокаРеальнойПроцедурыКонтекстноеМеню" id="80"/>
-											<ExtendedTooltip name="ДеревоТестовСтрокаРеальнойПроцедурыExtendedTooltip" id="1599"/>
+											<ExtendedTooltip name="ДеревоТестовСтрокаРеальнойПроцедурыРасширеннаяПодсказка" id="1288"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -638,7 +638,7 @@
 									<v8:content>Группа генерация</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаГенерацияEPFExtendedTooltip" id="1600"/>
+							<ExtendedTooltip name="ГруппаГенерацияEPFРасширеннаяПодсказка" id="1289"/>
 							<ChildItems>
 								<Button name="кнСоздатьШаблоныОбработок" id="47">
 									<Type>UsualButton</Type>
@@ -653,7 +653,7 @@
 											<v8:content>Create and update step definitons</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="кнСоздатьШаблоныОбработокExtendedTooltip" id="1601"/>
+									<ExtendedTooltip name="кнСоздатьШаблоныОбработокРасширеннаяПодсказка" id="1290"/>
 								</Button>
 								<CheckBoxField name="ГенерироватьУФ1" id="50">
 									<DataPath>Объект.ГенерироватьУФ</DataPath>
@@ -670,7 +670,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ГенерироватьУФ1КонтекстноеМеню" id="51"/>
-									<ExtendedTooltip name="ГенерироватьУФ1ExtendedTooltip" id="1602"/>
+									<ExtendedTooltip name="ГенерироватьУФ1РасширеннаяПодсказка" id="1291"/>
 								</CheckBoxField>
 								<CheckBoxField name="СоздаватьОбластиПриГенерацииКода" id="361">
 									<DataPath>Объект.СоздаватьОбластиПриГенерацииКода</DataPath>
@@ -687,7 +687,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="СоздаватьОбластиПриГенерацииКодаКонтекстноеМеню" id="362"/>
-									<ExtendedTooltip name="СоздаватьОбластиПриГенерацииКодаExtendedTooltip" id="1603"/>
+									<ExtendedTooltip name="СоздаватьОбластиПриГенерацииКодаРасширеннаяПодсказка" id="1292"/>
 								</CheckBoxField>
 								<CheckBoxField name="СоздаватьЗакоментированныйКодДляПереиспользуемыхПроцедур" id="153">
 									<DataPath>Объект.СоздаватьЗакоментированныйКодДляПереиспользуемыхПроцедур</DataPath>
@@ -704,7 +704,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="СоздаватьЗакоментированныйКодДляПереиспользуемыхПроцедурКонтекстноеМеню" id="154"/>
-									<ExtendedTooltip name="СоздаватьЗакоментированныйКодДляПереиспользуемыхПроцедурExtendedTooltip" id="1604"/>
+									<ExtendedTooltip name="СоздаватьЗакоментированныйКодДляПереиспользуемыхПроцедурРасширеннаяПодсказка" id="1293"/>
 								</CheckBoxField>
 								<CheckBoxField name="ВыводитьТекстМодуляВместоПерегенерацииEPF" id="478">
 									<DataPath>Объект.ВыводитьТекстМодуляВместоПерегенерацииEPF</DataPath>
@@ -721,7 +721,7 @@
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ВыводитьТекстМодуляВместоПерегенерацииEPFКонтекстноеМеню" id="479"/>
-									<ExtendedTooltip name="ВыводитьТекстМодуляВместоПерегенерацииEPFExtendedTooltip" id="1605"/>
+									<ExtendedTooltip name="ВыводитьТекстМодуляВместоПерегенерацииEPFРасширеннаяПодсказка" id="1294"/>
 								</CheckBoxField>
 							</ChildItems>
 						</Page>
@@ -742,7 +742,7 @@
 									<v8:content>Группа каталоги библиотек</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаКаталогиБиблиотекExtendedTooltip" id="1606"/>
+							<ExtendedTooltip name="ГруппаКаталогиБиблиотекРасширеннаяПодсказка" id="1295"/>
 							<ChildItems>
 								<UsualGroup name="БиблиотекиПовторногоКода" id="306">
 									<Title>
@@ -758,7 +758,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
-									<ExtendedTooltip name="БиблиотекиПовторногоКодаExtendedTooltip" id="1607"/>
+									<ExtendedTooltip name="БиблиотекиПовторногоКодаРасширеннаяПодсказка" id="1296"/>
 									<ChildItems>
 										<Table name="КаталогиБиблиотек" id="84">
 											<Representation>List</Representation>
@@ -773,30 +773,30 @@
 											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КаталогиБиблиотекКонтекстноеМеню" id="85"/>
 											<AutoCommandBar name="КаталогиБиблиотекКоманднаяПанель" id="86"/>
-											<ExtendedTooltip name="КаталогиБиблиотекExtendedTooltip" id="1608"/>
-											<SearchStringAddition name="КаталогиБиблиотекSearchString" id="1609">
+											<ExtendedTooltip name="КаталогиБиблиотекРасширеннаяПодсказка" id="1297"/>
+											<SearchStringAddition name="КаталогиБиблиотекСтрокаПоиска" id="1298">
 												<AdditionSource>
 													<Item>КаталогиБиблиотек</Item>
 													<Type>SearchStringRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="КаталогиБиблиотекSearchStringContextMenu" id="1610"/>
-												<ExtendedTooltip name="КаталогиБиблиотекSearchStringExtendedTooltip" id="1611"/>
+												<ContextMenu name="КаталогиБиблиотекСтрокаПоискаКонтекстноеМеню" id="1299"/>
+												<ExtendedTooltip name="КаталогиБиблиотекСтрокаПоискаРасширеннаяПодсказка" id="1300"/>
 											</SearchStringAddition>
-											<ViewStatusAddition name="КаталогиБиблиотекViewStatus" id="1612">
+											<ViewStatusAddition name="КаталогиБиблиотекСостояниеПросмотра" id="1301">
 												<AdditionSource>
 													<Item>КаталогиБиблиотек</Item>
 													<Type>ViewStatusRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="КаталогиБиблиотекViewStatusContextMenu" id="1613"/>
-												<ExtendedTooltip name="КаталогиБиблиотекViewStatusExtendedTooltip" id="1614"/>
+												<ContextMenu name="КаталогиБиблиотекСостояниеПросмотраКонтекстноеМеню" id="1302"/>
+												<ExtendedTooltip name="КаталогиБиблиотекСостояниеПросмотраРасширеннаяПодсказка" id="1303"/>
 											</ViewStatusAddition>
-											<SearchControlAddition name="КаталогиБиблиотекSearchControl" id="1615">
+											<SearchControlAddition name="КаталогиБиблиотекУправлениеПоиском" id="1304">
 												<AdditionSource>
 													<Item>КаталогиБиблиотек</Item>
 													<Type>SearchControl</Type>
 												</AdditionSource>
-												<ContextMenu name="КаталогиБиблиотекSearchControlContextMenu" id="1616"/>
-												<ExtendedTooltip name="КаталогиБиблиотекSearchControlExtendedTooltip" id="1617"/>
+												<ContextMenu name="КаталогиБиблиотекУправлениеПоискомКонтекстноеМеню" id="1305"/>
+												<ExtendedTooltip name="КаталогиБиблиотекУправлениеПоискомРасширеннаяПодсказка" id="1306"/>
 											</SearchControlAddition>
 											<Events>
 												<Event name="AfterDeleteRow">КаталогиБиблиотекПослеУдаления</Event>
@@ -815,7 +815,7 @@
 													<ClearButton>true</ClearButton>
 													<ChooseType>false</ChooseType>
 													<ContextMenu name="КаталогиБиблиотекЗначениеКонтекстноеМеню" id="88"/>
-													<ExtendedTooltip name="КаталогиБиблиотекЗначениеExtendedTooltip" id="1618"/>
+													<ExtendedTooltip name="КаталогиБиблиотекЗначениеРасширеннаяПодсказка" id="1307"/>
 													<Events>
 														<Event name="StartChoice">КаталогиБиблиотекЗначениеНачалоВыбора</Event>
 													</Events>
@@ -843,7 +843,7 @@
 									<v8:content>Группа дополнительно</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаДополнительноExtendedTooltip" id="1619"/>
+							<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="1308"/>
 							<ChildItems>
 								<CommandBar name="РаботасUI" id="333">
 									<Title>
@@ -858,7 +858,7 @@
 											<v8:content>Работас UI</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="РаботасUIExtendedTooltip" id="1620"/>
+									<ExtendedTooltip name="РаботасUIРасширеннаяПодсказка" id="1309"/>
 									<ChildItems>
 										<Button name="ОткрытьПодключитьTestClient" id="298">
 											<Type>CommandBarButton</Type>
@@ -873,7 +873,7 @@
 													<v8:content>Enable test client session</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="ОткрытьПодключитьTestClientExtendedTooltip" id="1621"/>
+											<ExtendedTooltip name="ОткрытьПодключитьTestClientРасширеннаяПодсказка" id="1310"/>
 										</Button>
 										<Button name="НачатьЗаписьДействийПользователя" id="294">
 											<Type>CommandBarButton</Type>
@@ -888,7 +888,7 @@
 													<v8:content>Record user behavior</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="НачатьЗаписьДействийПользователяExtendedTooltip" id="1622"/>
+											<ExtendedTooltip name="НачатьЗаписьДействийПользователяРасширеннаяПодсказка" id="1311"/>
 										</Button>
 										<Button name="ЗавершитьЗаписьДействийПользователя" id="296">
 											<Type>CommandBarButton</Type>
@@ -903,7 +903,7 @@
 													<v8:content>Stop record of user behavior</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="ЗавершитьЗаписьДействийПользователяExtendedTooltip" id="1623"/>
+											<ExtendedTooltip name="ЗавершитьЗаписьДействийПользователяРасширеннаяПодсказка" id="1312"/>
 										</Button>
 									</ChildItems>
 								</CommandBar>
@@ -920,7 +920,7 @@
 											<v8:content>Группа командная панель</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="1624"/>
+									<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="1313"/>
 									<ChildItems>
 										<Popup name="ГруппаПодменюСостояниеTestClient" id="351">
 											<Title>
@@ -939,7 +939,7 @@
 													<v8:content>Группа подменю состояние test client</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="ГруппаПодменюСостояниеTestClientExtendedTooltip" id="1625"/>
+											<ExtendedTooltip name="ГруппаПодменюСостояниеTestClientРасширеннаяПодсказка" id="1314"/>
 											<ChildItems>
 												<Button name="ЗапомнитьСостояниеФормыTestClient" id="349">
 													<Type>CommandBarButton</Type>
@@ -954,7 +954,7 @@
 															<v8:content>Save form state from test client</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ЗапомнитьСостояниеФормыTestClientExtendedTooltip" id="1626"/>
+													<ExtendedTooltip name="ЗапомнитьСостояниеФормыTestClientРасширеннаяПодсказка" id="1315"/>
 												</Button>
 												<Button name="ЗабытьСостояниеФормыTestClient" id="353">
 													<Type>CommandBarButton</Type>
@@ -969,7 +969,7 @@
 															<v8:content>Purge form state for test client</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ЗабытьСостояниеФормыTestClientExtendedTooltip" id="1627"/>
+													<ExtendedTooltip name="ЗабытьСостояниеФормыTestClientРасширеннаяПодсказка" id="1316"/>
 												</Button>
 											</ChildItems>
 										</Popup>
@@ -990,7 +990,7 @@
 													<v8:content>Группа получить изменения формы</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="ГруппаПолучитьИзмененияФормыExtendedTooltip" id="1628"/>
+											<ExtendedTooltip name="ГруппаПолучитьИзмененияФормыРасширеннаяПодсказка" id="1317"/>
 											<ChildItems>
 												<Button name="ПолучитьИзмененияФормыGherkin" id="357">
 													<Type>CommandBarButton</Type>
@@ -1005,7 +1005,7 @@
 															<v8:content>On Gherkin</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ПолучитьИзмененияФормыGherkinExtendedTooltip" id="1629"/>
+													<ExtendedTooltip name="ПолучитьИзмененияФормыGherkinРасширеннаяПодсказка" id="1318"/>
 												</Button>
 												<Button name="ПолучитьИзмененияФормыJSON" id="359">
 													<Type>CommandBarButton</Type>
@@ -1020,7 +1020,7 @@
 															<v8:content>On JSON</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ПолучитьИзмененияФормыJSONExtendedTooltip" id="1630"/>
+													<ExtendedTooltip name="ПолучитьИзмененияФормыJSONРасширеннаяПодсказка" id="1319"/>
 												</Button>
 											</ChildItems>
 										</Popup>
@@ -1040,7 +1040,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
-									<ExtendedTooltip name="АвтоматизированноеСозданиеСценариевExtendedTooltip" id="1631"/>
+									<ExtendedTooltip name="АвтоматизированноеСозданиеСценариевРасширеннаяПодсказка" id="1320"/>
 									<ChildItems>
 										<Pages name="РезультатГенерации" id="310">
 											<Title>
@@ -1055,7 +1055,7 @@
 													<v8:content>Результат генерации</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="РезультатГенерацииExtendedTooltip" id="1632"/>
+											<ExtendedTooltip name="РезультатГенерацииРасширеннаяПодсказка" id="1321"/>
 											<ChildItems>
 												<Page name="СценарийПоведения" id="312">
 													<Title>
@@ -1074,23 +1074,23 @@
 															<v8:content>Сценарий поведения</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="СценарийПоведенияExtendedTooltip" id="1633"/>
+													<ExtendedTooltip name="СценарийПоведенияРасширеннаяПодсказка" id="1322"/>
 													<ChildItems>
 														<UsualGroup name="Группа4" id="1245">
 															<Group>Horizontal</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="Группа4ExtendedTooltip" id="1634"/>
+															<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="1323"/>
 															<ChildItems>
 																<Button name="ПодготовитьСценарийКВыполнению" id="1241">
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.ПодготовитьСценарийКВыполнению</CommandName>
-																	<ExtendedTooltip name="ПодготовитьСценарийКВыполнениюExtendedTooltip" id="1635"/>
+																	<ExtendedTooltip name="ПодготовитьСценарийКВыполнениюРасширеннаяПодсказка" id="1324"/>
 																</Button>
 																<Button name="ДобавитьИзвестныйШаг" id="1467">
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.ДобавитьИзвестныйШаг</CommandName>
-																	<ExtendedTooltip name="ДобавитьИзвестныйШагExtendedTooltip" id="1636"/>
+																	<ExtendedTooltip name="ДобавитьИзвестныйШагРасширеннаяПодсказка" id="1468"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -1098,7 +1098,7 @@
 															<DataPath>Объект.СгенерированныйСценарий</DataPath>
 															<TitleLocation>None</TitleLocation>
 															<ContextMenu name="СгенерированныйСценарийКонтекстноеМеню" id="315"/>
-															<ExtendedTooltip name="СгенерированныйСценарийExtendedTooltip" id="1637"/>
+															<ExtendedTooltip name="СгенерированныйСценарийРасширеннаяПодсказка" id="1325"/>
 														</TextDocumentField>
 													</ChildItems>
 												</Page>
@@ -1115,13 +1115,13 @@
 															<v8:content>Сценарий поведения код</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="СценарийПоведенияКодExtendedTooltip" id="1638"/>
+													<ExtendedTooltip name="СценарийПоведенияКодРасширеннаяПодсказка" id="1326"/>
 													<ChildItems>
 														<TextDocumentField name="СгенерированныйСценарийКод" id="854">
 															<DataPath>Объект.СгенерированныйСценарийКод</DataPath>
 															<TitleLocation>None</TitleLocation>
 															<ContextMenu name="СгенерированныйСценарийКодКонтекстноеМеню" id="855"/>
-															<ExtendedTooltip name="СгенерированныйСценарийКодExtendedTooltip" id="1639"/>
+															<ExtendedTooltip name="СгенерированныйСценарийКодРасширеннаяПодсказка" id="1327"/>
 														</TextDocumentField>
 													</ChildItems>
 												</Page>
@@ -1142,13 +1142,13 @@
 															<v8:content>Сценарий поведения</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="КодПроверкиПоведенияExtendedTooltip" id="1640"/>
+													<ExtendedTooltip name="КодПроверкиПоведенияРасширеннаяПодсказка" id="1328"/>
 													<ChildItems>
 														<TextDocumentField name="СгенерированныйКод" id="327">
 															<DataPath>Объект.СгенерированныйКод</DataPath>
 															<TitleLocation>None</TitleLocation>
 															<ContextMenu name="СгенерированныйКодКонтекстноеМеню" id="328"/>
-															<ExtendedTooltip name="СгенерированныйКодExtendedTooltip" id="1641"/>
+															<ExtendedTooltip name="СгенерированныйКодРасширеннаяПодсказка" id="1329"/>
 														</TextDocumentField>
 													</ChildItems>
 												</Page>
@@ -1169,18 +1169,18 @@
 															<v8:content>Сценарий поведения</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="ИсходныйXMLПроверкиExtendedTooltip" id="1642"/>
+													<ExtendedTooltip name="ИсходныйXMLПроверкиРасширеннаяПодсказка" id="1330"/>
 													<ChildItems>
 														<Button name="ПреобразоватьИсходныйXML" id="1239">
 															<Type>UsualButton</Type>
 															<CommandName>Form.Command.ПреобразоватьИсходныйXML</CommandName>
-															<ExtendedTooltip name="ПреобразоватьИсходныйXMLExtendedTooltip" id="1643"/>
+															<ExtendedTooltip name="ПреобразоватьИсходныйXMLРасширеннаяПодсказка" id="1331"/>
 														</Button>
 														<TextDocumentField name="СгенерированныйXML" id="330">
 															<DataPath>Объект.СгенерированныйXML</DataPath>
 															<TitleLocation>None</TitleLocation>
 															<ContextMenu name="СгенерированныйXMLКонтекстноеМеню" id="331"/>
-															<ExtendedTooltip name="СгенерированныйXMLExtendedTooltip" id="1644"/>
+															<ExtendedTooltip name="СгенерированныйXMLРасширеннаяПодсказка" id="1332"/>
 														</TextDocumentField>
 													</ChildItems>
 												</Page>
@@ -1203,7 +1203,7 @@
 									<v8:content>Группа несколько клиентов тестирования</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаНесколькоКлиентовТестированияExtendedTooltip" id="1645"/>
+							<ExtendedTooltip name="ГруппаНесколькоКлиентовТестированияРасширеннаяПодсказка" id="1333"/>
 							<ChildItems>
 								<Table name="ДанныеКлиентовТестирования" id="959">
 									<Representation>List</Representation>
@@ -1222,30 +1222,30 @@
 											<Button name="ДанныеКлиентовТестированияДобавить" id="987">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Item.ДанныеКлиентовТестирования.StandardCommand.Add</CommandName>
-												<ExtendedTooltip name="ДанныеКлиентовТестированияДобавитьExtendedTooltip" id="1646"/>
+												<ExtendedTooltip name="ДанныеКлиентовТестированияДобавитьРасширеннаяПодсказка" id="1334"/>
 											</Button>
 											<Button name="ДанныеКлиентовТестированияСохранитьКлиентовТестирования" id="989">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.СохранитьКлиентовТестирования</CommandName>
-												<ExtendedTooltip name="ДанныеКлиентовТестированияСохранитьКлиентовТестированияExtendedTooltip" id="1647"/>
+												<ExtendedTooltip name="ДанныеКлиентовТестированияСохранитьКлиентовТестированияРасширеннаяПодсказка" id="1335"/>
 											</Button>
 											<ButtonGroup name="ДанныеКлиентовТестированияГруппа1" id="991">
-												<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа1ExtendedTooltip" id="1648"/>
+												<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа1РасширеннаяПодсказка" id="1336"/>
 												<ChildItems>
 													<Button name="ДанныеКлиентовТестированияПодключитьВыбранногоКлиентаТестирования" id="993">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ПодключитьВыбранногоКлиентаТестирования</CommandName>
-														<ExtendedTooltip name="ДанныеКлиентовТестированияПодключитьВыбранногоКлиентаТестированияExtendedTooltip" id="1649"/>
+														<ExtendedTooltip name="ДанныеКлиентовТестированияПодключитьВыбранногоКлиентаТестированияРасширеннаяПодсказка" id="1337"/>
 													</Button>
 													<Button name="ДанныеКлиентовТестированияНачатьЗаписьДействийПользлователяВВыбранномКлиентеТестирования" id="995">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.НачатьЗаписьДействийПользлователяВВыбранномКлиентеТестирования</CommandName>
-														<ExtendedTooltip name="ДанныеКлиентовТестированияНачатьЗаписьДействийПользлователяВВыбранномКлиентеТестированияExtendedTooltip" id="1650"/>
+														<ExtendedTooltip name="ДанныеКлиентовТестированияНачатьЗаписьДействийПользлователяВВыбранномКлиентеТестированияРасширеннаяПодсказка" id="1338"/>
 													</Button>
 													<Button name="ДанныеКлиентовТестированияОтключитьВыбранногоКлиентаТестирования" id="997">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ОтключитьВыбранногоКлиентаТестирования</CommandName>
-														<ExtendedTooltip name="ДанныеКлиентовТестированияОтключитьВыбранногоКлиентаТестированияExtendedTooltip" id="1651"/>
+														<ExtendedTooltip name="ДанныеКлиентовТестированияОтключитьВыбранногоКлиентаТестированияРасширеннаяПодсказка" id="1339"/>
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
@@ -1253,34 +1253,34 @@
 												<Type>CommandBarButton</Type>
 												<OnlyInAllActions>false</OnlyInAllActions>
 												<CommandName>Form.Command.КлиентТестированияТекущейИнфобазы</CommandName>
-												<ExtendedTooltip name="ДанныеКлиентовТестированияКлиентТестированияТекущейИнфобазыExtendedTooltip" id="1652"/>
+												<ExtendedTooltip name="ДанныеКлиентовТестированияКлиентТестированияТекущейИнфобазыРасширеннаяПодсказка" id="1340"/>
 											</Button>
 										</ChildItems>
 									</AutoCommandBar>
-									<ExtendedTooltip name="ДанныеКлиентовТестированияExtendedTooltip" id="1653"/>
-									<SearchStringAddition name="ДанныеКлиентовТестированияSearchString" id="1654">
+									<ExtendedTooltip name="ДанныеКлиентовТестированияРасширеннаяПодсказка" id="1341"/>
+									<SearchStringAddition name="ДанныеКлиентовТестированияСтрокаПоиска" id="1342">
 										<AdditionSource>
 											<Item>ДанныеКлиентовТестирования</Item>
 											<Type>SearchStringRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="ДанныеКлиентовТестированияSearchStringContextMenu" id="1655"/>
-										<ExtendedTooltip name="ДанныеКлиентовТестированияSearchStringExtendedTooltip" id="1656"/>
+										<ContextMenu name="ДанныеКлиентовТестированияСтрокаПоискаКонтекстноеМеню" id="1343"/>
+										<ExtendedTooltip name="ДанныеКлиентовТестированияСтрокаПоискаРасширеннаяПодсказка" id="1344"/>
 									</SearchStringAddition>
-									<ViewStatusAddition name="ДанныеКлиентовТестированияViewStatus" id="1657">
+									<ViewStatusAddition name="ДанныеКлиентовТестированияСостояниеПросмотра" id="1345">
 										<AdditionSource>
 											<Item>ДанныеКлиентовТестирования</Item>
 											<Type>ViewStatusRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="ДанныеКлиентовТестированияViewStatusContextMenu" id="1658"/>
-										<ExtendedTooltip name="ДанныеКлиентовТестированияViewStatusExtendedTooltip" id="1659"/>
+										<ContextMenu name="ДанныеКлиентовТестированияСостояниеПросмотраКонтекстноеМеню" id="1346"/>
+										<ExtendedTooltip name="ДанныеКлиентовТестированияСостояниеПросмотраРасширеннаяПодсказка" id="1347"/>
 									</ViewStatusAddition>
-									<SearchControlAddition name="ДанныеКлиентовТестированияSearchControl" id="1660">
+									<SearchControlAddition name="ДанныеКлиентовТестированияУправлениеПоиском" id="1348">
 										<AdditionSource>
 											<Item>ДанныеКлиентовТестирования</Item>
 											<Type>SearchControl</Type>
 										</AdditionSource>
-										<ContextMenu name="ДанныеКлиентовТестированияSearchControlContextMenu" id="1661"/>
-										<ExtendedTooltip name="ДанныеКлиентовТестированияSearchControlExtendedTooltip" id="1662"/>
+										<ContextMenu name="ДанныеКлиентовТестированияУправлениеПоискомКонтекстноеМеню" id="1349"/>
+										<ExtendedTooltip name="ДанныеКлиентовТестированияУправлениеПоискомРасширеннаяПодсказка" id="1350"/>
 									</SearchControlAddition>
 									<Events>
 										<Event name="BeforeEditEnd">ДанныеКлиентовТестированияПередОкончаниемРедактирования</Event>
@@ -1292,26 +1292,26 @@
 											<DataPath>ДанныеКлиентовТестирования.Имя</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДанныеКлиентовТестированияИмяКонтекстноеМеню" id="976"/>
-											<ExtendedTooltip name="ДанныеКлиентовТестированияИмяExtendedTooltip" id="1663"/>
+											<ExtendedTooltip name="ДанныеКлиентовТестированияИмяРасширеннаяПодсказка" id="1351"/>
 										</InputField>
 										<ColumnGroup name="ДанныеКлиентовТестированияГруппа2" id="1001">
-											<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа2ExtendedTooltip" id="1664"/>
+											<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа2РасширеннаяПодсказка" id="1352"/>
 											<ChildItems>
 												<ColumnGroup name="ДанныеКлиентовТестированияГруппа3" id="1003">
 													<Group>Horizontal</Group>
-													<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа3ExtendedTooltip" id="1665"/>
+													<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа3РасширеннаяПодсказка" id="1353"/>
 												</ColumnGroup>
 												<InputField name="ДанныеКлиентовТестированияПутьКПлатформе" id="972">
 													<DataPath>ДанныеКлиентовТестирования.ПутьКПлатформе</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ДанныеКлиентовТестированияПутьКПлатформеКонтекстноеМеню" id="973"/>
-													<ExtendedTooltip name="ДанныеКлиентовТестированияПутьКПлатформеExtendedTooltip" id="1666"/>
+													<ExtendedTooltip name="ДанныеКлиентовТестированияПутьКПлатформеРасширеннаяПодсказка" id="1354"/>
 												</InputField>
 												<InputField name="ДанныеКлиентовТестированияПутьКИнфобазе" id="981">
 													<DataPath>ДанныеКлиентовТестирования.ПутьКИнфобазе</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ДанныеКлиентовТестированияПутьКИнфобазеКонтекстноеМеню" id="982"/>
-													<ExtendedTooltip name="ДанныеКлиентовТестированияПутьКИнфобазеExtendedTooltip" id="1667"/>
+													<ExtendedTooltip name="ДанныеКлиентовТестированияПутьКИнфобазеРасширеннаяПодсказка" id="1355"/>
 												</InputField>
 												<InputField name="ДанныеКлиентовТестированияДопПараметры" id="1011">
 													<DataPath>ДанныеКлиентовТестирования.ДопПараметры</DataPath>
@@ -1323,7 +1323,7 @@
 														</v8:item>
 													</FooterText>
 													<ContextMenu name="ДанныеКлиентовТестированияДопПараметрыКонтекстноеМеню" id="1012"/>
-													<ExtendedTooltip name="ДанныеКлиентовТестированияДопПараметрыExtendedTooltip" id="1668"/>
+													<ExtendedTooltip name="ДанныеКлиентовТестированияДопПараметрыРасширеннаяПодсказка" id="1356"/>
 												</InputField>
 											</ChildItems>
 										</ColumnGroup>
@@ -1331,7 +1331,7 @@
 											<DataPath>ДанныеКлиентовТестирования.ПортЗапускаТестКлиента</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДанныеКлиентовТестированияПортКонтекстноеМеню" id="985"/>
-											<ExtendedTooltip name="ДанныеКлиентовТестированияПортExtendedTooltip" id="1669"/>
+											<ExtendedTooltip name="ДанныеКлиентовТестированияПортРасширеннаяПодсказка" id="1357"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -1354,7 +1354,7 @@
 									<v8:content>Группа настройки</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаНастройкиExtendedTooltip" id="1670"/>
+							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="1358"/>
 							<ChildItems>
 								<Button name="КомандаСохранитьНастроийки" id="720">
 									<Type>UsualButton</Type>
@@ -1366,7 +1366,7 @@
 											<v8:content>Сохранить</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="КомандаСохранитьНастроийкиExtendedTooltip" id="1671"/>
+									<ExtendedTooltip name="КомандаСохранитьНастроийкиРасширеннаяПодсказка" id="1359"/>
 								</Button>
 								<Pages name="СтраницыСервис" id="650">
 									<Title>
@@ -1381,7 +1381,7 @@
 											<v8:content>Страницы сервис</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="СтраницыСервисExtendedTooltip" id="1672"/>
+									<ExtendedTooltip name="СтраницыСервисРасширеннаяПодсказка" id="1360"/>
 									<ChildItems>
 										<Page name="СтраницыСервисОсновные" id="652">
 											<Title>
@@ -1396,7 +1396,7 @@
 													<v8:content>Страницы сервис основные</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницыСервисОсновныеExtendedTooltip" id="1673"/>
+											<ExtendedTooltip name="СтраницыСервисОсновныеРасширеннаяПодсказка" id="1361"/>
 											<ChildItems>
 												<UsualGroup name="РаботаСТэгами" id="304">
 													<Title>
@@ -1413,7 +1413,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="РаботаСТэгамиExtendedTooltip" id="1674"/>
+													<ExtendedTooltip name="РаботаСТэгамиРасширеннаяПодсказка" id="1362"/>
 													<ChildItems>
 														<InputField name="СписокТеговИсключение1" id="221">
 															<DataPath>Объект.СписокТеговИсключение</DataPath>
@@ -1428,7 +1428,7 @@
 																</v8:item>
 															</Title>
 															<ContextMenu name="СписокТеговИсключение1КонтекстноеМеню" id="222"/>
-															<ExtendedTooltip name="СписокТеговИсключение1ExtendedTooltip" id="1675"/>
+															<ExtendedTooltip name="СписокТеговИсключение1РасширеннаяПодсказка" id="1363"/>
 														</InputField>
 														<InputField name="СписокТеговОтбор1" id="224">
 															<DataPath>Объект.СписокТеговОтбор</DataPath>
@@ -1443,7 +1443,7 @@
 																</v8:item>
 															</Title>
 															<ContextMenu name="СписокТеговОтбор1КонтекстноеМеню" id="225"/>
-															<ExtendedTooltip name="СписокТеговОтбор1ExtendedTooltip" id="1676"/>
+															<ExtendedTooltip name="СписокТеговОтбор1РасширеннаяПодсказка" id="1364"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -1467,14 +1467,14 @@
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="ГруппаОтладкаTestClientExtendedTooltip" id="1677"/>
+													<ExtendedTooltip name="ГруппаОтладкаTestClientРасширеннаяПодсказка" id="1365"/>
 													<ChildItems>
 														<CheckBoxField name="ЗапускатьТестКлиентВРежимеОтладки" id="867">
 															<DataPath>Объект.ЗапускатьТестКлиентВРежимеОтладки</DataPath>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ЗапускатьТестКлиентВРежимеОтладкиКонтекстноеМеню" id="868"/>
-															<ExtendedTooltip name="ЗапускатьТестКлиентВРежимеОтладкиExtendedTooltip" id="1678"/>
+															<ExtendedTooltip name="ЗапускатьТестКлиентВРежимеОтладкиРасширеннаяПодсказка" id="1366"/>
 														</CheckBoxField>
 														<UsualGroup name="НастройкиОтладчикаTC" id="924">
 															<Title>
@@ -1492,17 +1492,17 @@
 															<Group>Horizontal</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="НастройкиОтладчикаTCExtendedTooltip" id="1679"/>
+															<ExtendedTooltip name="НастройкиОтладчикаTCРасширеннаяПодсказка" id="1367"/>
 															<ChildItems>
 																<InputField name="КлючиОтладки" id="861">
 																	<DataPath>Объект.КлючиОтладки</DataPath>
 																	<ContextMenu name="КлючиОтладкиКонтекстноеМеню" id="862"/>
-																	<ExtendedTooltip name="КлючиОтладкиExtendedTooltip" id="1680"/>
+																	<ExtendedTooltip name="КлючиОтладкиРасширеннаяПодсказка" id="1368"/>
 																</InputField>
 																<InputField name="АдресОтладчика" id="864">
 																	<DataPath>Объект.АдресОтладчика</DataPath>
 																	<ContextMenu name="АдресОтладчикаКонтекстноеМеню" id="865"/>
-																	<ExtendedTooltip name="АдресОтладчикаExtendedTooltip" id="1681"/>
+																	<ExtendedTooltip name="АдресОтладчикаРасширеннаяПодсказка" id="1369"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
@@ -1524,7 +1524,7 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ФлажкиНастроекExtendedTooltip" id="1682"/>
+													<ExtendedTooltip name="ФлажкиНастроекРасширеннаяПодсказка" id="1370"/>
 													<ChildItems>
 														<UsualGroup name="ЛеваяЧастьФлажковНастроек" id="912">
 															<Title>
@@ -1542,7 +1542,7 @@
 															<Group>Vertical</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ЛеваяЧастьФлажковНастроекExtendedTooltip" id="1683"/>
+															<ExtendedTooltip name="ЛеваяЧастьФлажковНастроекРасширеннаяПодсказка" id="1371"/>
 															<ChildItems>
 																<CheckBoxField name="ПодключитьВнешниеОбработкиДляОтладки" id="341">
 																	<DataPath>Объект.ПодключитьВнешниеОбработкиДляОтладки</DataPath>
@@ -1559,7 +1559,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ПодключитьВнешниеОбработкиДляОтладкиКонтекстноеМеню" id="342"/>
-																	<ExtendedTooltip name="ПодключитьВнешниеОбработкиДляОтладкиExtendedTooltip" id="1684"/>
+																	<ExtendedTooltip name="ПодключитьВнешниеОбработкиДляОтладкиРасширеннаяПодсказка" id="1372"/>
 																</CheckBoxField>
 																<CheckBoxField name="СохранятьКонтекстыПередВыполнениемШагов" id="344">
 																	<DataPath>Объект.СохранятьКонтекстыПередВыполнениемШагов</DataPath>
@@ -1576,7 +1576,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="СохранятьКонтекстыПередВыполнениемШаговКонтекстноеМеню" id="345"/>
-																	<ExtendedTooltip name="СохранятьКонтекстыПередВыполнениемШаговExtendedTooltip" id="1685"/>
+																	<ExtendedTooltip name="СохранятьКонтекстыПередВыполнениемШаговРасширеннаяПодсказка" id="1373"/>
 																</CheckBoxField>
 																<CheckBoxField name="ВыполнятьШагиАссинхронно" id="335">
 																	<DataPath>Объект.ВыполнятьШагиАссинхронно</DataPath>
@@ -1593,14 +1593,14 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ВыполнятьШагиАссинхронноКонтекстноеМеню" id="336"/>
-																	<ExtendedTooltip name="ВыполнятьШагиАссинхронноExtendedTooltip" id="1686"/>
+																	<ExtendedTooltip name="ВыполнятьШагиАссинхронноРасширеннаяПодсказка" id="1374"/>
 																</CheckBoxField>
 																<CheckBoxField name="ОстановкаПриВозникновенииОшибки" id="954">
 																	<DataPath>Объект.ОстановкаПриВозникновенииОшибки</DataPath>
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ОстановкаПриВозникновенииОшибкиКонтекстноеМеню" id="955"/>
-																	<ExtendedTooltip name="ОстановкаПриВозникновенииОшибкиExtendedTooltip" id="1687"/>
+																	<ExtendedTooltip name="ОстановкаПриВозникновенииОшибкиРасширеннаяПодсказка" id="1375"/>
 																</CheckBoxField>
 															</ChildItems>
 														</UsualGroup>
@@ -1620,7 +1620,7 @@
 															<Group>Vertical</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ПраваяЧастьФлажковНастроекExtendedTooltip" id="1688"/>
+															<ExtendedTooltip name="ПраваяЧастьФлажковНастроекРасширеннаяПодсказка" id="1376"/>
 															<ChildItems>
 																<CheckBoxField name="DebugLog2" id="289">
 																	<DataPath>Объект.DebugLog</DataPath>
@@ -1637,7 +1637,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="DebugLog2КонтекстноеМеню" id="290"/>
-																	<ExtendedTooltip name="DebugLog2ExtendedTooltip" id="1689"/>
+																	<ExtendedTooltip name="DebugLog2РасширеннаяПодсказка" id="1377"/>
 																</CheckBoxField>
 																<CheckBoxField name="ДелатьЛогВыполненияСценариевВЖР" id="338">
 																	<DataPath>Объект.ДелатьЛогВыполненияСценариевВЖР</DataPath>
@@ -1654,7 +1654,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ДелатьЛогВыполненияСценариевВЖРКонтекстноеМеню" id="339"/>
-																	<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВЖРExtendedTooltip" id="1690"/>
+																	<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВЖРРасширеннаяПодсказка" id="1378"/>
 																</CheckBoxField>
 																<CheckBoxField name="ПроверкаРаботыVanessaBehaviorВРежимеTestClient" id="481">
 																	<DataPath>Объект.ПроверкаРаботыVanessaBehaviorВРежимеTestClient</DataPath>
@@ -1671,7 +1671,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="ПроверкаРаботыVanessaBehaviorВРежимеTestClientКонтекстноеМеню" id="482"/>
-																	<ExtendedTooltip name="ПроверкаРаботыVanessaBehaviorВРежимеTestClientExtendedTooltip" id="1691"/>
+																	<ExtendedTooltip name="ПроверкаРаботыVanessaBehaviorВРежимеTestClientРасширеннаяПодсказка" id="1379"/>
 																	<Events>
 																		<Event name="OnChange">ПроверкаРаботыVanessaBehaviorВРежимеTestClientПриИзменении</Event>
 																	</Events>
@@ -1684,11 +1684,11 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="Группа6ExtendedTooltip" id="1692"/>
+													<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="1380"/>
 													<ChildItems>
 														<InputField name="ПортЗапускаТестКлиента" id="897">
 															<ContextMenu name="ПортЗапускаТестКлиентаКонтекстноеМеню" id="898"/>
-															<ExtendedTooltip name="ПортЗапускаТестКлиентаExtendedTooltip" id="1693"/>
+															<ExtendedTooltip name="ПортЗапускаТестКлиентаРасширеннаяПодсказка" id="1381"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -1707,7 +1707,7 @@
 													<ChoiceButton>true</ChoiceButton>
 													<ClearButton>true</ClearButton>
 													<ContextMenu name="КаталогИнструментовКонтекстноеМеню" id="381"/>
-													<ExtendedTooltip name="КаталогИнструментовExtendedTooltip" id="1694"/>
+													<ExtendedTooltip name="КаталогИнструментовРасширеннаяПодсказка" id="1382"/>
 													<Events>
 														<Event name="StartChoice">КаталогИнструментовНачалоВыбора</Event>
 													</Events>
@@ -1727,7 +1727,7 @@
 													<ChoiceButton>true</ChoiceButton>
 													<ClearButton>true</ClearButton>
 													<ContextMenu name="VanessaStackCommonsКонтекстноеМеню" id="365"/>
-													<ExtendedTooltip name="VanessaStackCommonsExtendedTooltip" id="1695"/>
+													<ExtendedTooltip name="VanessaStackCommonsРасширеннаяПодсказка" id="1383"/>
 													<Events>
 														<Event name="StartChoice">VanessaStackCommonsНачалоВыбора</Event>
 													</Events>
@@ -1737,7 +1737,7 @@
 													<ChoiceButton>true</ChoiceButton>
 													<ClearButton>true</ClearButton>
 													<ContextMenu name="КаталогПроектаКонтекстноеМеню" id="718"/>
-													<ExtendedTooltip name="КаталогПроектаExtendedTooltip" id="1696"/>
+													<ExtendedTooltip name="КаталогПроектаРасширеннаяПодсказка" id="1384"/>
 													<Events>
 														<Event name="StartChoice">КаталогПроектаНачалоВыбора</Event>
 													</Events>
@@ -1755,7 +1755,7 @@
 														</v8:item>
 													</Title>
 													<ContextMenu name="ИнтервалВыполненияШагаЗаданныйПользователемКонтекстноеМеню" id="524"/>
-													<ExtendedTooltip name="ИнтервалВыполненияШагаЗаданныйПользователемExtendedTooltip" id="1697"/>
+													<ExtendedTooltip name="ИнтервалВыполненияШагаЗаданныйПользователемРасширеннаяПодсказка" id="1385"/>
 												</InputField>
 												<InputField name="ЗагрузкаФичПриОткрытии" id="1032">
 													<DataPath>Объект.ЗагрузкаФичПриОткрытии</DataPath>
@@ -1822,12 +1822,12 @@
 														</xr:Item>
 													</ChoiceList>
 													<ContextMenu name="ЗагрузкаФичПриОткрытииКонтекстноеМеню" id="1033"/>
-													<ExtendedTooltip name="ЗагрузкаФичПриОткрытииExtendedTooltip" id="1698"/>
+													<ExtendedTooltip name="ЗагрузкаФичПриОткрытииРасширеннаяПодсказка" id="1386"/>
 												</InputField>
 												<Button name="СброситьКешИзвестныхStepDefinition" id="1532">
 													<Type>UsualButton</Type>
 													<CommandName>Form.Command.СброситьКешИзвестныхStepDefinition</CommandName>
-													<ExtendedTooltip name="СброситьКешИзвестныхStepDefinitionExtendedTooltip" id="1699"/>
+													<ExtendedTooltip name="СброситьКешИзвестныхStepDefinitionРасширеннаяПодсказка" id="1533"/>
 												</Button>
 											</ChildItems>
 										</Page>
@@ -1844,7 +1844,7 @@
 													<v8:content>Страницы отчеты о запуске</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницыОтчетыОЗапускеExtendedTooltip" id="1700"/>
+											<ExtendedTooltip name="СтраницыОтчетыОЗапускеРасширеннаяПодсказка" id="1387"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаСкриншоты" id="1534">
 													<ToolTip>
@@ -1855,7 +1855,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="ГруппаСкриншотыExtendedTooltip" id="1701"/>
+													<ExtendedTooltip name="ГруппаСкриншотыРасширеннаяПодсказка" id="1535"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьСкриншотПриВозникновенииОшибки" id="507">
 															<DataPath>Объект.ДелатьСкриншотПриВозникновенииОшибки</DataPath>
@@ -1872,7 +1872,7 @@
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьСкриншотПриВозникновенииОшибкиКонтекстноеМеню" id="508"/>
-															<ExtendedTooltip name="ДелатьСкриншотПриВозникновенииОшибкиExtendedTooltip" id="1702"/>
+															<ExtendedTooltip name="ДелатьСкриншотПриВозникновенииОшибкиРасширеннаяПодсказка" id="1391"/>
 														</CheckBoxField>
 														<InputField name="КаталогOutputСкриншоты" id="510">
 															<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
@@ -1889,7 +1889,7 @@
 															<ChoiceButton>true</ChoiceButton>
 															<ClearButton>true</ClearButton>
 															<ContextMenu name="КаталогOutputСкриншотыКонтекстноеМеню" id="511"/>
-															<ExtendedTooltip name="КаталогOutputСкриншотыExtendedTooltip" id="1703"/>
+															<ExtendedTooltip name="КаталогOutputСкриншотыРасширеннаяПодсказка" id="1395"/>
 															<Events>
 																<Event name="StartChoice">КаталогOutputСкриншотыНачалоВыбора</Event>
 															</Events>
@@ -1905,7 +1905,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="ГруппаAllureExtendedTooltip" id="1704"/>
+													<ExtendedTooltip name="ГруппаAllureРасширеннаяПодсказка" id="1537"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьОтчетВФорматеАллюр" id="138">
 															<DataPath>Объект.ДелатьОтчетВФорматеАллюр</DataPath>
@@ -1922,7 +1922,7 @@
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьОтчетВФорматеАллюрКонтекстноеМеню" id="139"/>
-															<ExtendedTooltip name="ДелатьОтчетВФорматеАллюрExtendedTooltip" id="1705"/>
+															<ExtendedTooltip name="ДелатьОтчетВФорматеАллюрРасширеннаяПодсказка" id="1392"/>
 														</CheckBoxField>
 														<InputField name="КаталогOutputAllure" id="141">
 															<DataPath>Объект.КаталогOutputAllure</DataPath>
@@ -1939,7 +1939,7 @@
 															<ChoiceButton>true</ChoiceButton>
 															<ClearButton>true</ClearButton>
 															<ContextMenu name="КаталогOutputAllureКонтекстноеМеню" id="142"/>
-															<ExtendedTooltip name="КаталогOutputAllureExtendedTooltip" id="1706"/>
+															<ExtendedTooltip name="КаталогOutputAllureРасширеннаяПодсказка" id="1396"/>
 															<Events>
 																<Event name="StartChoice">КаталогOutputAllureНачалоВыбора</Event>
 															</Events>
@@ -1955,7 +1955,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="ГруппаjUnitExtendedTooltip" id="1707"/>
+													<ExtendedTooltip name="ГруппаjUnitРасширеннаяПодсказка" id="1539"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьОтчетВФорматеxUnit" id="367">
 															<DataPath>Объект.ДелатьОтчетВФорматеjUnit</DataPath>
@@ -1972,7 +1972,7 @@
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьОтчетВФорматеxUnitКонтекстноеМеню" id="368"/>
-															<ExtendedTooltip name="ДелатьОтчетВФорматеxUnitExtendedTooltip" id="1708"/>
+															<ExtendedTooltip name="ДелатьОтчетВФорматеxUnitРасширеннаяПодсказка" id="1393"/>
 														</CheckBoxField>
 														<InputField name="КаталогOutputxUnit" id="370">
 															<DataPath>Объект.КаталогOutputjUnit</DataPath>
@@ -1989,7 +1989,7 @@
 															<ChoiceButton>true</ChoiceButton>
 															<ClearButton>true</ClearButton>
 															<ContextMenu name="КаталогOutputxUnitКонтекстноеМеню" id="371"/>
-															<ExtendedTooltip name="КаталогOutputxUnitExtendedTooltip" id="1709"/>
+															<ExtendedTooltip name="КаталогOutputxUnitРасширеннаяПодсказка" id="1397"/>
 															<Events>
 																<Event name="StartChoice">КаталогOutputxUnitНачалоВыбора</Event>
 															</Events>
@@ -2005,7 +2005,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="ГруппаCucumberExtendedTooltip" id="1710"/>
+													<ExtendedTooltip name="ГруппаCucumberРасширеннаяПодсказка" id="1541"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьОтчетВФорматеCucumberJson" id="1461">
 															<DataPath>Объект.ДелатьОтчетВФорматеCucumberJson</DataPath>
@@ -2022,7 +2022,7 @@
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьОтчетВФорматеCucumberJsonКонтекстноеМеню" id="1462"/>
-															<ExtendedTooltip name="ДелатьОтчетВФорматеCucumberJsonExtendedTooltip" id="1711"/>
+															<ExtendedTooltip name="ДелатьОтчетВФорматеCucumberJsonРасширеннаяПодсказка" id="1463"/>
 														</CheckBoxField>
 														<InputField name="КаталогOutputCucumberJson" id="1464">
 															<DataPath>Объект.КаталогOutputCucumberJson</DataPath>
@@ -2039,7 +2039,7 @@
 															<ChoiceButton>true</ChoiceButton>
 															<ClearButton>true</ClearButton>
 															<ContextMenu name="КаталогOutputCucumberJsonКонтекстноеМеню" id="1465"/>
-															<ExtendedTooltip name="КаталогOutputCucumberJsonExtendedTooltip" id="1712"/>
+															<ExtendedTooltip name="КаталогOutputCucumberJsonРасширеннаяПодсказка" id="1466"/>
 															<Events>
 																<Event name="StartChoice">КаталогOutputCucumberJsonНачалоВыбора</Event>
 															</Events>
@@ -2055,19 +2055,19 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="ГруппаЛогТекстExtendedTooltip" id="1713"/>
+													<ExtendedTooltip name="ГруппаЛогТекстРасширеннаяПодсказка" id="1543"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьЛогВыполненияСценариевВТекстовыйФайл" id="1544">
 															<DataPath>Объект.ДелатьЛогВыполненияСценариевВТекстовыйФайл</DataPath>
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьЛогВыполненияСценариевВТекстовыйФайлКонтекстноеМеню" id="1545"/>
-															<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВТекстовыйФайлExtendedTooltip" id="1714"/>
+															<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВТекстовыйФайлРасширеннаяПодсказка" id="1546"/>
 														</CheckBoxField>
 														<InputField name="ИмяФайлаЛогВыполненияСценариев" id="1547">
 															<DataPath>Объект.ИмяФайлаЛогВыполненияСценариев</DataPath>
 															<ContextMenu name="ИмяФайлаЛогВыполненияСценариевКонтекстноеМеню" id="1548"/>
-															<ExtendedTooltip name="ИмяФайлаЛогВыполненияСценариевExtendedTooltip" id="1715"/>
+															<ExtendedTooltip name="ИмяФайлаЛогВыполненияСценариевРасширеннаяПодсказка" id="1549"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2075,7 +2075,7 @@
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="Группа3ExtendedTooltip" id="1716"/>
+													<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="1398"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьОтчетВоВнутреннемФормате" id="375">
 															<DataPath>Объект.ДелатьОтчетВоВнутреннемФормате</DataPath>
@@ -2092,7 +2092,7 @@
 															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьОтчетВоВнутреннемФорматеКонтекстноеМеню" id="376"/>
-															<ExtendedTooltip name="ДелатьОтчетВоВнутреннемФорматеExtendedTooltip" id="1717"/>
+															<ExtendedTooltip name="ДелатьОтчетВоВнутреннемФорматеРасширеннаяПодсказка" id="1399"/>
 														</CheckBoxField>
 													</ChildItems>
 												</UsualGroup>
@@ -2111,7 +2111,7 @@
 													<v8:content>Страницы авто инструкции</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="СтраницыАвтоИнструкцииExtendedTooltip" id="1718"/>
+											<ExtendedTooltip name="СтраницыАвтоИнструкцииРасширеннаяПодсказка" id="1400"/>
 											<ChildItems>
 												<UsualGroup name="СтраницыАвтоИнструкцииОсновные" id="503">
 													<ToolTip>
@@ -2122,7 +2122,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="СтраницыАвтоИнструкцииОсновныеExtendedTooltip" id="1719"/>
+													<ExtendedTooltip name="СтраницыАвтоИнструкцииОсновныеРасширеннаяПодсказка" id="1401"/>
 													<ChildItems>
 														<InputField name="КомандаСделатьСкриншот" id="500">
 															<DataPath>Объект.КомандаСделатьСкриншот</DataPath>
@@ -2137,7 +2137,7 @@
 																</v8:item>
 															</Title>
 															<ContextMenu name="КомандаСделатьСкриншотКонтекстноеМеню" id="501"/>
-															<ExtendedTooltip name="КомандаСделатьСкриншотExtendedTooltip" id="1720"/>
+															<ExtendedTooltip name="КомандаСделатьСкриншотРасширеннаяПодсказка" id="1402"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2156,7 +2156,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="HTMLИMarkdownExtendedTooltip" id="1721"/>
+													<ExtendedTooltip name="HTMLИMarkdownРасширеннаяПодсказка" id="1403"/>
 													<ChildItems>
 														<UsualGroup name="ГруппаHTML" id="513">
 															<ToolTip>
@@ -2167,7 +2167,7 @@
 															</ToolTip>
 															<Group>Horizontal</Group>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаHTMLExtendedTooltip" id="1722"/>
+															<ExtendedTooltip name="ГруппаHTMLРасширеннаяПодсказка" id="1404"/>
 															<ChildItems>
 																<CheckBoxField name="СоздаватьИнструкциюHTML" id="135">
 																	<DataPath>Объект.СоздаватьИнструкциюHTML</DataPath>
@@ -2184,7 +2184,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="СоздаватьИнструкциюHTMLКонтекстноеМеню" id="136"/>
-																	<ExtendedTooltip name="СоздаватьИнструкциюHTMLExtendedTooltip" id="1723"/>
+																	<ExtendedTooltip name="СоздаватьИнструкциюHTMLРасширеннаяПодсказка" id="1405"/>
 																</CheckBoxField>
 																<InputField name="КаталогOutputИнструкцияHTML" id="148">
 																	<DataPath>Объект.КаталогOutputИнструкцияHTML</DataPath>
@@ -2201,7 +2201,7 @@
 																	<ChoiceButton>true</ChoiceButton>
 																	<ClearButton>true</ClearButton>
 																	<ContextMenu name="КаталогOutputИнструкцияHTMLКонтекстноеМеню" id="149"/>
-																	<ExtendedTooltip name="КаталогOutputИнструкцияHTMLExtendedTooltip" id="1724"/>
+																	<ExtendedTooltip name="КаталогOutputИнструкцияHTMLРасширеннаяПодсказка" id="1406"/>
 																	<Events>
 																		<Event name="StartChoice">КаталогOutputИнструкцияHTMLНачалоВыбора</Event>
 																	</Events>
@@ -2217,7 +2217,7 @@
 															</ToolTip>
 															<Group>Horizontal</Group>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаMarkdownExtendedTooltip" id="1725"/>
+															<ExtendedTooltip name="ГруппаMarkdownРасширеннаяПодсказка" id="1407"/>
 															<ChildItems>
 																<CheckBoxField name="СоздаватьИнструкциюMarkdown" id="644">
 																	<DataPath>Объект.СоздаватьИнструкциюMarkdown</DataPath>
@@ -2230,7 +2230,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="СоздаватьИнструкциюMarkdownКонтекстноеМеню" id="645"/>
-																	<ExtendedTooltip name="СоздаватьИнструкциюMarkdownExtendedTooltip" id="1726"/>
+																	<ExtendedTooltip name="СоздаватьИнструкциюMarkdownРасширеннаяПодсказка" id="1408"/>
 																</CheckBoxField>
 																<InputField name="КаталогOutputИнструкцияMarkdown" id="647">
 																	<DataPath>Объект.КаталогOutputИнструкцияMarkdown</DataPath>
@@ -2243,7 +2243,7 @@
 																	<ChoiceButton>true</ChoiceButton>
 																	<ClearButton>true</ClearButton>
 																	<ContextMenu name="КаталогOutputИнструкцияMarkdownКонтекстноеМеню" id="648"/>
-																	<ExtendedTooltip name="КаталогOutputИнструкцияMarkdownExtendedTooltip" id="1727"/>
+																	<ExtendedTooltip name="КаталогOutputИнструкцияMarkdownРасширеннаяПодсказка" id="1409"/>
 																	<Events>
 																		<Event name="StartChoice">КаталогOutputИнструкцияMarkdownНачалоВыбора</Event>
 																	</Events>
@@ -2267,7 +2267,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
-													<ExtendedTooltip name="РаботаСВидеоExtendedTooltip" id="1728"/>
+													<ExtendedTooltip name="РаботаСВидеоРасширеннаяПодсказка" id="1410"/>
 													<ChildItems>
 														<UsualGroup name="ГруппаВидео" id="515">
 															<ToolTip>
@@ -2278,7 +2278,7 @@
 															</ToolTip>
 															<Group>Horizontal</Group>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаВидеоExtendedTooltip" id="1729"/>
+															<ExtendedTooltip name="ГруппаВидеоРасширеннаяПодсказка" id="1411"/>
 															<ChildItems>
 																<CheckBoxField name="СоздаватьИнструкциюВидео" id="517">
 																	<DataPath>Объект.СоздаватьИнструкциюВидео</DataPath>
@@ -2295,7 +2295,7 @@
 																	<TitleLocation>Right</TitleLocation>
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="СоздаватьИнструкциюВидеоКонтекстноеМеню" id="518"/>
-																	<ExtendedTooltip name="СоздаватьИнструкциюВидеоExtendedTooltip" id="1730"/>
+																	<ExtendedTooltip name="СоздаватьИнструкциюВидеоРасширеннаяПодсказка" id="1412"/>
 																</CheckBoxField>
 																<InputField name="КаталогOutputИнструкцияВидео" id="520">
 																	<DataPath>Объект.КаталогOutputИнструкцияВидео</DataPath>
@@ -2308,7 +2308,7 @@
 																	<ChoiceButton>true</ChoiceButton>
 																	<ClearButton>true</ClearButton>
 																	<ContextMenu name="КаталогOutputИнструкцияВидеоКонтекстноеМеню" id="521"/>
-																	<ExtendedTooltip name="КаталогOutputИнструкцияВидеоExtendedTooltip" id="1731"/>
+																	<ExtendedTooltip name="КаталогOutputИнструкцияВидеоРасширеннаяПодсказка" id="1413"/>
 																	<Events>
 																		<Event name="StartChoice">КаталогOutputИнструкцияВидеоНачалоВыбора</Event>
 																	</Events>
@@ -2330,7 +2330,7 @@
 															</ToolTip>
 															<HorizontalStretch>true</HorizontalStretch>
 															<VerticalStretch>true</VerticalStretch>
-															<ExtendedTooltip name="НастройкиВидеоИнструкцийExtendedTooltip" id="1732"/>
+															<ExtendedTooltip name="НастройкиВидеоИнструкцийРасширеннаяПодсказка" id="1414"/>
 															<ChildItems>
 																<Page name="НастрокиВидео" id="906">
 																	<Title>
@@ -2345,7 +2345,7 @@
 																			<v8:content>Настроки видео</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="НастрокиВидеоExtendedTooltip" id="1733"/>
+																	<ExtendedTooltip name="НастрокиВидеоРасширеннаяПодсказка" id="1415"/>
 																	<ChildItems>
 																		<UsualGroup name="КнопкиВидео" id="902">
 																			<Title>
@@ -2363,17 +2363,17 @@
 																			<Group>Horizontal</Group>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="КнопкиВидеоExtendedTooltip" id="1734"/>
+																			<ExtendedTooltip name="КнопкиВидеоРасширеннаяПодсказка" id="1416"/>
 																			<ChildItems>
 																				<Button name="ПроверитьЧтоЗаписьВидеоБудетРаботать" id="715">
 																					<Type>UsualButton</Type>
 																					<CommandName>Form.Command.ПроверитьЧтоЗаписьВидеоБудетРаботать</CommandName>
-																					<ExtendedTooltip name="ПроверитьЧтоЗаписьВидеоБудетРаботатьExtendedTooltip" id="1735"/>
+																					<ExtendedTooltip name="ПроверитьЧтоЗаписьВидеоБудетРаботатьРасширеннаяПодсказка" id="1417"/>
 																				</Button>
 																				<Button name="ЗагрузитьНастройкиПоУмолчанию" id="857">
 																					<Type>UsualButton</Type>
 																					<CommandName>Form.Command.ЗагрузитьНастройкиПоУмолчанию</CommandName>
-																					<ExtendedTooltip name="ЗагрузитьНастройкиПоУмолчаниюExtendedTooltip" id="1736"/>
+																					<ExtendedTooltip name="ЗагрузитьНастройкиПоУмолчаниюРасширеннаяПодсказка" id="1418"/>
 																				</Button>
 																			</ChildItems>
 																		</UsualGroup>
@@ -2393,7 +2393,7 @@
 																			<Group>Horizontal</Group>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ПараметрыЭкранаExtendedTooltip" id="1737"/>
+																			<ExtendedTooltip name="ПараметрыЭкранаРасширеннаяПодсказка" id="1419"/>
 																			<ChildItems>
 																				<InputField name="ЗаписьВидеоКоличествоКадров" id="706">
 																					<DataPath>Объект.ЗаписьВидеоКоличествоКадров</DataPath>
@@ -2404,7 +2404,7 @@
 																						</v8:item>
 																					</Title>
 																					<ContextMenu name="ЗаписьВидеоКоличествоКадровКонтекстноеМеню" id="707"/>
-																					<ExtendedTooltip name="ЗаписьВидеоКоличествоКадровExtendedTooltip" id="1738"/>
+																					<ExtendedTooltip name="ЗаписьВидеоКоличествоКадровРасширеннаяПодсказка" id="1420"/>
 																				</InputField>
 																				<InputField name="ЗаписьВидеоЭкранШирина" id="700">
 																					<DataPath>Объект.ЗаписьВидеоЭкранШирина</DataPath>
@@ -2415,7 +2415,7 @@
 																						</v8:item>
 																					</Title>
 																					<ContextMenu name="ЗаписьВидеоЭкранШиринаКонтекстноеМеню" id="701"/>
-																					<ExtendedTooltip name="ЗаписьВидеоЭкранШиринаExtendedTooltip" id="1739"/>
+																					<ExtendedTooltip name="ЗаписьВидеоЭкранШиринаРасширеннаяПодсказка" id="1421"/>
 																				</InputField>
 																				<InputField name="ЗаписьВидеоЭкранВысота" id="703">
 																					<DataPath>Объект.ЗаписьВидеоЭкранВысота</DataPath>
@@ -2426,7 +2426,7 @@
 																						</v8:item>
 																					</Title>
 																					<ContextMenu name="ЗаписьВидеоЭкранВысотаКонтекстноеМеню" id="704"/>
-																					<ExtendedTooltip name="ЗаписьВидеоЭкранВысотаExtendedTooltip" id="1740"/>
+																					<ExtendedTooltip name="ЗаписьВидеоЭкранВысотаРасширеннаяПодсказка" id="1422"/>
 																				</InputField>
 																			</ChildItems>
 																		</UsualGroup>
@@ -2439,7 +2439,7 @@
 																				</v8:item>
 																			</Title>
 																			<ContextMenu name="ЗаписьВидеоКомандаНачатьЗаписьВидеоКонтекстноеМеню" id="663"/>
-																			<ExtendedTooltip name="ЗаписьВидеоКомандаНачатьЗаписьВидеоExtendedTooltip" id="1741"/>
+																			<ExtendedTooltip name="ЗаписьВидеоКомандаНачатьЗаписьВидеоРасширеннаяПодсказка" id="1423"/>
 																		</InputField>
 																		<InputField name="ЗаписьВидеоКаталогДляВременныхФайлов" id="671">
 																			<DataPath>Объект.ЗаписьВидеоКаталогДляВременныхФайлов</DataPath>
@@ -2450,7 +2450,7 @@
 																				</v8:item>
 																			</Title>
 																			<ContextMenu name="ЗаписьВидеоКаталогДляВременныхФайловКонтекстноеМеню" id="672"/>
-																			<ExtendedTooltip name="ЗаписьВидеоКаталогДляВременныхФайловExtendedTooltip" id="1742"/>
+																			<ExtendedTooltip name="ЗаписьВидеоКаталогДляВременныхФайловРасширеннаяПодсказка" id="1424"/>
 																		</InputField>
 																		<InputField name="ЗаписьВидеоКомандаFfmpeg" id="677">
 																			<DataPath>Объект.ЗаписьВидеоКомандаFfmpeg</DataPath>
@@ -2461,7 +2461,7 @@
 																				</v8:item>
 																			</Title>
 																			<ContextMenu name="ЗаписьВидеоКомандаFfmpegКонтекстноеМеню" id="678"/>
-																			<ExtendedTooltip name="ЗаписьВидеоКомандаFfmpegExtendedTooltip" id="1743"/>
+																			<ExtendedTooltip name="ЗаписьВидеоКомандаFfmpegРасширеннаяПодсказка" id="1425"/>
 																		</InputField>
 																		<InputField name="ЗаписьВидеоКомандаConvert" id="680">
 																			<DataPath>Объект.ЗаписьВидеоКомандаConvert</DataPath>
@@ -2472,7 +2472,7 @@
 																				</v8:item>
 																			</Title>
 																			<ContextMenu name="ЗаписьВидеоКомандаConvertКонтекстноеМеню" id="681"/>
-																			<ExtendedTooltip name="ЗаписьВидеоКомандаConvertExtendedTooltip" id="1744"/>
+																			<ExtendedTooltip name="ЗаписьВидеоКомандаConvertРасширеннаяПодсказка" id="1426"/>
 																		</InputField>
 																	</ChildItems>
 																</Page>
@@ -2489,7 +2489,7 @@
 																			<v8:content>Настройки аудио</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="НастройкиАудиоExtendedTooltip" id="1745"/>
+																	<ExtendedTooltip name="НастройкиАудиоРасширеннаяПодсказка" id="1427"/>
 																	<ChildItems>
 																		<InputField name="ЗаписьВидеоКаталогМузыки" id="683">
 																			<DataPath>Объект.ЗаписьВидеоКаталогМузыки</DataPath>
@@ -2500,7 +2500,7 @@
 																				</v8:item>
 																			</Title>
 																			<ContextMenu name="ЗаписьВидеоКаталогМузыкиКонтекстноеМеню" id="684"/>
-																			<ExtendedTooltip name="ЗаписьВидеоКаталогМузыкиExtendedTooltip" id="1746"/>
+																			<ExtendedTooltip name="ЗаписьВидеоКаталогМузыкиРасширеннаяПодсказка" id="1428"/>
 																		</InputField>
 																		<UsualGroup name="ОзвучкаГолосом" id="698">
 																			<Title>
@@ -2518,7 +2518,7 @@
 																			</ToolTip>
 																			<Group>Vertical</Group>
 																			<Representation>StrongSeparation</Representation>
-																			<ExtendedTooltip name="ОзвучкаГолосомExtendedTooltip" id="1747"/>
+																			<ExtendedTooltip name="ОзвучкаГолосомРасширеннаяПодсказка" id="1429"/>
 																			<ChildItems>
 																				<CheckBoxField name="ЗаписьВидеоДелатьНаложениеTTS" id="686">
 																					<DataPath>Объект.ЗаписьВидеоДелатьНаложениеTTS</DataPath>
@@ -2531,7 +2531,7 @@
 																					<TitleLocation>Right</TitleLocation>
 																					<CheckBoxType>Auto</CheckBoxType>
 																					<ContextMenu name="ЗаписьВидеоДелатьНаложениеTTSКонтекстноеМеню" id="687"/>
-																					<ExtendedTooltip name="ЗаписьВидеоДелатьНаложениеTTSExtendedTooltip" id="1748"/>
+																					<ExtendedTooltip name="ЗаписьВидеоДелатьНаложениеTTSРасширеннаяПодсказка" id="1430"/>
 																				</CheckBoxField>
 																				<InputField name="ЗаписьВидеоПутьКДвижкуTTS" id="689">
 																					<DataPath>Объект.ЗаписьВидеоПутьКДвижкуTTS</DataPath>
@@ -2542,7 +2542,7 @@
 																						</v8:item>
 																					</Title>
 																					<ContextMenu name="ЗаписьВидеоПутьКДвижкуTTSКонтекстноеМеню" id="690"/>
-																					<ExtendedTooltip name="ЗаписьВидеоПутьКДвижкуTTSExtendedTooltip" id="1749"/>
+																					<ExtendedTooltip name="ЗаписьВидеоПутьКДвижкуTTSРасширеннаяПодсказка" id="1431"/>
 																				</InputField>
 																				<InputField name="ЗаписьВидеоИмяTTS" id="692">
 																					<DataPath>Объект.ЗаписьВидеоИмяTTS</DataPath>
@@ -2553,7 +2553,7 @@
 																						</v8:item>
 																					</Title>
 																					<ContextMenu name="ЗаписьВидеоИмяTTSКонтекстноеМеню" id="693"/>
-																					<ExtendedTooltip name="ЗаписьВидеоИмяTTSExtendedTooltip" id="1750"/>
+																					<ExtendedTooltip name="ЗаписьВидеоИмяTTSРасширеннаяПодсказка" id="1432"/>
 																				</InputField>
 																				<InputField name="ЗаписьВидеоСловарьЗамен" id="695">
 																					<DataPath>Объект.ЗаписьВидеоСловарьЗамен</DataPath>
@@ -2564,7 +2564,7 @@
 																						</v8:item>
 																					</Title>
 																					<ContextMenu name="ЗаписьВидеоСловарьЗаменКонтекстноеМеню" id="696"/>
-																					<ExtendedTooltip name="ЗаписьВидеоСловарьЗаменExtendedTooltip" id="1751"/>
+																					<ExtendedTooltip name="ЗаписьВидеоСловарьЗаменРасширеннаяПодсказка" id="1433"/>
 																				</InputField>
 																			</ChildItems>
 																		</UsualGroup>
@@ -2583,7 +2583,7 @@
 																			<v8:content>Настройки видео дополнительные</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="НастройкиВидеоДополнительныеExtendedTooltip" id="1752"/>
+																	<ExtendedTooltip name="НастройкиВидеоДополнительныеРасширеннаяПодсказка" id="1434"/>
 																	<ChildItems>
 																		<InputField name="ЗаписьВидеоФайлКурсораМышки" id="665">
 																			<DataPath>Объект.ЗаписьВидеоФайлКурсораМышки</DataPath>
@@ -2594,7 +2594,7 @@
 																				</v8:item>
 																			</Title>
 																			<ContextMenu name="ЗаписьВидеоФайлКурсораМышкиКонтекстноеМеню" id="666"/>
-																			<ExtendedTooltip name="ЗаписьВидеоФайлКурсораМышкиExtendedTooltip" id="1753"/>
+																			<ExtendedTooltip name="ЗаписьВидеоФайлКурсораМышкиРасширеннаяПодсказка" id="1435"/>
 																		</InputField>
 																		<InputField name="ЗаписьВидеоФайлВодянойЗнак" id="674">
 																			<DataPath>Объект.ЗаписьВидеоФайлВодянойЗнак</DataPath>
@@ -2605,7 +2605,7 @@
 																				</v8:item>
 																			</Title>
 																			<ContextMenu name="ЗаписьВидеоФайлВодянойЗнакКонтекстноеМеню" id="675"/>
-																			<ExtendedTooltip name="ЗаписьВидеоФайлВодянойЗнакExtendedTooltip" id="1754"/>
+																			<ExtendedTooltip name="ЗаписьВидеоФайлВодянойЗнакРасширеннаяПодсказка" id="1436"/>
 																		</InputField>
 																		<CheckBoxField name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФорм" id="709">
 																			<DataPath>Объект.ЗаписьВидеоПодсвечиватьАктивныеЭлементыФорм</DataPath>
@@ -2618,7 +2618,7 @@
 																			<TitleLocation>Right</TitleLocation>
 																			<CheckBoxType>Auto</CheckBoxType>
 																			<ContextMenu name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФормКонтекстноеМеню" id="710"/>
-																			<ExtendedTooltip name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФормExtendedTooltip" id="1755"/>
+																			<ExtendedTooltip name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФормРасширеннаяПодсказка" id="1437"/>
 																		</CheckBoxField>
 																		<CheckBoxField name="ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормы" id="712">
 																			<DataPath>Объект.ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормы</DataPath>
@@ -2631,7 +2631,7 @@
 																			<TitleLocation>Right</TitleLocation>
 																			<CheckBoxType>Auto</CheckBoxType>
 																			<ContextMenu name="ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормыКонтекстноеМеню" id="713"/>
-																			<ExtendedTooltip name="ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормыExtendedTooltip" id="1756"/>
+																			<ExtendedTooltip name="ЗаписьВидеоПеремещатьКурсорМышкиКАктивномуЭлементуФормыРасширеннаяПодсказка" id="1438"/>
 																		</CheckBoxField>
 																	</ChildItems>
 																</Page>
@@ -2662,7 +2662,7 @@
 									<v8:content>Группа служебная</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаСлужебнаяExtendedTooltip" id="1757"/>
+							<ExtendedTooltip name="ГруппаСлужебнаяРасширеннаяПодсказка" id="1439"/>
 							<ChildItems>
 								<InputField name="КаталогФичСлужебный" id="489">
 									<DataPath>Объект.КаталогФич</DataPath>
@@ -2677,7 +2677,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="КаталогФичСлужебныйКонтекстноеМеню" id="490"/>
-									<ExtendedTooltip name="КаталогФичСлужебныйExtendedTooltip" id="1758"/>
+									<ExtendedTooltip name="КаталогФичСлужебныйРасширеннаяПодсказка" id="1440"/>
 								</InputField>
 								<InputField name="КаталогИнструментовСлужебный" id="494">
 									<DataPath>Объект.КаталогИнструментов</DataPath>
@@ -2692,7 +2692,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="КаталогИнструментовСлужебныйКонтекстноеМеню" id="495"/>
-									<ExtendedTooltip name="КаталогИнструментовСлужебныйExtendedTooltip" id="1759"/>
+									<ExtendedTooltip name="КаталогИнструментовСлужебныйРасширеннаяПодсказка" id="1441"/>
 									<Events>
 										<Event name="OnChange">КаталогИнструментовСлужебныйПриИзменении</Event>
 									</Events>
@@ -2710,7 +2710,7 @@
 											<v8:content>Invoke designer</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ДляВызоваКонфигуратораExtendedTooltip" id="1760"/>
+									<ExtendedTooltip name="ДляВызоваКонфигуратораРасширеннаяПодсказка" id="1442"/>
 								</Button>
 								<Table name="ТаблицаИзвестныхStepDefinition" id="1486">
 									<Representation>List</Representation>
@@ -2718,104 +2718,101 @@
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
 									<DataPath>ТаблицаИзвестныхStepDefinition</DataPath>
-									<SearchStringLocation>None</SearchStringLocation>
-									<ViewStatusLocation>None</ViewStatusLocation>
-									<SearchControlLocation>None</SearchControlLocation>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ТаблицаИзвестныхStepDefinitionКонтекстноеМеню" id="1487"/>
 									<AutoCommandBar name="ТаблицаИзвестныхStepDefinitionКоманднаяПанель" id="1488"/>
-									<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionExtendedTooltip" id="1761"/>
-									<SearchStringAddition name="ТаблицаИзвестныхStepDefinitionSearchString" id="1762">
+									<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionРасширеннаяПодсказка" id="1489"/>
+									<SearchStringAddition name="ТаблицаИзвестныхStepDefinitionСтрокаПоиска" id="1490">
 										<AdditionSource>
 											<Item>ТаблицаИзвестныхStepDefinition</Item>
 											<Type>SearchStringRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="ТаблицаИзвестныхStepDefinitionSearchStringContextMenu" id="1763"/>
-										<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionSearchStringExtendedTooltip" id="1764"/>
+										<ContextMenu name="ТаблицаИзвестныхStepDefinitionСтрокаПоискаКонтекстноеМеню" id="1491"/>
+										<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСтрокаПоискаРасширеннаяПодсказка" id="1492"/>
 									</SearchStringAddition>
-									<ViewStatusAddition name="ТаблицаИзвестныхStepDefinitionViewStatus" id="1765">
+									<ViewStatusAddition name="ТаблицаИзвестныхStepDefinitionСостояниеПросмотра" id="1493">
 										<AdditionSource>
 											<Item>ТаблицаИзвестныхStepDefinition</Item>
 											<Type>ViewStatusRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="ТаблицаИзвестныхStepDefinitionViewStatusContextMenu" id="1766"/>
-										<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionViewStatusExtendedTooltip" id="1767"/>
+										<ContextMenu name="ТаблицаИзвестныхStepDefinitionСостояниеПросмотраКонтекстноеМеню" id="1494"/>
+										<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСостояниеПросмотраРасширеннаяПодсказка" id="1495"/>
 									</ViewStatusAddition>
-									<SearchControlAddition name="ТаблицаИзвестныхStepDefinitionSearchControl" id="1768">
+									<SearchControlAddition name="ТаблицаИзвестныхStepDefinitionУправлениеПоиском" id="1496">
 										<AdditionSource>
 											<Item>ТаблицаИзвестныхStepDefinition</Item>
 											<Type>SearchControl</Type>
 										</AdditionSource>
-										<ContextMenu name="ТаблицаИзвестныхStepDefinitionSearchControlContextMenu" id="1769"/>
-										<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionSearchControlExtendedTooltip" id="1770"/>
+										<ContextMenu name="ТаблицаИзвестныхStepDefinitionУправлениеПоискомКонтекстноеМеню" id="1497"/>
+										<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionУправлениеПоискомРасширеннаяПодсказка" id="1498"/>
 									</SearchControlAddition>
 									<ChildItems>
 										<InputField name="ТаблицаИзвестныхStepDefinitionИмяФайла" id="1499">
 											<DataPath>ТаблицаИзвестныхStepDefinition.ИмяФайла</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionИмяФайлаКонтекстноеМеню" id="1500"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionИмяФайлаExtendedTooltip" id="1771"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionИмяФайлаРасширеннаяПодсказка" id="1501"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionId" id="1502">
 											<DataPath>ТаблицаИзвестныхStepDefinition.Id</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionIdКонтекстноеМеню" id="1503"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionIdExtendedTooltip" id="1772"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionIdРасширеннаяПодсказка" id="1504"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionСтрокаРеальнойПроцедуры" id="1505">
 											<DataPath>ТаблицаИзвестныхStepDefinition.СтрокаРеальнойПроцедуры</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionСтрокаРеальнойПроцедурыКонтекстноеМеню" id="1506"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСтрокаРеальнойПроцедурыExtendedTooltip" id="1773"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСтрокаРеальнойПроцедурыРасширеннаяПодсказка" id="1507"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionПараметры" id="1508">
 											<DataPath>ТаблицаИзвестныхStepDefinition.Параметры</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionПараметрыКонтекстноеМеню" id="1509"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionПараметрыExtendedTooltip" id="1774"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionПараметрыРасширеннаяПодсказка" id="1510"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionСтрокаДляПоиска" id="1511">
 											<DataPath>ТаблицаИзвестныхStepDefinition.СтрокаДляПоиска</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionСтрокаДляПоискаКонтекстноеМеню" id="1512"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСтрокаДляПоискаExtendedTooltip" id="1775"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСтрокаДляПоискаРасширеннаяПодсказка" id="1513"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionПредставлениеТеста" id="1514">
 											<DataPath>ТаблицаИзвестныхStepDefinition.ПредставлениеТеста</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionПредставлениеТестаКонтекстноеМеню" id="1515"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionПредставлениеТестаExtendedTooltip" id="1776"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionПредставлениеТестаРасширеннаяПодсказка" id="1516"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionТранзакция" id="1517">
 											<DataPath>ТаблицаИзвестныхStepDefinition.Транзакция</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionТранзакцияКонтекстноеМеню" id="1518"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionТранзакцияExtendedTooltip" id="1777"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionТранзакцияРасширеннаяПодсказка" id="1519"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionОписаниеШага" id="1520">
 											<DataPath>ТаблицаИзвестныхStepDefinition.ОписаниеШага</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionОписаниеШагаКонтекстноеМеню" id="1521"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionОписаниеШагаExtendedTooltip" id="1778"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionОписаниеШагаРасширеннаяПодсказка" id="1522"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionТипШага" id="1523">
 											<DataPath>ТаблицаИзвестныхStepDefinition.ТипШага</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionТипШагаКонтекстноеМеню" id="1524"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionТипШагаExtendedTooltip" id="1779"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionТипШагаРасширеннаяПодсказка" id="1525"/>
 										</InputField>
 										<InputField name="ТаблицаИзвестныхStepDefinitionВерсияФайла" id="1526">
 											<DataPath>ТаблицаИзвестныхStepDefinition.ВерсияФайла</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionВерсияФайлаКонтекстноеМеню" id="1527"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionВерсияФайлаExtendedTooltip" id="1780"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionВерсияФайлаРасширеннаяПодсказка" id="1528"/>
 										</InputField>
 										<CheckBoxField name="ТаблицаИзвестныхStepDefinitionСтрокаОбрабатывалась" id="1529">
 											<DataPath>ТаблицаИзвестныхStepDefinition.СтрокаОбрабатывалась</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ТаблицаИзвестныхStepDefinitionСтрокаОбрабатываласьКонтекстноеМеню" id="1530"/>
-											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСтрокаОбрабатываласьExtendedTooltip" id="1781"/>
+											<ExtendedTooltip name="ТаблицаИзвестныхStepDefinitionСтрокаОбрабатываласьРасширеннаяПодсказка" id="1531"/>
 										</CheckBoxField>
 									</ChildItems>
 								</Table>
@@ -2834,13 +2831,13 @@
 									<v8:content>Известные шаги дерево</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ИзвестныеШагиДеревоExtendedTooltip" id="1782"/>
+							<ExtendedTooltip name="ИзвестныеШагиДеревоРасширеннаяПодсказка" id="1443"/>
 							<ChildItems>
 								<UsualGroup name="Группа7" id="930">
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа7ExtendedTooltip" id="1783"/>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1444"/>
 									<ChildItems>
 										<InputField name="ФильтрДереваШагов" id="932">
 											<DataPath>ФильтрДереваШагов</DataPath>
@@ -2852,7 +2849,7 @@
 											</Title>
 											<ClearButton>true</ClearButton>
 											<ContextMenu name="ФильтрДереваШаговКонтекстноеМеню" id="933"/>
-											<ExtendedTooltip name="ФильтрДереваШаговExtendedTooltip" id="1784"/>
+											<ExtendedTooltip name="ФильтрДереваШаговРасширеннаяПодсказка" id="1445"/>
 											<Events>
 												<Event name="OnChange">ФильтрДереваШаговПриИзменении</Event>
 											</Events>
@@ -2896,55 +2893,55 @@
 													<Button name="ДеревоИзвестныхШаговКонтекстноеМенюСвернутьДеревоИзвестныхФич" id="1235">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.СвернутьДеревоИзвестныхФич</CommandName>
-														<ExtendedTooltip name="ДеревоИзвестныхШаговКонтекстноеМенюСвернутьДеревоИзвестныхФичExtendedTooltip" id="1785"/>
+														<ExtendedTooltip name="ДеревоИзвестныхШаговКонтекстноеМенюСвернутьДеревоИзвестныхФичРасширеннаяПодсказка" id="1446"/>
 													</Button>
 													<Button name="ДеревоИзвестныхШаговКонтекстноеМенюСвернутьДеревоИзвестныхШагов" id="1237">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.СвернутьДеревоИзвестныхШагов</CommandName>
-														<ExtendedTooltip name="ДеревоИзвестныхШаговКонтекстноеМенюСвернутьДеревоИзвестныхШаговExtendedTooltip" id="1786"/>
+														<ExtendedTooltip name="ДеревоИзвестныхШаговКонтекстноеМенюСвернутьДеревоИзвестныхШаговРасширеннаяПодсказка" id="1447"/>
 													</Button>
 												</ChildItems>
 											</ContextMenu>
 											<AutoCommandBar name="ДеревоИзвестныхШаговКоманднаяПанель" id="937">
 												<Autofill>false</Autofill>
 											</AutoCommandBar>
-											<ExtendedTooltip name="ДеревоИзвестныхШаговExtendedTooltip" id="1787"/>
-											<SearchStringAddition name="ДеревоИзвестныхШаговSearchString" id="1788">
+											<ExtendedTooltip name="ДеревоИзвестныхШаговРасширеннаяПодсказка" id="1448"/>
+											<SearchStringAddition name="ДеревоИзвестныхШаговСтрокаПоиска" id="1449">
 												<AdditionSource>
 													<Item>ДеревоИзвестныхШагов</Item>
 													<Type>SearchStringRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ДеревоИзвестныхШаговSearchStringContextMenu" id="1789"/>
-												<ExtendedTooltip name="ДеревоИзвестныхШаговSearchStringExtendedTooltip" id="1790"/>
+												<ContextMenu name="ДеревоИзвестныхШаговСтрокаПоискаКонтекстноеМеню" id="1450"/>
+												<ExtendedTooltip name="ДеревоИзвестныхШаговСтрокаПоискаРасширеннаяПодсказка" id="1451"/>
 											</SearchStringAddition>
-											<ViewStatusAddition name="ДеревоИзвестныхШаговViewStatus" id="1791">
+											<ViewStatusAddition name="ДеревоИзвестныхШаговСостояниеПросмотра" id="1452">
 												<AdditionSource>
 													<Item>ДеревоИзвестныхШагов</Item>
 													<Type>ViewStatusRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ДеревоИзвестныхШаговViewStatusContextMenu" id="1792"/>
-												<ExtendedTooltip name="ДеревоИзвестныхШаговViewStatusExtendedTooltip" id="1793"/>
+												<ContextMenu name="ДеревоИзвестныхШаговСостояниеПросмотраКонтекстноеМеню" id="1453"/>
+												<ExtendedTooltip name="ДеревоИзвестныхШаговСостояниеПросмотраРасширеннаяПодсказка" id="1454"/>
 											</ViewStatusAddition>
-											<SearchControlAddition name="ДеревоИзвестныхШаговSearchControl" id="1794">
+											<SearchControlAddition name="ДеревоИзвестныхШаговУправлениеПоиском" id="1455">
 												<AdditionSource>
 													<Item>ДеревоИзвестныхШагов</Item>
 													<Type>SearchControl</Type>
 												</AdditionSource>
-												<ContextMenu name="ДеревоИзвестныхШаговSearchControlContextMenu" id="1795"/>
-												<ExtendedTooltip name="ДеревоИзвестныхШаговSearchControlExtendedTooltip" id="1796"/>
+												<ContextMenu name="ДеревоИзвестныхШаговУправлениеПоискомКонтекстноеМеню" id="1456"/>
+												<ExtendedTooltip name="ДеревоИзвестныхШаговУправлениеПоискомРасширеннаяПодсказка" id="1457"/>
 											</SearchControlAddition>
 											<ChildItems>
 												<InputField name="ДеревоИзвестныхШаговНаименование" id="1005">
 													<DataPath>Объект.ДеревоИзвестныхШагов.Наименование</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ДеревоИзвестныхШаговНаименованиеКонтекстноеМеню" id="1006"/>
-													<ExtendedTooltip name="ДеревоИзвестныхШаговНаименованиеExtendedTooltip" id="1797"/>
+													<ExtendedTooltip name="ДеревоИзвестныхШаговНаименованиеРасширеннаяПодсказка" id="1458"/>
 												</InputField>
 												<InputField name="ДеревоИзвестныхШаговЗначение" id="1008">
 													<DataPath>Объект.ДеревоИзвестныхШагов.Значение</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ДеревоИзвестныхШаговЗначениеКонтекстноеМеню" id="1009"/>
-													<ExtendedTooltip name="ДеревоИзвестныхШаговЗначениеExtendedTooltip" id="1798"/>
+													<ExtendedTooltip name="ДеревоИзвестныхШаговЗначениеРасширеннаяПодсказка" id="1459"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -2970,7 +2967,7 @@
 					<Width>50</Width>
 					<Hiperlink>true</Hiperlink>
 					<ContextMenu name="КаталогФичКонтекстноеМеню" id="82"/>
-					<ExtendedTooltip name="КаталогФичExtendedTooltip" id="1799"/>
+					<ExtendedTooltip name="КаталогФичРасширеннаяПодсказка" id="1460"/>
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
