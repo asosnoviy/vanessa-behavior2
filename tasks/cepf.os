@@ -29,6 +29,9 @@
 
 	Команда.УстановитьСтрокуЗапуска("oscript ./tools/runner.os compileepf ./epf ./build/epf");
 	Команда.Исполнить();
+
+	Команда.УстановитьСтрокуЗапуска("oscript ./tools/runner.os compileepf ./vendor ./build/vendor");
+	Команда.Исполнить();
 	
 КонецПроцедуры
 
