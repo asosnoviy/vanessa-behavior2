@@ -1475,6 +1475,9 @@
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ЗапускатьТестКлиентВРежимеОтладкиКонтекстноеМеню" id="868"/>
 															<ExtendedTooltip name="ЗапускатьТестКлиентВРежимеОтладкиРасширеннаяПодсказка" id="1366"/>
+															<Events>
+																<Event name="OnChange">ЗапускатьТестКлиентВРежимеОтладкиПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
 														<UsualGroup name="НастройкиОтладчикаTC" id="924">
 															<Title>
@@ -1855,6 +1858,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаСкриншотыРасширеннаяПодсказка" id="1535"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьСкриншотПриВозникновенииОшибки" id="507">
@@ -1873,6 +1877,9 @@
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьСкриншотПриВозникновенииОшибкиКонтекстноеМеню" id="508"/>
 															<ExtendedTooltip name="ДелатьСкриншотПриВозникновенииОшибкиРасширеннаяПодсказка" id="1391"/>
+															<Events>
+																<Event name="OnChange">ДелатьСкриншотПриВозникновенииОшибкиПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
 														<InputField name="КаталогOutputСкриншоты" id="510">
 															<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
@@ -1905,6 +1912,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаAllureРасширеннаяПодсказка" id="1537"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьОтчетВФорматеАллюр" id="138">
@@ -1923,6 +1931,9 @@
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьОтчетВФорматеАллюрКонтекстноеМеню" id="139"/>
 															<ExtendedTooltip name="ДелатьОтчетВФорматеАллюрРасширеннаяПодсказка" id="1392"/>
+															<Events>
+																<Event name="OnChange">ДелатьОтчетВФорматеАллюрПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
 														<InputField name="КаталогOutputAllure" id="141">
 															<DataPath>Объект.КаталогOutputAllure</DataPath>
@@ -1955,6 +1966,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаjUnitРасширеннаяПодсказка" id="1539"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьОтчетВФорматеxUnit" id="367">
@@ -1973,8 +1985,11 @@
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьОтчетВФорматеxUnitКонтекстноеМеню" id="368"/>
 															<ExtendedTooltip name="ДелатьОтчетВФорматеxUnitРасширеннаяПодсказка" id="1393"/>
+															<Events>
+																<Event name="OnChange">ДелатьОтчетВФорматеxUnitПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
-														<InputField name="КаталогOutputxUnit" id="370">
+														<InputField name="КаталогOutputjUnit" id="370">
 															<DataPath>Объект.КаталогOutputjUnit</DataPath>
 															<Title>
 																<v8:item>
@@ -1988,10 +2003,10 @@
 															</Title>
 															<ChoiceButton>true</ChoiceButton>
 															<ClearButton>true</ClearButton>
-															<ContextMenu name="КаталогOutputxUnitКонтекстноеМеню" id="371"/>
-															<ExtendedTooltip name="КаталогOutputxUnitРасширеннаяПодсказка" id="1397"/>
+															<ContextMenu name="КаталогOutputjUnitКонтекстноеМеню" id="371"/>
+															<ExtendedTooltip name="КаталогOutputjUnitРасширеннаяПодсказка" id="1397"/>
 															<Events>
-																<Event name="StartChoice">КаталогOutputxUnitНачалоВыбора</Event>
+																<Event name="StartChoice">КаталогOutputjUnitНачалоВыбора</Event>
 															</Events>
 														</InputField>
 													</ChildItems>
@@ -2005,6 +2020,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаCucumberРасширеннаяПодсказка" id="1541"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьОтчетВФорматеCucumberJson" id="1461">
@@ -2023,6 +2039,9 @@
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьОтчетВФорматеCucumberJsonКонтекстноеМеню" id="1462"/>
 															<ExtendedTooltip name="ДелатьОтчетВФорматеCucumberJsonРасширеннаяПодсказка" id="1463"/>
+															<Events>
+																<Event name="OnChange">ДелатьОтчетВФорматеCucumberJsonПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
 														<InputField name="КаталогOutputCucumberJson" id="1464">
 															<DataPath>Объект.КаталогOutputCucumberJson</DataPath>
@@ -2055,6 +2074,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>StrongSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаЛогТекстРасширеннаяПодсказка" id="1543"/>
 													<ChildItems>
 														<CheckBoxField name="ДелатьЛогВыполненияСценариевВТекстовыйФайл" id="1544">
@@ -2063,11 +2083,18 @@
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ДелатьЛогВыполненияСценариевВТекстовыйФайлКонтекстноеМеню" id="1545"/>
 															<ExtendedTooltip name="ДелатьЛогВыполненияСценариевВТекстовыйФайлРасширеннаяПодсказка" id="1546"/>
+															<Events>
+																<Event name="OnChange">ДелатьЛогВыполненияСценариевВТекстовыйФайлПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
 														<InputField name="ИмяФайлаЛогВыполненияСценариев" id="1547">
 															<DataPath>Объект.ИмяФайлаЛогВыполненияСценариев</DataPath>
+															<ChoiceButton>true</ChoiceButton>
 															<ContextMenu name="ИмяФайлаЛогВыполненияСценариевКонтекстноеМеню" id="1548"/>
 															<ExtendedTooltip name="ИмяФайлаЛогВыполненияСценариевРасширеннаяПодсказка" id="1549"/>
+															<Events>
+																<Event name="StartChoice">КаталогOutputВнутреннийФорматНачалоВыбора</Event>
+															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2165,7 +2192,8 @@
 																	<v8:content>Группа HTML</v8:content>
 																</v8:item>
 															</ToolTip>
-															<Group>Horizontal</Group>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаHTMLРасширеннаяПодсказка" id="1404"/>
 															<ChildItems>
@@ -2185,6 +2213,9 @@
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="СоздаватьИнструкциюHTMLКонтекстноеМеню" id="136"/>
 																	<ExtendedTooltip name="СоздаватьИнструкциюHTMLРасширеннаяПодсказка" id="1405"/>
+																	<Events>
+																		<Event name="OnChange">СоздаватьИнструкциюHTMLПриИзменении</Event>
+																	</Events>
 																</CheckBoxField>
 																<InputField name="КаталогOutputИнструкцияHTML" id="148">
 																	<DataPath>Объект.КаталогOutputИнструкцияHTML</DataPath>
@@ -2215,7 +2246,8 @@
 																	<v8:content>Группа markdown</v8:content>
 																</v8:item>
 															</ToolTip>
-															<Group>Horizontal</Group>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаMarkdownРасширеннаяПодсказка" id="1407"/>
 															<ChildItems>
@@ -2231,6 +2263,9 @@
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="СоздаватьИнструкциюMarkdownКонтекстноеМеню" id="645"/>
 																	<ExtendedTooltip name="СоздаватьИнструкциюMarkdownРасширеннаяПодсказка" id="1408"/>
+																	<Events>
+																		<Event name="OnChange">СоздаватьИнструкциюMarkdownПриИзменении</Event>
+																	</Events>
 																</CheckBoxField>
 																<InputField name="КаталогOutputИнструкцияMarkdown" id="647">
 																	<DataPath>Объект.КаталогOutputИнструкцияMarkdown</DataPath>
@@ -2276,7 +2311,8 @@
 																	<v8:content>Группа видео</v8:content>
 																</v8:item>
 															</ToolTip>
-															<Group>Horizontal</Group>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаВидеоРасширеннаяПодсказка" id="1411"/>
 															<ChildItems>
@@ -2296,6 +2332,9 @@
 																	<CheckBoxType>Auto</CheckBoxType>
 																	<ContextMenu name="СоздаватьИнструкциюВидеоКонтекстноеМеню" id="518"/>
 																	<ExtendedTooltip name="СоздаватьИнструкциюВидеоРасширеннаяПодсказка" id="1412"/>
+																	<Events>
+																		<Event name="OnChange">СоздаватьИнструкциюВидеоПриИзменении</Event>
+																	</Events>
 																</CheckBoxField>
 																<InputField name="КаталогOutputИнструкцияВидео" id="520">
 																	<DataPath>Объект.КаталогOutputИнструкцияВидео</DataPath>
@@ -2499,8 +2538,13 @@
 																					<v8:content>Каталог музыки</v8:content>
 																				</v8:item>
 																			</Title>
+																			<ChoiceButton>true</ChoiceButton>
+																			<ClearButton>true</ClearButton>
 																			<ContextMenu name="ЗаписьВидеоКаталогМузыкиКонтекстноеМеню" id="684"/>
 																			<ExtendedTooltip name="ЗаписьВидеоКаталогМузыкиРасширеннаяПодсказка" id="1428"/>
+																			<Events>
+																				<Event name="StartChoice">ЗаписьВидеоКаталогМузыкиНачалоВыбора</Event>
+																			</Events>
 																		</InputField>
 																		<UsualGroup name="ОзвучкаГолосом" id="698">
 																			<Title>
@@ -2532,6 +2576,9 @@
 																					<CheckBoxType>Auto</CheckBoxType>
 																					<ContextMenu name="ЗаписьВидеоДелатьНаложениеTTSКонтекстноеМеню" id="687"/>
 																					<ExtendedTooltip name="ЗаписьВидеоДелатьНаложениеTTSРасширеннаяПодсказка" id="1430"/>
+																					<Events>
+																						<Event name="OnChange">ЗаписьВидеоДелатьНаложениеTTSПриИзменении</Event>
+																					</Events>
 																				</CheckBoxField>
 																				<InputField name="ЗаписьВидеоПутьКДвижкуTTS" id="689">
 																					<DataPath>Объект.ЗаписьВидеоПутьКДвижкуTTS</DataPath>
@@ -2541,8 +2588,13 @@
 																							<v8:content>Путь к движку TTS</v8:content>
 																						</v8:item>
 																					</Title>
+																					<ChoiceButton>true</ChoiceButton>
+																					<ClearButton>true</ClearButton>
 																					<ContextMenu name="ЗаписьВидеоПутьКДвижкуTTSКонтекстноеМеню" id="690"/>
 																					<ExtendedTooltip name="ЗаписьВидеоПутьКДвижкуTTSРасширеннаяПодсказка" id="1431"/>
+																					<Events>
+																						<Event name="StartChoice">ЗаписьВидеоПутьКДвижкуTTSНачалоВыбора</Event>
+																					</Events>
 																				</InputField>
 																				<InputField name="ЗаписьВидеоИмяTTS" id="692">
 																					<DataPath>Объект.ЗаписьВидеоИмяTTS</DataPath>
@@ -2563,8 +2615,13 @@
 																							<v8:content>Путь к словарю замен</v8:content>
 																						</v8:item>
 																					</Title>
+																					<ChoiceButton>true</ChoiceButton>
+																					<ClearButton>true</ClearButton>
 																					<ContextMenu name="ЗаписьВидеоСловарьЗаменКонтекстноеМеню" id="696"/>
 																					<ExtendedTooltip name="ЗаписьВидеоСловарьЗаменРасширеннаяПодсказка" id="1433"/>
+																					<Events>
+																						<Event name="StartChoice">ЗаписьВидеоСловарьЗаменНачалоВыбора</Event>
+																					</Events>
 																				</InputField>
 																			</ChildItems>
 																		</UsualGroup>
@@ -2593,8 +2650,13 @@
 																					<v8:content>Файл курсор мыши</v8:content>
 																				</v8:item>
 																			</Title>
+																			<ChoiceButton>true</ChoiceButton>
+																			<ClearButton>true</ClearButton>
 																			<ContextMenu name="ЗаписьВидеоФайлКурсораМышкиКонтекстноеМеню" id="666"/>
 																			<ExtendedTooltip name="ЗаписьВидеоФайлКурсораМышкиРасширеннаяПодсказка" id="1435"/>
+																			<Events>
+																				<Event name="StartChoice">ЗаписьВидеоФайлКурсораМышкиНачалоВыбора</Event>
+																			</Events>
 																		</InputField>
 																		<InputField name="ЗаписьВидеоФайлВодянойЗнак" id="674">
 																			<DataPath>Объект.ЗаписьВидеоФайлВодянойЗнак</DataPath>
@@ -2604,8 +2666,13 @@
 																					<v8:content>Файл водяной знак</v8:content>
 																				</v8:item>
 																			</Title>
+																			<ChoiceButton>true</ChoiceButton>
+																			<ClearButton>true</ClearButton>
 																			<ContextMenu name="ЗаписьВидеоФайлВодянойЗнакКонтекстноеМеню" id="675"/>
 																			<ExtendedTooltip name="ЗаписьВидеоФайлВодянойЗнакРасширеннаяПодсказка" id="1436"/>
+																			<Events>
+																				<Event name="StartChoice">ЗаписьВидеоФайлВодянойЗнакНачалоВыбора</Event>
+																			</Events>
 																		</InputField>
 																		<CheckBoxField name="ЗаписьВидеоПодсвечиватьАктивныеЭлементыФорм" id="709">
 																			<DataPath>Объект.ЗаписьВидеоПодсвечиватьАктивныеЭлементыФорм</DataPath>
