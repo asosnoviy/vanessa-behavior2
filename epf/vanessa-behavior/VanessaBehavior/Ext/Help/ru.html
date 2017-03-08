@@ -2,7 +2,13 @@
 <p><font size="3" face="Arial">Vanessa-Behavior - это фреймворк для разработки в 1С используя методологию BDD.</font></p>
 <p><font size="3" face="Arial">Страница проекта: <a href="https://github.com/silverbulleters/vanessa-behavior">https://github.com/silverbulleters/vanessa-behavior</a></font></p>
 <p><font size="3" face="Arial">Vanessa-Behavior является аналогом Cucumber для разработки на платформе 1С:Предприятие.</font></p>
-<p><font size="3" face="Arial"></font> </p>
+<p><font size="2" face="Arial">Поддерживаются версии платформы:</font></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p><font size="1" face="Arial"> 8.2.19, 8.3.6, 8.3.7, 8.3.8, 8.3.9, 8.3.10.</font></p></blockquote>
+<p><font size="2" face="Arial">У обработки есть <strong>Управляемая форма</strong> (она является основой) и <strong>Обычная форма</strong>.</font></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p><font size="1" face="Arial">Обычная форма поддерживается в <strong>ограниченном</strong> формате. Т.е. ошибки исправляются - новые фичи добавляются редко. Но вы можете добавить в неё нужные Вам фичи самостоятельно.</font></p></blockquote>
+<p><font size="2" face="Arial"></font> </p>
 <p><font size="3" face="Arial"></font> </p>
 <p><font size="3" face="Arial">Разделы справки:</font></p>
 <p>1 . <a href="#ПравилаНаписанияfeatureФайлов">Правила написания feature файлов.</a></p>
@@ -12,24 +18,26 @@
 <p><a href="#Заголовок">1.1.1 Заголовок feature</a></p>
 <p><a href="#Сценарии">1.1.2 Сценарии</a></p>
 <p><a href="#Структура сценария">1.1.3 Структура сценария</a></p></blockquote>
-<p dir="ltr"><a href="#Тег @tree">#Тег @tree</a></p>
-<p><a href="#Тег @exportscenarios">#Тег @exportscenarios</a></p>
+<p dir="ltr"><a href="#Тег @tree">1.2 Тег @tree</a></p>
+<p><a href="#Тег @exportscenarios">1.3 Тег @exportscenarios</a></p>
 <p>1.4 Передача в шаг таблицы.</p>
 <p>1.5 Вызов структуры сценария как вложенного сценария.</p>
 <p>1.6 Передача параметра таблицы (таблиц) во вложенный сценарий.</p></blockquote>
-<p dir="ltr"><a href="#Как загрузить feature файл.">2. Как загрузить feature файл. Тэги.</a></p>
-<p>3. Как запустить feature файл на выполнение. Отладка.</p>
-<p>4. Как создать epf файл.</p>
-<p>5. Асинхронные вызовы</p>
-<p>6. Как получить отчет Allure, jUnit, Cucmber report.</p>
-<p>7. Как накликать фича файл.</p>
-<p>8. Как получить состояние формы TestClient.</p>
-<p>9. Как подключить свою библиотеку.</p>
-<p>10. Как поделиться своими шагами с коллегами при групповой разработке.</p>
-<p>11. Как создать автоинструкцию в формате HTML, MD.</p>
-<p>12. Как создать автовидеоинструкцию.</p>
-<p>13. Список экспортных процедур и функций.</p>
-<p>14. Запуск Vanessa-Behavior на CI.</p>
+<p dir="ltr">2. <a href="#Как загрузить feature файл.">Как загрузить feature файл. Тэги.</a></p>
+<p>3. <a href="#Как запустить feature файл на выполнение. Отладка.">Как запустить feature файл на выполнение. Отладка.</a></p>
+<p>4. <a href="#Как создать epf файл на основе feature файла.">Как создать epf файл на основе feature файла.</a></p>
+<p>5. Описание настроек на закладке Сервис.</p>
+<p>6. Асинхронные вызовы</p>
+<p>7. Как получить отчет Allure, jUnit, Cucmber report.</p>
+<p>8. Как накликать фича файл.</p>
+<p>9. Как получить состояние формы TestClient.</p>
+<p>10. Как подключить свою библиотеку.</p>
+<p>11. Как поделиться своими шагами с коллегами при групповой разработке.</p>
+<p>12. Как создать автоинструкцию в формате HTML, MD.</p>
+<p>13. Как создать автовидеоинструкцию.</p>
+<p>14. Список экспортных процедур и функций.</p>
+<p>15. Запуск Vanessa-Behavior на CI.</p>
+<p>16. Инструкция для контрибьютерров.</p>
 <p> </p>
 <p> </p>
 <p><a name="ПравилаНаписанияfeatureФайлов"><font size="4">1 . Правила написания feature файлов.</font></a></p>
@@ -125,4 +133,44 @@
 <p align="left">Если выбран пункт "Загрузить файлы из каталога" - тогда возможны варианты, в зависимости от указанных тегов в настройках Vanessa-Behavior.</p>
 <p align="center"><img src="_files/Tags01.png"></img></p>
 <p align="left">Если заполнен список "Список исключаемых тэгов" - тогда если в feature файле указан такой тэг в заголовке feature, весь feature файл не будет загружен. Если тэг был указан у одного или несклольких сценариев, <br>данные сценарии не будет загружены, а остальные загрузятся.</p>
-<p align="left">Если заполнен список "Тэги для запуска" - тогда если в feature данный тэг не встречается нигде - весь feature файл будет проигнорирован. Если тэг есть в заголовке feature, тогда будут загружены все сценарии из feature.<br>Если тэг указан у одного или нескольких сценариев - тогда будут загружены только эти сценарии.<br><br></p></blockquote></blockquote></body></html>
+<p align="left">Если заполнен список "Тэги для запуска" - тогда если в feature данный тэг не встречается нигде - весь feature файл будет проигнорирован. Если тэг есть в заголовке feature, тогда будут загружены все сценарии из feature.<br>Если тэг указан у одного или нескольких сценариев - тогда будут загружены только эти сценарии.<br><br></p></blockquote>
+<p dir="ltr" align="left"><strong><font size="2"><a name="Как запустить feature файл на выполнение. Отладка.">Как запустить feature файл на выполнение. Отладка.</a></font></strong></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr" align="left"><font size="1">Что выполнить все сценарии надо нажать на кнопку "<strong>Выполнить сценарии</strong>".</font></p>
+<p dir="ltr" align="left"><font size="1">Если вы внесли изменения в epf или в фичу, тогда надо нажать на кнопку "<strong>Перезагрузить сценарии</strong>". Иначе будут использоваться старые версии фич и обработок.</font></p>
+<p dir="ltr" align="left"><font size="1">При постоянном внесении правок в фичу или в epf - удобно использовать кнопку "<strong>Перезагрузить и выполнить</strong>".</font></p>
+<p dir="ltr" align="left"><font size="1">Также в Vanessa-Behavior можно использовать следующие варианты запуска фич на выполнение (доступно в контекстном меню):</font></p>
+<p dir="ltr" align="center"><img src="_files/Run03.png"></img></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr" align="left"><font size="1">1. <strong>Выполнить данный сценарий с текущего шага</strong> (Ctrl+F5). Позволяет выполнить сценарий с текущего шага и до конца данного сценария. Другие сценарии выполняться не будут.</font></p>
+<p dir="ltr" align="left"><font size="1">2. <strong>Выполнить данный сценарий с текущего шага с продолжением</strong> (Ctrl+Shift+F5). Позволяет выполнить сценарий с текущего шага. Также будут выполнены сценарии следующие за данным.</font></p>
+<p dir="ltr" align="left"><font size="1">3. <strong>Выполнить данный сценарий с начала</strong> (Alt+F5).  Будет выполнен только данный сценарий начиная с первого шага.</font></p>
+<p dir="ltr" align="left"><font size="1">4. <strong>Выполнить сценарии этой фичи</strong> (Ctrl+Alt+F5). Будут выполнены все сценарии данной фичи.</font></p>
+<p dir="ltr" align="left"><font size="1">5. <strong>Выполнить один шаг</strong> (F11). Будет выполнен только один шаг фичи. Можно выбрать любой шаг в дереве фич и выполнить его, включая шаги секции Контекст. Удобно использовать при отладке.</font></p>
+<p dir="ltr" align="left"><font size="1">6. <strong>Открыть feature файл в редакторе</strong>. Откроет приложение, которое ассоциировано с расширением <strong>feature</strong>.</font></p>
+<p dir="ltr" align="left"><font size="1">7. <strong>Открыть каталог feature</strong>. Откроет проводник с каталогом, где лежит feature файл.</font></p>
+<p dir="ltr" align="left"><font size="1">8. <strong>Выполнять сценарий с этого шага с сохранением контекстов</strong>. Будет выполнен сценарий с текущего шага. При этом будет выставлен флаг <strong>Сохранять контексты перед выполнением шагов</strong> на закладке <strong>Сервис</strong>, т.е. при выполении сценария будут запоминаться значения контекстов шагов. При таком режиме запуска удобно делать отладку сценария, когда шаги зависят от значений переменных <strong>Контекст</strong> и <strong>КонтекстСохраняемый</strong>. При первом запуске сценария с данной опцией возможно выполнение сценария с начала, если флаг <strong>Сохранять контексты перед выполнением шагов</strong> ранее не был равен <strong>Истина</strong>. При последующих запусках сценарий будет выполняться с нужного шага.</font></p>
+<p dir="ltr" align="left"><font size="1">9. <strong>Свернуть до фич</strong>. Дерево фич будет свёрнуто до строк фич.</font></p>
+<p dir="ltr" align="left"><font size="1">10. <strong>Свернуть до сценариев</strong>. Дерево фич будет свёрнуто до строк сценариев.</font></p>
+<p dir="ltr" align="center"><img src="_files/Run04.png"></img></p>
+<p dir="ltr" align="left"><font size="1">11. <strong>Брейкпоинт</strong> (F9). У строки шага будет установлена отметка брейкпоинта. Выполнение сценариев будет прервано на этом шаге, при этом сам шаг выполнен не будет. Далее удобно выполнять отладку по одному шагу (F11).</font></p>
+<p dir="ltr" align="left"><font size="1">12. <strong>Убрать все брейкпоинты</strong> (Ctrl+F9). Убирает все брейкпоинты из дерева.</font></p></blockquote>
+<p dir="ltr" align="left"><font size="1"></font> </p>
+<p dir="ltr" align="left"><font size="1"></font> </p>
+<p dir="ltr" align="left"><font size="1"></font> </p></blockquote>
+<p dir="ltr" align="left"><font size="3"><strong><a name="Как создать epf файл на основе feature файла.">Как создать epf файл на основе feature файла.</a></strong></font></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr" align="center"><font size="1"><img src="_files/Gen02.png"></img></font></p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr" align="left"><font size="1">1. Если мы работаем в режиме управляемых форм - надо выставить флаг "<strong>Генерировать управляемую форму</strong>".</font></p>
+<p dir="ltr" align="left"><font size="1">2. Если выставить флаг "<strong>Создавать области при генерации кода</strong>"  - внутри epf будут созданы области кода.</font></p>
+<p dir="ltr" align="center"><img src="_files/Gen03.png"></img></p>
+<p dir="ltr" align="left">3.  Флаг "<strong>Создавать закомментированный код для переиспользуемых процедур</strong>" сейчас не используется.</p>
+<p dir="ltr" align="left">4. Флаг "<strong>Выводить текст получаемого модуля, вместо перегенрации EPF</strong>" - позволяет вывести модуль в текстовый документ не создавая epf.</p>
+<p dir="ltr" align="left">5. Если epf уже существует, тогда в неё будут добавлены новые шаги. При этом существующие процедуры, функции, макеты и т.д. в epf сохранятся.</p>
+<p dir="ltr" align="left">6. Epf будет создана с тем же именем файла что и feature файл.</p>
+<p dir="ltr" align="left">7. Epf будет создана в каталоге "<strong>step_definitions</strong>", который будет находится в каталоге feature файла.</p>
+<p dir="ltr" align="left">8. Каждая epf должная обладать уникальным значением в поле "<strong>Имя</strong>".  Если вы копируете (а не перемещаете) epf в другой каталог, тогда надо обеспечить уникальность этого поля.</p>
+<p dir="ltr" align="center"><img src="_files/Gen04.png"></img></p></blockquote></blockquote>
+<p dir="ltr" align="left"><strong><font size="3"></font></strong> </p>
+<p dir="ltr" align="left"><strong><font size="3"></font></strong> </p></blockquote></body></html>
