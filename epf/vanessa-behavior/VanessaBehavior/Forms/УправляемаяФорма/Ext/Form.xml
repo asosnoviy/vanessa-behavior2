@@ -723,6 +723,29 @@
 									<ContextMenu name="ВыводитьТекстМодуляВместоПерегенерацииEPFКонтекстноеМеню" id="479"/>
 									<ExtendedTooltip name="ВыводитьТекстМодуляВместоПерегенерацииEPFРасширеннаяПодсказка" id="1294"/>
 								</CheckBoxField>
+								<UsualGroup name="Группа1" id="1557">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<Width>28</Width>
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="1558"/>
+									<ChildItems>
+										<InputField name="ВерсияПлатформыДляГенерацииEPF" id="1559">
+											<DataPath>Объект.ВерсияПлатформыДляГенерацииEPF</DataPath>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="ВерсияПлатформыДляГенерацииEPFКонтекстноеМеню" id="1560"/>
+											<ExtendedTooltip name="ВерсияПлатформыДляГенерацииEPFРасширеннаяПодсказка" id="1561"/>
+											<Events>
+												<Event name="StartChoice">ВерсияПлатформыДляГенерацииEPFНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</Page>
 						<Page name="ГруппаКаталогиБиблиотек" id="83">
