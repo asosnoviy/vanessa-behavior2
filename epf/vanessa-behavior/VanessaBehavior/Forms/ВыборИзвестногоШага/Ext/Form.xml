@@ -233,7 +233,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">web:HoneyDew</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
