@@ -21,30 +21,30 @@
 			<SearchControlLocation>None</SearchControlLocation>
 			<ContextMenu name="ДеревоШаговКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="ДеревоШаговКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="ДеревоШаговExtendedTooltip" id="31"/>
-			<SearchStringAddition name="ДеревоШаговSearchString" id="32">
+			<ExtendedTooltip name="ДеревоШаговРасширеннаяПодсказка" id="31"/>
+			<SearchStringAddition name="ДеревоШаговСтрокаПоиска" id="32">
 				<AdditionSource>
 					<Item>ДеревоШагов</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ДеревоШаговSearchStringContextMenu" id="33"/>
-				<ExtendedTooltip name="ДеревоШаговSearchStringExtendedTooltip" id="34"/>
+				<ContextMenu name="ДеревоШаговСтрокаПоискаКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ДеревоШаговСтрокаПоискаРасширеннаяПодсказка" id="34"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ДеревоШаговViewStatus" id="35">
+			<ViewStatusAddition name="ДеревоШаговСостояниеПросмотра" id="35">
 				<AdditionSource>
 					<Item>ДеревоШагов</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ДеревоШаговViewStatusContextMenu" id="36"/>
-				<ExtendedTooltip name="ДеревоШаговViewStatusExtendedTooltip" id="37"/>
+				<ContextMenu name="ДеревоШаговСостояниеПросмотраКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ДеревоШаговСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ДеревоШаговSearchControl" id="38">
+			<SearchControlAddition name="ДеревоШаговУправлениеПоиском" id="38">
 				<AdditionSource>
 					<Item>ДеревоШагов</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="ДеревоШаговSearchControlContextMenu" id="39"/>
-				<ExtendedTooltip name="ДеревоШаговSearchControlExtendedTooltip" id="40"/>
+				<ContextMenu name="ДеревоШаговУправлениеПоискомКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="ДеревоШаговУправлениеПоискомРасширеннаяПодсказка" id="40"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">ДеревоШаговВыбор</Event>
@@ -56,26 +56,26 @@
 					<Width>15</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДеревоШаговТипШагаКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ДеревоШаговТипШагаExtendedTooltip" id="41"/>
+					<ExtendedTooltip name="ДеревоШаговТипШагаРасширеннаяПодсказка" id="41"/>
 				</InputField>
 				<InputField name="ДеревоШаговПредставлениеТеста" id="20">
 					<DataPath>ДеревоШагов.ПредставлениеТеста</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ДеревоШаговПредставлениеТестаКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="ДеревоШаговПредставлениеТестаExtendedTooltip" id="42"/>
+					<ExtendedTooltip name="ДеревоШаговПредставлениеТестаРасширеннаяПодсказка" id="42"/>
 				</InputField>
 				<InputField name="ДеревоШаговОписаниеШага" id="23">
 					<DataPath>ДеревоШагов.ОписаниеШага</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ДеревоШаговОписаниеШагаКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ДеревоШаговОписаниеШагаExtendedTooltip" id="43"/>
+					<ExtendedTooltip name="ДеревоШаговОписаниеШагаРасширеннаяПодсказка" id="43"/>
 				</InputField>
 				<InputField name="ДеревоШаговПолныйТипШага" id="26">
 					<DataPath>ДеревоШагов.ПолныйТипШага</DataPath>
 					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ДеревоШаговПолныйТипШагаКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ДеревоШаговПолныйТипШагаExtendedTooltip" id="44"/>
+					<ExtendedTooltip name="ДеревоШаговПолныйТипШагаРасширеннаяПодсказка" id="44"/>
 				</InputField>
 				<InputField name="ДеревоШаговИмяEPF" id="29">
 					<DataPath>ДеревоШагов.ИмяФайла</DataPath>
@@ -83,7 +83,7 @@
 					<Width>10</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДеревоШаговИмяEPFКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="ДеревоШаговИмяEPFExtendedTooltip" id="45"/>
+					<ExtendedTooltip name="ДеревоШаговИмяEPFРасширеннаяПодсказка" id="45"/>
 				</InputField>
 			</ChildItems>
 		</Table>
