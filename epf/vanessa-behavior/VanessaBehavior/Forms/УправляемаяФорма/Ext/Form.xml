@@ -272,6 +272,17 @@
 														</Title>
 														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПунктВыполнитьСценарийРасширеннаяПодсказка" id="1264"/>
 													</Button>
+													<Button name="ДеревоТестовКонтекстноеМенюПерезагрузитьИВыполнитьДанныйСценарий" id="1562">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПерезагрузитьИВыполнитьДанныйСценарий</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Перезагрузить и выполнить этот сценарий</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ДеревоТестовКонтекстноеМенюПерезагрузитьИВыполнитьДанныйСценарийРасширеннаяПодсказка" id="1563"/>
+													</Button>
 													<Button name="ДеревоТестовКонтекстноеМенюПунктВыполнитьФичу" id="1247">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ВыполнитьФичу</CommandName>
@@ -4876,6 +4887,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьКаталогФичи</Action>
+		</Command>
+		<Command name="ПерезагрузитьИВыполнитьДанныйСценарий" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезагрузить и выполнить данный сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезагрузить и выполнить данный сценарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+F6</Shortcut>
+			<Action>ПерезагрузитьИВыполнитьДанныйСценарийФорма</Action>
 		</Command>
 	</Commands>
 </Form>
