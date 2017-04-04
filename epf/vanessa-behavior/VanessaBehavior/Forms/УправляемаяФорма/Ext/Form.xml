@@ -5,143 +5,6 @@
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
-		<ChildItems>
-			<Popup name="ПодменюЗагрузитьФичи" id="63">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Загрузить фичи</v8:content>
-					</v8:item>
-					<v8:item>
-						<v8:lang>en</v8:lang>
-						<v8:content>Load features</v8:content>
-					</v8:item>
-				</Title>
-				<ToolTip>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Подменю загрузить фичи</v8:content>
-					</v8:item>
-				</ToolTip>
-				<Picture>
-					<xr:Abs>Picture.png</xr:Abs>
-					<xr:LoadTransparent>false</xr:LoadTransparent>
-				</Picture>
-				<ExtendedTooltip name="ПодменюЗагрузитьФичиРасширеннаяПодсказка" id="1252"/>
-				<ChildItems>
-					<ButtonGroup name="ГруппаКнопокЗагрузитьФичи" id="1249">
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Группа кнопок загрузить фичи</v8:content>
-							</v8:item>
-						</ToolTip>
-						<ExtendedTooltip name="ГруппаКнопокЗагрузитьФичиРасширеннаяПодсказка" id="1253"/>
-						<ChildItems>
-							<Button name="ФормаЗагрузитьФичиИзКаталога" id="64">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ЗагрузитьФичиИзКаталога</CommandName>
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Загрузить файлы из каталога</v8:content>
-									</v8:item>
-									<v8:item>
-										<v8:lang>en</v8:lang>
-										<v8:content>Load features files from directory</v8:content>
-									</v8:item>
-								</Title>
-								<ExtendedTooltip name="ФормаЗагрузитьФичиИзКаталогаРасширеннаяПодсказка" id="1254"/>
-							</Button>
-							<Button name="ФормаЗагрузитьОднуФичу" id="65">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ЗагрузитьОднуФичу</CommandName>
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Загрузить один файл</v8:content>
-									</v8:item>
-									<v8:item>
-										<v8:lang>en</v8:lang>
-										<v8:content>Load one feature file</v8:content>
-									</v8:item>
-								</Title>
-								<ExtendedTooltip name="ФормаЗагрузитьОднуФичуРасширеннаяПодсказка" id="1255"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
-					<ButtonGroup name="ГруппаКнопокНедавноЗагруженныеФичи" id="1251">
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Группа кнопок недавно загруженные фичи</v8:content>
-							</v8:item>
-						</ToolTip>
-						<ExtendedTooltip name="ГруппаКнопокНедавноЗагруженныеФичиРасширеннаяПодсказка" id="1256"/>
-					</ButtonGroup>
-				</ChildItems>
-			</Popup>
-			<Button name="Перезагрузить" id="60">
-				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
-				<CommandName>Form.Command.Перезагрузить</CommandName>
-				<Picture>
-					<xr:Abs>Picture.png</xr:Abs>
-					<xr:LoadTransparent>false</xr:LoadTransparent>
-				</Picture>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Перезагрузить сценарии</v8:content>
-					</v8:item>
-					<v8:item>
-						<v8:lang>en</v8:lang>
-						<v8:content>Reload scenario</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="ПерезагрузитьРасширеннаяПодсказка" id="1257"/>
-			</Button>
-			<Button name="кнВыполнитьСценарии" id="61">
-				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
-				<CommandName>Form.Command.ВыполнитьСценарии</CommandName>
-				<Picture>
-					<xr:Abs>Picture.png</xr:Abs>
-					<xr:LoadTransparent>false</xr:LoadTransparent>
-				</Picture>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Выполнить сценарии</v8:content>
-					</v8:item>
-					<v8:item>
-						<v8:lang>en</v8:lang>
-						<v8:content>Run scenario</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="кнВыполнитьСценарииРасширеннаяПодсказка" id="1258"/>
-			</Button>
-			<Button name="ФормаПерезагрузитьИВыполнить" id="151">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ПерезагрузитьИВыполнить</CommandName>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Перезагрузить и выполнить</v8:content>
-					</v8:item>
-					<v8:item>
-						<v8:lang>en</v8:lang>
-						<v8:content>Reload and run</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="ФормаПерезагрузитьИВыполнитьРасширеннаяПодсказка" id="1259"/>
-			</Button>
-			<Button name="ФормаСправка" id="1552">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.Help</CommandName>
-				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="1553"/>
-			</Button>
-		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
@@ -202,6 +65,146 @@
 							</ToolTip>
 							<ExtendedTooltip name="ГруппаЗапускТестовРасширеннаяПодсказка" id="1262"/>
 							<ChildItems>
+								<CommandBar name="Группа2" id="1564">
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="1565"/>
+									<ChildItems>
+										<Popup name="ПодменюЗагрузитьФичи" id="63">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загрузить фичи</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Load features</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подменю загрузить фичи</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ПодменюЗагрузитьФичиРасширеннаяПодсказка" id="1252"/>
+											<ChildItems>
+												<ButtonGroup name="ГруппаКнопокЗагрузитьФичи" id="1249">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопок загрузить фичи</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаКнопокЗагрузитьФичиРасширеннаяПодсказка" id="1253"/>
+													<ChildItems>
+														<Button name="ФормаЗагрузитьФичиИзКаталога" id="64">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ЗагрузитьФичиИзКаталога</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Загрузить файлы из каталога</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Load features files from directory</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ФормаЗагрузитьФичиИзКаталогаРасширеннаяПодсказка" id="1254"/>
+														</Button>
+														<Button name="ФормаЗагрузитьОднуФичу" id="65">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ЗагрузитьОднуФичу</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Загрузить один файл</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Load one feature file</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ФормаЗагрузитьОднуФичуРасширеннаяПодсказка" id="1255"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+												<ButtonGroup name="ГруппаКнопокНедавноЗагруженныеФичи" id="1251">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопок недавно загруженные фичи</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаКнопокНедавноЗагруженныеФичиРасширеннаяПодсказка" id="1256"/>
+												</ButtonGroup>
+											</ChildItems>
+										</Popup>
+										<Button name="Перезагрузить" id="60">
+											<Type>CommandBarButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.Перезагрузить</CommandName>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перезагрузить сценарии</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Reload scenario</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПерезагрузитьРасширеннаяПодсказка" id="1257"/>
+										</Button>
+										<Button name="кнВыполнитьСценарии" id="61">
+											<Type>CommandBarButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.ВыполнитьСценарии</CommandName>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить сценарии</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Run scenario</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="кнВыполнитьСценарииРасширеннаяПодсказка" id="1258"/>
+										</Button>
+										<Button name="ФормаПерезагрузитьИВыполнить" id="151">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПерезагрузитьИВыполнить</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перезагрузить и выполнить</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Reload and run</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ФормаПерезагрузитьИВыполнитьРасширеннаяПодсказка" id="1259"/>
+										</Button>
+										<Button name="ФормаСправка" id="1552">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.StandardCommand.Help</CommandName>
+											<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="1553"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
 								<Table name="ДеревоТестов" id="66">
 									<Representation>Tree</Representation>
 									<AutoInsertNewRow>true</AutoInsertNewRow>
