@@ -725,7 +725,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Выводить текст получаемого модуля, вместо перегенрации EPF</v8:content>
+											<v8:content>Выводить текст получаемого модуля, вместо перегенерации EPF</v8:content>
 										</v8:item>
 										<v8:item>
 											<v8:lang>en</v8:lang>
@@ -1393,17 +1393,17 @@
 							</ToolTip>
 							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="1358"/>
 							<ChildItems>
-								<Button name="КомандаСохранитьНастроийки" id="720">
+								<Button name="КомандаСохранитьНастройки" id="720">
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
-									<CommandName>Form.Command.КомандаСохранитьНастроийки</CommandName>
+									<CommandName>Form.Command.КомандаСохранитьНастройки</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Сохранить</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="КомандаСохранитьНастроийкиРасширеннаяПодсказка" id="1359"/>
+									<ExtendedTooltip name="КомандаСохранитьНастройкиРасширеннаяПодсказка" id="1359"/>
 								</Button>
 								<Pages name="СтраницыСервис" id="650">
 									<Title>
@@ -4442,24 +4442,24 @@
 			</ToolTip>
 			<Action>ПроверитьЧтоЗаписьВидеоБудетРаботать</Action>
 		</Command>
-		<Command name="КомандаСохранитьНастроийки" id="22">
+		<Command name="КомандаСохранитьНастройки" id="22">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда сохранить настроийки</v8:content>
+					<v8:content>Команда сохранить настройки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда сохранить настроийки</v8:content>
+					<v8:content>Команда сохранить настройки</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.Write</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>КомандаСохранитьНастроийки</Action>
+			<Action>КомандаСохранитьНастройки</Action>
 		</Command>
 		<Command name="ЗагрузитьНастройкиПоУмолчанию" id="23">
 			<Title>
