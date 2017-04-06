@@ -2925,7 +2925,6 @@
 							</ChildItems>
 						</Page>
 						<Page name="ИзвестныеШагиДерево" id="928">
-							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
