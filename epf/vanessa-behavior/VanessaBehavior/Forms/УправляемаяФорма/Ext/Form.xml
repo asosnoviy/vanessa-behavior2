@@ -900,6 +900,10 @@
 										<Button name="ОткрытьПодключитьTestClient" id="298">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.ОткрытьПодключитьTestClient</CommandName>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -915,6 +919,10 @@
 										<Button name="НачатьЗаписьДействийПользователя" id="294">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.НачатьЗаписьДействийПользователя</CommandName>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -930,6 +938,10 @@
 										<Button name="ЗавершитьЗаписьДействийПользователя" id="296">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.ЗавершитьЗаписьДействийПользователя</CommandName>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -942,123 +954,123 @@
 											</Title>
 											<ExtendedTooltip name="ЗавершитьЗаписьДействийПользователяРасширеннаяПодсказка" id="1312"/>
 										</Button>
-									</ChildItems>
-								</CommandBar>
-								<CommandBar name="ГруппаКоманднаяПанель" id="347">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа командная панель</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа командная панель</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="1313"/>
-									<ChildItems>
-										<Popup name="ГруппаПодменюСостояниеTestClient" id="351">
+										<Popup name="ГруппаКоманднаяПанель" id="347">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Состояние формы</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Form state</v8:content>
+													<v8:content>Форма</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа подменю состояние test client</v8:content>
+													<v8:content>Группа командная панель</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="ГруппаПодменюСостояниеTestClientРасширеннаяПодсказка" id="1314"/>
+											<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="1313"/>
 											<ChildItems>
-												<Button name="ЗапомнитьСостояниеФормыTestClient" id="349">
-													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ЗапомнитьСостояниеФормыTestClient</CommandName>
+												<Popup name="ГруппаПодменюСостояниеTestClient" id="351">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Запомнить состояние формы TestClient</v8:content>
+															<v8:content>Состояние формы</v8:content>
 														</v8:item>
 														<v8:item>
 															<v8:lang>en</v8:lang>
-															<v8:content>Save form state from test client</v8:content>
+															<v8:content>Form state</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ЗапомнитьСостояниеФормыTestClientРасширеннаяПодсказка" id="1315"/>
-												</Button>
-												<Button name="ЗабытьСостояниеФормыTestClient" id="353">
-													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ЗабытьСостояниеФормыTestClient</CommandName>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа подменю состояние test client</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаПодменюСостояниеTestClientРасширеннаяПодсказка" id="1314"/>
+													<ChildItems>
+														<Button name="ЗапомнитьСостояниеФормыTestClient" id="349">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ЗапомнитьСостояниеФормыTestClient</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Запомнить состояние формы TestClient</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Save form state from test client</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ЗапомнитьСостояниеФормыTestClientРасширеннаяПодсказка" id="1315"/>
+														</Button>
+														<Button name="ЗабытьСостояниеФормыTestClient" id="353">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ЗабытьСостояниеФормыTestClient</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Забыть состояние формы TestClient</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Purge form state for test client</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ЗабытьСостояниеФормыTestClientРасширеннаяПодсказка" id="1316"/>
+														</Button>
+													</ChildItems>
+												</Popup>
+												<Popup name="ГруппаПолучитьИзмененияФормы" id="355">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Забыть состояние формы TestClient</v8:content>
+															<v8:content>Получить изменения формы</v8:content>
 														</v8:item>
 														<v8:item>
 															<v8:lang>en</v8:lang>
-															<v8:content>Purge form state for test client</v8:content>
+															<v8:content>Form changes</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ЗабытьСостояниеФормыTestClientРасширеннаяПодсказка" id="1316"/>
-												</Button>
-											</ChildItems>
-										</Popup>
-										<Popup name="ГруппаПолучитьИзмененияФормы" id="355">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Получить изменения формы</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Form changes</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа получить изменения формы</v8:content>
-												</v8:item>
-											</ToolTip>
-											<ExtendedTooltip name="ГруппаПолучитьИзмененияФормыРасширеннаяПодсказка" id="1317"/>
-											<ChildItems>
-												<Button name="ПолучитьИзмененияФормыGherkin" id="357">
-													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ПолучитьИзмененияФормыGherkin</CommandName>
-													<Title>
+													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Gherkin</v8:content>
+															<v8:content>Группа получить изменения формы</v8:content>
 														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>On Gherkin</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="ПолучитьИзмененияФормыGherkinРасширеннаяПодсказка" id="1318"/>
-												</Button>
-												<Button name="ПолучитьИзмененияФормыJSON" id="359">
-													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ПолучитьИзмененияФормыJSON</CommandName>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>JSON</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>On JSON</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="ПолучитьИзмененияФормыJSONРасширеннаяПодсказка" id="1319"/>
-												</Button>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаПолучитьИзмененияФормыРасширеннаяПодсказка" id="1317"/>
+													<ChildItems>
+														<Button name="ПолучитьИзмененияФормыGherkin" id="357">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ПолучитьИзмененияФормыGherkin</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Gherkin</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>On Gherkin</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ПолучитьИзмененияФормыGherkinРасширеннаяПодсказка" id="1318"/>
+														</Button>
+														<Button name="ПолучитьИзмененияФормыJSON" id="359">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ПолучитьИзмененияФормыJSON</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>JSON</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>On JSON</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ПолучитьИзмененияФормыJSONРасширеннаяПодсказка" id="1319"/>
+														</Button>
+													</ChildItems>
+												</Popup>
 											</ChildItems>
 										</Popup>
 									</ChildItems>
@@ -4271,13 +4283,13 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть подключить test client</v8:content>
+					<v8:content>Подключить TestClient</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть подключить test client</v8:content>
+					<v8:content>Подключить TestClient</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьПодключитьTestClient</Action>
