@@ -899,9 +899,11 @@
 									<ChildItems>
 										<Button name="ОткрытьПодключитьTestClient" id="298">
 											<Type>CommandBarButton</Type>
+											<MaxWidth>2</MaxWidth>
+											<MaxHeight>2</MaxHeight>
 											<CommandName>Form.Command.ОткрытьПодключитьTestClient</CommandName>
 											<Picture>
-												<xr:Abs>Picture.png</xr:Abs>
+												<xr:Abs>Picture.ico</xr:Abs>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<Title>
@@ -920,7 +922,7 @@
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.НачатьЗаписьДействийПользователя</CommandName>
 											<Picture>
-												<xr:Abs>Picture.png</xr:Abs>
+												<xr:Abs>Picture.ico</xr:Abs>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<Title>
@@ -939,7 +941,7 @@
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.ЗавершитьЗаписьДействийПользователя</CommandName>
 											<Picture>
-												<xr:Abs>Picture.png</xr:Abs>
+												<xr:Abs>Picture.ico</xr:Abs>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<Title>
