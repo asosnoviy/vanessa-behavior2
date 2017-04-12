@@ -918,7 +918,7 @@
 											</Title>
 											<ExtendedTooltip name="ОткрытьПодключитьTestClientРасширеннаяПодсказка" id="1310"/>
 										</Button>
-										<Button name="НачатьЗаписьДействийПользователя" id="294">
+										<Button name="кнНачатьЗаписьДействийПользователя" id="294">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.НачатьЗаписьДействийПользователя</CommandName>
 											<Picture>
@@ -935,9 +935,29 @@
 													<v8:content>Record user behavior</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="НачатьЗаписьДействийПользователяРасширеннаяПодсказка" id="1311"/>
+											<ExtendedTooltip name="кнНачатьЗаписьДействийПользователяРасширеннаяПодсказка" id="1311"/>
 										</Button>
-										<Button name="ЗавершитьЗаписьДействийПользователя" id="296">
+										<Button name="кнПродолжитьЗаписьДействийПользователя" id="1579">
+											<Type>CommandBarButton</Type>
+											<Visible>false</Visible>
+											<CommandName>Form.Command.ПродолжитьЗаписьДействийПользователя</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="кнПродолжитьЗаписьДействийПользователяРасширеннаяПодсказка" id="1580"/>
+										</Button>
+										<Button name="кнПриостановитьЗаписьДействийПользователя" id="1577">
+											<Type>CommandBarButton</Type>
+											<Visible>false</Visible>
+											<CommandName>Form.Command.ПриостановитьЗаписьДействийПользователя</CommandName>
+											<Picture>
+												<xr:Abs>Picture.ico</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="кнПриостановитьЗаписьДействийПользователяРасширеннаяПодсказка" id="1578"/>
+										</Button>
+										<Button name="кнЗавершитьЗаписьДействийПользователя" id="296">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.ЗавершитьЗаписьДействийПользователя</CommandName>
 											<Picture>
@@ -954,7 +974,7 @@
 													<v8:content>Stop record of user behavior</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="ЗавершитьЗаписьДействийПользователяРасширеннаяПодсказка" id="1312"/>
+											<ExtendedTooltip name="кнЗавершитьЗаписьДействийПользователяРасширеннаяПодсказка" id="1312"/>
 										</Button>
 										<Popup name="ГруппаКоманднаяПанель" id="347">
 											<Title>
@@ -1266,7 +1286,35 @@
 									<ViewStatusLocation>None</ViewStatusLocation>
 									<SearchControlLocation>None</SearchControlLocation>
 									<RowFilter xsi:nil="true"/>
-									<ContextMenu name="ДанныеКлиентовТестированияКонтекстноеМеню" id="960"/>
+									<ContextMenu name="ДанныеКлиентовТестированияКонтекстноеМеню" id="960">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ДанныеКлиентовТестированияКонтекстноеМенюПодключитьВыбранногоКлиентаТестирования" id="1569">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодключитьВыбранногоКлиентаТестирования</CommandName>
+												<Picture>
+													<xr:Abs>Picture.ico</xr:Abs>
+													<xr:LoadTransparent>false</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ДанныеКлиентовТестированияКонтекстноеМенюПодключитьВыбранногоКлиентаТестированияРасширеннаяПодсказка" id="1570"/>
+											</Button>
+											<Button name="ДанныеКлиентовТестированияКонтекстноеМенюНачатьЗаписьДействийПользлователяВВыбранномКлиентеТестирования" id="1571">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.НачатьЗаписьДействийПользлователяВВыбранномКлиентеТестирования</CommandName>
+												<Picture>
+													<xr:Abs>Picture.ico</xr:Abs>
+													<xr:LoadTransparent>false</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Начать запись поведения</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ДанныеКлиентовТестированияКонтекстноеМенюНачатьЗаписьДействийПользлователяВВыбранномКлиентеТестированияРасширеннаяПодсказка" id="1572"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
 									<AutoCommandBar name="ДанныеКлиентовТестированияКоманднаяПанель" id="961">
 										<Autofill>false</Autofill>
 										<ChildItems>
@@ -1286,16 +1334,34 @@
 													<Button name="ДанныеКлиентовТестированияПодключитьВыбранногоКлиентаТестирования" id="993">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ПодключитьВыбранногоКлиентаТестирования</CommandName>
+														<Picture>
+															<xr:Abs>Picture.ico</xr:Abs>
+															<xr:LoadTransparent>false</xr:LoadTransparent>
+														</Picture>
 														<ExtendedTooltip name="ДанныеКлиентовТестированияПодключитьВыбранногоКлиентаТестированияРасширеннаяПодсказка" id="1337"/>
 													</Button>
 													<Button name="ДанныеКлиентовТестированияНачатьЗаписьДействийПользлователяВВыбранномКлиентеТестирования" id="995">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.НачатьЗаписьДействийПользлователяВВыбранномКлиентеТестирования</CommandName>
+														<Picture>
+															<xr:Abs>Picture.ico</xr:Abs>
+															<xr:LoadTransparent>false</xr:LoadTransparent>
+														</Picture>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Начать запись поведения</v8:content>
+															</v8:item>
+														</Title>
 														<ExtendedTooltip name="ДанныеКлиентовТестированияНачатьЗаписьДействийПользлователяВВыбранномКлиентеТестированияРасширеннаяПодсказка" id="1338"/>
 													</Button>
 													<Button name="ДанныеКлиентовТестированияОтключитьВыбранногоКлиентаТестирования" id="997">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ОтключитьВыбранногоКлиентаТестирования</CommandName>
+														<Picture>
+															<xr:Abs>Picture.png</xr:Abs>
+															<xr:LoadTransparent>false</xr:LoadTransparent>
+														</Picture>
 														<ExtendedTooltip name="ДанныеКлиентовТестированияОтключитьВыбранногоКлиентаТестированияРасширеннаяПодсказка" id="1339"/>
 													</Button>
 												</ChildItems>
@@ -1352,12 +1418,6 @@
 													<Group>Horizontal</Group>
 													<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа3РасширеннаяПодсказка" id="1353"/>
 												</ColumnGroup>
-												<InputField name="ДанныеКлиентовТестированияПутьКПлатформе" id="972">
-													<DataPath>ДанныеКлиентовТестирования.ПутьКПлатформе</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ДанныеКлиентовТестированияПутьКПлатформеКонтекстноеМеню" id="973"/>
-													<ExtendedTooltip name="ДанныеКлиентовТестированияПутьКПлатформеРасширеннаяПодсказка" id="1354"/>
-												</InputField>
 												<InputField name="ДанныеКлиентовТестированияПутьКИнфобазе" id="981">
 													<DataPath>ДанныеКлиентовТестирования.ПутьКИнфобазе</DataPath>
 													<EditMode>EnterOnInput</EditMode>
@@ -1375,6 +1435,42 @@
 													</FooterText>
 													<ContextMenu name="ДанныеКлиентовТестированияДопПараметрыКонтекстноеМеню" id="1012"/>
 													<ExtendedTooltip name="ДанныеКлиентовТестированияДопПараметрыРасширеннаяПодсказка" id="1356"/>
+												</InputField>
+												<InputField name="ДанныеКлиентовТестированияТипКлиента" id="1566">
+													<DataPath>ДанныеКлиентовТестирования.ТипКлиента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>true</DropListButton>
+													<ClearButton>true</ClearButton>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Тонкий</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">Тонкий</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Толстый</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">Толстый</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ДанныеКлиентовТестированияТипКлиентаКонтекстноеМеню" id="1567"/>
+													<ExtendedTooltip name="ДанныеКлиентовТестированияТипКлиентаРасширеннаяПодсказка" id="1568"/>
 												</InputField>
 											</ChildItems>
 										</ColumnGroup>
@@ -3574,21 +3670,6 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="ПутьКПлатформе" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Путь к платформе</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
 				<Column name="Имя" id="2">
 					<Title>
 						<v8:item>
@@ -3651,6 +3732,21 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Доп.параметры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипКлиента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип клиента</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -4711,6 +4807,36 @@
 			</ToolTip>
 			<Shortcut>Alt+F6</Shortcut>
 			<Action>ПерезагрузитьИВыполнитьДанныйСценарийФорма</Action>
+		</Command>
+		<Command name="ПриостановитьЗаписьДействийПользователя" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приостановить запись действий пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приостановить запись действий пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПриостановитьЗаписьДействийПользователя</Action>
+		</Command>
+		<Command name="ПродолжитьЗаписьДействийПользователя" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить запись действий пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить запись действий пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьЗаписьДействийПользователя</Action>
 		</Command>
 	</Commands>
 </Form>
