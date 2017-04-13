@@ -2030,6 +2030,19 @@
 																<Event name="OnChange">ДелатьСкриншотПриВозникновенииОшибкиПриИзменении</Event>
 															</Events>
 														</CheckBoxField>
+														<CheckBoxField name="СниматьСкриншотКаждогоОкна1С" id="1581">
+															<DataPath>Объект.СниматьСкриншотКаждогоОкна1С</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Снимать скриншот каждого окна 1С</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="СниматьСкриншотКаждогоОкна1СКонтекстноеМеню" id="1582"/>
+															<ExtendedTooltip name="СниматьСкриншотКаждогоОкна1СРасширеннаяПодсказка" id="1583"/>
+														</CheckBoxField>
 														<InputField name="КаталогOutputСкриншоты" id="510">
 															<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
 															<Title>
