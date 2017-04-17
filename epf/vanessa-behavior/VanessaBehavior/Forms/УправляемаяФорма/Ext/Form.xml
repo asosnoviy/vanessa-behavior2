@@ -199,6 +199,96 @@
 											</Title>
 											<ExtendedTooltip name="ФормаПерезагрузитьИВыполнитьРасширеннаяПодсказка" id="1259"/>
 										</Button>
+										<Popup name="Группа5" id="1586">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Показать/скрыть колонки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Ref>StdPicture.NestedTable</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="1587"/>
+											<ChildItems>
+												<Button name="ПоказатьСкрытьВсеКолонки" id="1594">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПоказатьСкрытьВсеКолонки</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Все колонки</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПоказатьСкрытьВсеКолонкиРасширеннаяПодсказка" id="1595"/>
+												</Button>
+												<Button name="ПоказатьСкрытьПутьКФайлу" id="1584">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПоказатьСкрытьПутьКФайлу</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.CheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Адрес в файле</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПоказатьСкрытьПутьКФайлуРасширеннаяПодсказка" id="1585"/>
+												</Button>
+												<Button name="ПоказатьСкрытьСнипет" id="1588">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПоказатьСкрытьСнипет</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.CheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя снипета</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПоказатьСкрытьСнипетРасширеннаяПодсказка" id="1589"/>
+												</Button>
+												<Button name="ПоказатьСкрытьАдресСнипета" id="1590">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПоказатьСкрытьАдресСнипета</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.CheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Обработка вызова</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПоказатьСкрытьАдресСнипетаРасширеннаяПодсказка" id="1591"/>
+												</Button>
+												<Button name="ПоказатьСкрытьСтрокаРеальнойПроцедуры" id="1592">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПоказатьСкрытьСтрокаРеальнойПроцедуры</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.CheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Строка реальной процедуры</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПоказатьСкрытьСтрокаРеальнойПроцедурыРасширеннаяПодсказка" id="1593"/>
+												</Button>
+											</ChildItems>
+										</Popup>
 										<Button name="ФормаСправка" id="1552">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.StandardCommand.Help</CommandName>
@@ -555,7 +645,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Путь к файлу</v8:content>
+													<v8:content>Адрес в файле</v8:content>
 												</v8:item>
 												<v8:item>
 													<v8:lang>en</v8:lang>
@@ -4023,6 +4113,43 @@
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоТестовИмя</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоТестовПолныйПуть</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоТестовСнипет</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоТестовАдресСнипета</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоТестовСтрокаРеальнойПроцедуры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.АдресСнипета</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string"/>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Снипет</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string"/>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFCC00</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
@@ -4860,6 +4987,81 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПродолжитьЗаписьДействийПользователя</Action>
+		</Command>
+		<Command name="ПоказатьСкрытьПутьКФайлу" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть путь к файлу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть путь к файлу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСкрытьПутьКФайлу</Action>
+		</Command>
+		<Command name="ПоказатьСкрытьСнипет" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть снипет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть снипет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСкрытьСнипет</Action>
+		</Command>
+		<Command name="ПоказатьСкрытьАдресСнипета" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть адрес снипета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть адрес снипета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСкрытьАдресСнипета</Action>
+		</Command>
+		<Command name="ПоказатьСкрытьСтрокаРеальнойПроцедуры" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть строка реальной процедуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть строка реальной процедуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСкрытьСтрокаРеальнойПроцедуры</Action>
+		</Command>
+		<Command name="ПоказатьСкрытьВсеКолонки" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать/Скрыть все колонки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть все колонки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСкрытьВсеКолонки</Action>
 		</Command>
 	</Commands>
 </Form>
