@@ -199,6 +199,11 @@
 											</Title>
 											<ExtendedTooltip name="ФормаПерезагрузитьИВыполнитьРасширеннаяПодсказка" id="1259"/>
 										</Button>
+										<Button name="ФормаСправка" id="1552">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.StandardCommand.Help</CommandName>
+											<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="1553"/>
+										</Button>
 										<Popup name="Группа5" id="1586">
 											<ToolTip>
 												<v8:item>
@@ -216,7 +221,7 @@
 													<Type>CommandBarButton</Type>
 													<CommandName>Form.Command.ПоказатьСкрытьВсеКолонки</CommandName>
 													<Picture>
-														<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+														<xr:Ref>StdPicture.CheckAll</xr:Ref>
 														<xr:LoadTransparent>true</xr:LoadTransparent>
 													</Picture>
 													<Title>
@@ -289,11 +294,6 @@
 												</Button>
 											</ChildItems>
 										</Popup>
-										<Button name="ФормаСправка" id="1552">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.StandardCommand.Help</CommandName>
-											<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="1553"/>
-										</Button>
 									</ChildItems>
 								</CommandBar>
 								<Table name="ДеревоТестов" id="66">
