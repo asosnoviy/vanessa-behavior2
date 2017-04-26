@@ -1262,7 +1262,21 @@
 														<TextDocumentField name="СгенерированныйСценарий" id="314">
 															<DataPath>Объект.СгенерированныйСценарий</DataPath>
 															<TitleLocation>None</TitleLocation>
-															<ContextMenu name="СгенерированныйСценарийКонтекстноеМеню" id="315"/>
+															<ContextMenu name="СгенерированныйСценарийКонтекстноеМеню" id="315">
+																<ChildItems>
+																	<Button name="СгенерированныйСценарийКонтекстноеМенюРедактироватьТаблицуТекст" id="1603">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.РедактироватьТаблицуТекст</CommandName>
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Редактировать таблицу</v8:content>
+																			</v8:item>
+																		</Title>
+																		<ExtendedTooltip name="СгенерированныйСценарийКонтекстноеМенюРедактироватьТаблицуТекстРасширеннаяПодсказка" id="1604"/>
+																	</Button>
+																</ChildItems>
+															</ContextMenu>
 															<ExtendedTooltip name="СгенерированныйСценарийРасширеннаяПодсказка" id="1325"/>
 														</TextDocumentField>
 													</ChildItems>
@@ -1461,6 +1475,12 @@
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
+											<Button name="ДанныеКлиентовТестированияКлиентТестированияТекущейИнфобазы" id="999">
+												<Type>CommandBarButton</Type>
+												<OnlyInAllActions>false</OnlyInAllActions>
+												<CommandName>Form.Command.КлиентТестированияТекущейИнфобазы</CommandName>
+												<ExtendedTooltip name="ДанныеКлиентовТестированияКлиентТестированияТекущейИнфобазыРасширеннаяПодсказка" id="1340"/>
+											</Button>
 										</ChildItems>
 									</AutoCommandBar>
 									<ExtendedTooltip name="ДанныеКлиентовТестированияРасширеннаяПодсказка" id="1341"/>
@@ -5068,6 +5088,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьСкрытьВсеКолонки</Action>
+		</Command>
+		<Command name="КлиентТестированияТекущейИнфобазы" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент тестирования текущей инфобазы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент тестирования текущей инфобазы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КлиентТестированияТекущейИнфобазы</Action>
+		</Command>
+		<Command name="РедактироватьТаблицуТекст" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать таблицу текст</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать таблицу текст</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РедактироватьТаблицуТекст</Action>
 		</Command>
 	</Commands>
 </Form>

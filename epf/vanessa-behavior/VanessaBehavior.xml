@@ -3341,6 +3341,7 @@
 			<Form>УправляемаяФорма</Form>
 			<Form>ВыборИзвестногоШага</Form>
 			<Form>ЗаписьJSON</Form>
+			<Form>РедактированиеТаблицы</Form>
 			<Template>ОтчетТестирования</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
