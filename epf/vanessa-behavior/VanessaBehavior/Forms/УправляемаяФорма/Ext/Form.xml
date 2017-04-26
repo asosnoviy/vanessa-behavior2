@@ -1461,12 +1461,6 @@
 													</Button>
 												</ChildItems>
 											</ButtonGroup>
-											<Button name="ДанныеКлиентовТестированияКлиентТестированияТекущейИнфобазы" id="999">
-												<Type>CommandBarButton</Type>
-												<OnlyInAllActions>false</OnlyInAllActions>
-												<CommandName>Form.Command.КлиентТестированияТекущейИнфобазы</CommandName>
-												<ExtendedTooltip name="ДанныеКлиентовТестированияКлиентТестированияТекущейИнфобазыРасширеннаяПодсказка" id="1340"/>
-											</Button>
 										</ChildItems>
 									</AutoCommandBar>
 									<ExtendedTooltip name="ДанныеКлиентовТестированияРасширеннаяПодсказка" id="1341"/>
@@ -4613,21 +4607,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтключитьВыбранногоКлиентаТестирования</Action>
-		</Command>
-		<Command name="КлиентТестированияТекущейИнфобазы" id="28">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Клиент тестирования текущей инфобазы</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Клиент тестирования текущей инфобазы</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>КлиентТестированияТекущейИнфобазы</Action>
 		</Command>
 		<Command name="СвернутьДеревоИзвестныхФич" id="29">
 			<Title>
