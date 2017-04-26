@@ -3148,24 +3148,52 @@
 						</Page>
 					</ChildItems>
 				</Pages>
-				<LabelField name="КаталогФич" id="81">
-					<DataPath>Объект.КаталогФич</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Текущий каталог файлов функциональности</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Current features files directory</v8:content>
-						</v8:item>
-					</Title>
-					<Width>50</Width>
-					<Hiperlink>true</Hiperlink>
-					<ContextMenu name="КаталогФичКонтекстноеМеню" id="82"/>
-					<ExtendedTooltip name="КаталогФичРасширеннаяПодсказка" id="1460"/>
-				</LabelField>
+				<UsualGroup name="Группа7" id="1596">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1597"/>
+					<ChildItems>
+						<LabelField name="КаталогФич" id="81">
+							<DataPath>Объект.КаталогФич</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущий каталог файлов функциональности</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Current features files directory</v8:content>
+								</v8:item>
+							</Title>
+							<Width>50</Width>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="КаталогФичКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="КаталогФичРасширеннаяПодсказка" id="1460"/>
+						</LabelField>
+						<UsualGroup name="Группа8" id="1601">
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="1602"/>
+							<ChildItems>
+								<LabelDecoration name="Статистика" id="1598">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статистика</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<ContextMenu name="СтатистикаКонтекстноеМеню" id="1599"/>
+									<ExtendedTooltip name="СтатистикаРасширеннаяПодсказка" id="1600"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
