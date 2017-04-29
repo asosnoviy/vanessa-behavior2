@@ -63,7 +63,6 @@
 									<v8:content>Группа запуск тестов</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаЗапускТестовРасширеннаяПодсказка" id="1262"/>
 							<ChildItems>
 								<CommandBar name="Группа2" id="1564">
@@ -743,7 +742,6 @@
 									<v8:content>Группа генерация</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаГенерацияEPFРасширеннаяПодсказка" id="1289"/>
 							<ChildItems>
 								<Button name="кнСоздатьШаблоныОбработок" id="47">
@@ -871,7 +869,6 @@
 									<v8:content>Группа каталоги библиотек</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаКаталогиБиблиотекРасширеннаяПодсказка" id="1295"/>
 							<ChildItems>
 								<UsualGroup name="БиблиотекиПовторногоКода" id="306">
@@ -973,7 +970,6 @@
 									<v8:content>Группа дополнительно</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="1308"/>
 							<ChildItems>
 								<CommandBar name="РаботасUI" id="333">
@@ -993,8 +989,6 @@
 									<ChildItems>
 										<Button name="ОткрытьПодключитьTestClient" id="298">
 											<Type>CommandBarButton</Type>
-											<MaxWidth>2</MaxWidth>
-											<MaxHeight>2</MaxHeight>
 											<CommandName>Form.Command.ОткрытьПодключитьTestClient</CommandName>
 											<Picture>
 												<xr:Abs>Picture.ico</xr:Abs>
@@ -1382,7 +1376,6 @@
 									<v8:content>Группа несколько клиентов тестирования</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаНесколькоКлиентовТестированияРасширеннаяПодсказка" id="1333"/>
 							<ChildItems>
 								<Table name="ДанныеКлиентовТестирования" id="959">
@@ -1610,7 +1603,6 @@
 									<v8:content>Группа настройки</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="1358"/>
 							<ChildItems>
 								<Button name="КомандаСохранитьНастройки" id="720">
@@ -1653,7 +1645,6 @@
 													<v8:content>Страницы сервис основные</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ScrollOnCompress>true</ScrollOnCompress>
 											<ExtendedTooltip name="СтраницыСервисОсновныеРасширеннаяПодсказка" id="1361"/>
 											<ChildItems>
 												<UsualGroup name="РаботаСТэгами" id="304">
@@ -2106,7 +2097,6 @@
 													<v8:content>Страницы отчеты о запуске</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ScrollOnCompress>true</ScrollOnCompress>
 											<ExtendedTooltip name="СтраницыОтчетыОЗапускеРасширеннаяПодсказка" id="1387"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаСкриншоты" id="1534">
@@ -2411,7 +2401,6 @@
 													<v8:content>Страницы авто инструкции</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ScrollOnCompress>true</ScrollOnCompress>
 											<ExtendedTooltip name="СтраницыАвтоИнструкцииРасширеннаяПодсказка" id="1400"/>
 											<ChildItems>
 												<UsualGroup name="СтраницыАвтоИнструкцииОсновные" id="503">
@@ -3003,7 +2992,6 @@
 									<v8:content>Группа служебная</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаСлужебнаяРасширеннаяПодсказка" id="1439"/>
 							<ChildItems>
 								<InputField name="КаталогФичСлужебный" id="489">
@@ -3164,6 +3152,7 @@
 				</Pages>
 				<UsualGroup name="Группа7" id="1596">
 					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1597"/>
@@ -3187,8 +3176,7 @@
 							<ExtendedTooltip name="КаталогФичРасширеннаяПодсказка" id="1460"/>
 						</LabelField>
 						<UsualGroup name="Группа8" id="1601">
-							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-							<HorizontalAlign>Right</HorizontalAlign>
+							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="1602"/>
@@ -3294,72 +3282,6 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
-					<Column name="Каталог" id="6">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Каталог</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
-					<Column name="Фича" id="7">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Фича</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
-					<Column name="Сценарий" id="8">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Сценарий</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
-					<Column name="ЭтоScenarioOutline" id="9">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Это scenario outline</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
-					<Column name="ЭтоКонтекст" id="10">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Это контекст</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
-					<Column name="Примеры" id="11">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Примеры</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
 					<Column name="ИменованныеПараметры" id="12">
 						<Title>
 							<v8:item>
@@ -3369,28 +3291,6 @@
 						</Title>
 						<Type>
 							<v8:Type>v8:ValueListType</v8:Type>
-						</Type>
-					</Column>
-					<Column name="Пример" id="13">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Пример</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
-					<Column name="Шаг" id="14">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Шаг</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
 					<Column name="ЗначенияПараметров" id="15">
@@ -3544,17 +3444,6 @@
 						</Title>
 						<Type/>
 					</Column>
-					<Column name="Область" id="28">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Область</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
-						</Type>
-					</Column>
 					<Column name="МассивТегов" id="29">
 						<Title>
 							<v8:item>
@@ -3599,6 +3488,36 @@
 								<v8:FractionDigits>0</v8:FractionDigits>
 								<v8:AllowedSign>Any</v8:AllowedSign>
 							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Тип" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДопТип" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Доп тип</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
 						</Type>
 					</Column>
 				</AdditionalColumns>
