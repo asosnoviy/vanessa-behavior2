@@ -63,7 +63,6 @@
 									<v8:content>Группа запуск тестов</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаЗапускТестовРасширеннаяПодсказка" id="1262"/>
 							<ChildItems>
 								<CommandBar name="Группа2" id="1564">
@@ -743,7 +742,6 @@
 									<v8:content>Группа генерация</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаГенерацияEPFРасширеннаяПодсказка" id="1289"/>
 							<ChildItems>
 								<Button name="кнСоздатьШаблоныОбработок" id="47">
@@ -871,7 +869,6 @@
 									<v8:content>Группа каталоги библиотек</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаКаталогиБиблиотекРасширеннаяПодсказка" id="1295"/>
 							<ChildItems>
 								<UsualGroup name="БиблиотекиПовторногоКода" id="306">
@@ -973,7 +970,6 @@
 									<v8:content>Группа дополнительно</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="1308"/>
 							<ChildItems>
 								<CommandBar name="РаботасUI" id="333">
@@ -1380,7 +1376,6 @@
 									<v8:content>Группа несколько клиентов тестирования</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаНесколькоКлиентовТестированияРасширеннаяПодсказка" id="1333"/>
 							<ChildItems>
 								<Table name="ДанныеКлиентовТестирования" id="959">
@@ -1608,7 +1603,6 @@
 									<v8:content>Группа настройки</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="1358"/>
 							<ChildItems>
 								<Button name="КомандаСохранитьНастройки" id="720">
@@ -2998,7 +2992,6 @@
 									<v8:content>Группа служебная</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ScrollOnCompress>true</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппаСлужебнаяРасширеннаяПодсказка" id="1439"/>
 							<ChildItems>
 								<InputField name="КаталогФичСлужебный" id="489">
@@ -3161,7 +3154,6 @@
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
-					<United>false</United>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1597"/>
 					<ChildItems>
@@ -3186,7 +3178,6 @@
 						<UsualGroup name="Группа8" id="1601">
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
-							<United>false</United>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="1602"/>
 							<ChildItems>
