@@ -3150,24 +3150,13 @@
 						</Page>
 					</ChildItems>
 				</Pages>
-				<UsualGroup name="ГруппаИнформация" id="1596">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа информация</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа информация</v8:content>
-						</v8:item>
-					</ToolTip>
+				<UsualGroup name="Группа7" id="1596">
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
+					<United>false</United>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="1597"/>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1597"/>
 					<ChildItems>
 						<LabelField name="КаталогФич" id="81">
 							<DataPath>Объект.КаталогФич</DataPath>
@@ -3187,23 +3176,11 @@
 							<ContextMenu name="КаталогФичКонтекстноеМеню" id="82"/>
 							<ExtendedTooltip name="КаталогФичРасширеннаяПодсказка" id="1460"/>
 						</LabelField>
-						<UsualGroup name="ГруппаСтатистика" id="1601">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа статистика</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа статистика</v8:content>
-								</v8:item>
-							</ToolTip>
+						<UsualGroup name="Группа8" id="1601">
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаСтатистикаРасширеннаяПодсказка" id="1602"/>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="1602"/>
 							<ChildItems>
 								<LabelDecoration name="Статистика" id="1598">
 									<Title formatted="true">
