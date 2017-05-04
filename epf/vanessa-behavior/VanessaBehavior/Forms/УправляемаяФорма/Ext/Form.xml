@@ -291,6 +291,21 @@
 													</Title>
 													<ExtendedTooltip name="ПоказатьСкрытьСтрокаРеальнойПроцедурыРасширеннаяПодсказка" id="1593"/>
 												</Button>
+												<Button name="ПоказатьСкрытьИДСтроки" id="1614">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПоказатьСкрытьИДСтроки</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.CheckAll</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>№ строки</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПоказатьСкрытьИДСтрокиРасширеннаяПодсказка" id="1615"/>
+												</Button>
 											</ChildItems>
 										</Popup>
 									</ChildItems>
@@ -720,6 +735,20 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДеревоТестовСтрокаРеальнойПроцедурыКонтекстноеМеню" id="80"/>
 											<ExtendedTooltip name="ДеревоТестовСтрокаРеальнойПроцедурыРасширеннаяПодсказка" id="1288"/>
+										</InputField>
+										<InputField name="ДеревоТестовИДСтроки" id="1611">
+											<DataPath>Объект.ДеревоТестов.ИДСтроки</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>№ строки</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>3</Width>
+											<ContextMenu name="ДеревоТестовИДСтрокиКонтекстноеМеню" id="1612"/>
+											<ExtendedTooltip name="ДеревоТестовИДСтрокиРасширеннаяПодсказка" id="1613"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -3901,19 +3930,6 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string">Pending</dcsset:right>
 						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemGroup">
-							<dcsset:groupType>OrGroup</dcsset:groupType>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Сценарий</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Пример</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-							</dcsset:item>
-						</dcsset:item>
 					</dcsset:item>
 				</dcsset:filter>
 				<dcsset:appearance>
@@ -3936,19 +3952,6 @@
 							<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Статус</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string">Failed</dcsset:right>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemGroup">
-							<dcsset:groupType>OrGroup</dcsset:groupType>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Сценарий</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Пример</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-							</dcsset:item>
 						</dcsset:item>
 					</dcsset:item>
 				</dcsset:filter>
@@ -3973,19 +3976,6 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:string">Success</dcsset:right>
 						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemGroup">
-							<dcsset:groupType>OrGroup</dcsset:groupType>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Сценарий</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Пример</dcsset:left>
-								<dcsset:comparisonType>Equal</dcsset:comparisonType>
-								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-							</dcsset:item>
-						</dcsset:item>
 					</dcsset:item>
 				</dcsset:filter>
 				<dcsset:appearance>
@@ -4006,11 +3996,6 @@
 						<dcsset:groupType>OrGroup</dcsset:groupType>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.СтрокаПараметровШагаВВидеТаблицы</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Пример</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 						</dcsset:item>
@@ -4066,29 +4051,6 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">#99CCFF</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ДеревоТестовИмя</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemGroup">
-						<dcsset:groupType>OrGroup</dcsset:groupType>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Объект.ДеревоТестов.Область</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-						</dcsset:item>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Times New Roman" height="12" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -5080,6 +5042,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>РедактироватьТаблицуТекст</Action>
+		</Command>
+		<Command name="ПоказатьСкрытьИДСтроки" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть ИД строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть ИДСтроки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСкрытьИДСтроки</Action>
 		</Command>
 	</Commands>
 </Form>
