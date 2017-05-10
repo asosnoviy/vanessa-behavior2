@@ -773,21 +773,39 @@
 							</ToolTip>
 							<ExtendedTooltip name="ГруппаГенерацияEPFРасширеннаяПодсказка" id="1289"/>
 							<ChildItems>
-								<Button name="кнСоздатьШаблоныОбработок" id="47">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.СоздатьШаблоныОбработок</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Создать и обновить шаблоны обработок</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>en</v8:lang>
-											<v8:content>Create and update step definitons</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="кнСоздатьШаблоныОбработокРасширеннаяПодсказка" id="1290"/>
-								</Button>
+								<UsualGroup name="Группа7" id="1620">
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1621"/>
+									<ChildItems>
+										<Button name="кнСоздатьШаблоныОбработок" id="47">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СоздатьШаблоныОбработок</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создать и обновить шаблоны обработок</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Create and update step definitons</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="кнСоздатьШаблоныОбработокРасширеннаяПодсказка" id="1290"/>
+										</Button>
+										<Button name="КомандаСохранитьНастройки1" id="1616">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.КомандаСохранитьНастройки</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранить настройки</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаСохранитьНастройки1РасширеннаяПодсказка" id="1617"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<CheckBoxField name="ГенерироватьУФ1" id="50">
 									<DataPath>Объект.ГенерироватьУФ</DataPath>
 									<Title>
@@ -928,7 +946,22 @@
 											<ViewStatusLocation>None</ViewStatusLocation>
 											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КаталогиБиблиотекКонтекстноеМеню" id="85"/>
-											<AutoCommandBar name="КаталогиБиблиотекКоманднаяПанель" id="86"/>
+											<AutoCommandBar name="КаталогиБиблиотекКоманднаяПанель" id="86">
+												<ChildItems>
+													<Button name="КомандаСохранитьНастройки2" id="1618">
+														<Type>CommandBarButton</Type>
+														<Representation>PictureAndText</Representation>
+														<CommandName>Form.Command.КомандаСохранитьНастройки</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Сохранить настройки</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="КомандаСохранитьНастройки2РасширеннаяПодсказка" id="1619"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
 											<ExtendedTooltip name="КаталогиБиблиотекРасширеннаяПодсказка" id="1297"/>
 											<SearchStringAddition name="КаталогиБиблиотекСтрокаПоиска" id="1298">
 												<AdditionSource>
@@ -1641,7 +1674,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Сохранить</v8:content>
+											<v8:content>Сохранить настройки</v8:content>
 										</v8:item>
 									</Title>
 									<ExtendedTooltip name="КомандаСохранитьНастройкиРасширеннаяПодсказка" id="1359"/>
