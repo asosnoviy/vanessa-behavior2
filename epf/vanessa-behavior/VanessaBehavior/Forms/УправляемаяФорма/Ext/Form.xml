@@ -1141,7 +1141,7 @@
 											</ToolTip>
 											<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="1313"/>
 											<ChildItems>
-												<Popup name="ГруппаПодменюСостояниеTestClient" id="351">
+												<ButtonGroup name="ГруппаПодменюСостояниеTestClient" id="351">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1191,8 +1191,10 @@
 															<ExtendedTooltip name="ЗабытьСостояниеФормыTestClientРасширеннаяПодсказка" id="1316"/>
 														</Button>
 													</ChildItems>
-												</Popup>
-												<Popup name="ГруппаПолучитьИзмененияФормы" id="355">
+												</ButtonGroup>
+												<Button name="ПолучитьИзмененияФормыGherkin" id="357">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПолучитьИзмененияФормыGherkin</CommandName>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1200,49 +1202,11 @@
 														</v8:item>
 														<v8:item>
 															<v8:lang>en</v8:lang>
-															<v8:content>Form changes</v8:content>
+															<v8:content>On Gherkin</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа получить изменения формы</v8:content>
-														</v8:item>
-													</ToolTip>
-													<ExtendedTooltip name="ГруппаПолучитьИзмененияФормыРасширеннаяПодсказка" id="1317"/>
-													<ChildItems>
-														<Button name="ПолучитьИзмененияФормыGherkin" id="357">
-															<Type>CommandBarButton</Type>
-															<CommandName>Form.Command.ПолучитьИзмененияФормыGherkin</CommandName>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Gherkin</v8:content>
-																</v8:item>
-																<v8:item>
-																	<v8:lang>en</v8:lang>
-																	<v8:content>On Gherkin</v8:content>
-																</v8:item>
-															</Title>
-															<ExtendedTooltip name="ПолучитьИзмененияФормыGherkinРасширеннаяПодсказка" id="1318"/>
-														</Button>
-														<Button name="ПолучитьИзмененияФормыJSON" id="359">
-															<Type>CommandBarButton</Type>
-															<CommandName>Form.Command.ПолучитьИзмененияФормыJSON</CommandName>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>JSON</v8:content>
-																</v8:item>
-																<v8:item>
-																	<v8:lang>en</v8:lang>
-																	<v8:content>On JSON</v8:content>
-																</v8:item>
-															</Title>
-															<ExtendedTooltip name="ПолучитьИзмененияФормыJSONРасширеннаяПодсказка" id="1319"/>
-														</Button>
-													</ChildItems>
-												</Popup>
+													<ExtendedTooltip name="ПолучитьИзмененияФормыGherkinРасширеннаяПодсказка" id="1318"/>
+												</Button>
 											</ChildItems>
 										</Popup>
 									</ChildItems>
@@ -1643,6 +1607,12 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ДанныеКлиентовТестированияПортКонтекстноеМеню" id="985"/>
 											<ExtendedTooltip name="ДанныеКлиентовТестированияПортРасширеннаяПодсказка" id="1357"/>
+										</InputField>
+										<InputField name="ДанныеКлиентовТестированияPID" id="1646">
+											<DataPath>ДанныеКлиентовТестирования.PID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДанныеКлиентовТестированияPIDКонтекстноеМеню" id="1647"/>
+											<ExtendedTooltip name="ДанныеКлиентовТестированияPIDРасширеннаяПодсказка" id="1648"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -3033,6 +3003,45 @@
 												</UsualGroup>
 											</ChildItems>
 										</Page>
+										<Page name="СтраницаPID" id="1658">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>PID</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница PID</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаPIDРасширеннаяПодсказка" id="1659"/>
+											<ChildItems>
+												<Button name="ВычислитьPIDЭтогоСеанса1" id="1662">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ВычислитьPIDЭтогоСеанса</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вычислить PID</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ВычислитьPIDЭтогоСеанса1РасширеннаяПодсказка" id="1663"/>
+												</Button>
+												<InputField name="PIDЭтогоСеанса" id="1664">
+													<DataPath>PIDЭтогоСеанса</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>PID этого сеанса</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="PIDЭтогоСеансаКонтекстноеМеню" id="1665"/>
+													<ExtendedTooltip name="PIDЭтогоСеансаРасширеннаяПодсказка" id="1666"/>
+												</InputField>
+											</ChildItems>
+										</Page>
 									</ChildItems>
 								</Pages>
 							</ChildItems>
@@ -3086,6 +3095,21 @@
 											</ToolTip>
 											<ExtendedTooltip name="СтраницаСлужебноеОсновноеРасширеннаяПодсказка" id="1638"/>
 											<ChildItems>
+												<Button name="ДляВызоваКонфигуратора" id="492">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ДляВызоваКонфигуратора</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вызов конфигуратора</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Invoke designer</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ДляВызоваКонфигуратораРасширеннаяПодсказка" id="1442"/>
+												</Button>
 												<InputField name="КаталогИнструментовСлужебный" id="494">
 													<DataPath>Объект.КаталогИнструментов</DataPath>
 													<Title>
@@ -3119,21 +3143,58 @@
 													<ContextMenu name="КаталогФичСлужебныйКонтекстноеМеню" id="490"/>
 													<ExtendedTooltip name="КаталогФичСлужебныйРасширеннаяПодсказка" id="1440"/>
 												</InputField>
-												<Button name="ДляВызоваКонфигуратора" id="492">
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаСлужебноеВыполнитьКод" id="1639">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить код</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа служебное выполнить код</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаСлужебноеВыполнитьКодРасширеннаяПодсказка" id="1640"/>
+											<ChildItems>
+												<Button name="ВыполнитьПроизвольныйКод" id="1644">
 													<Type>UsualButton</Type>
-													<CommandName>Form.Command.ДляВызоваКонфигуратора</CommandName>
+													<CommandName>Form.Command.ВыполнитьПроизвольныйКод</CommandName>
+													<ExtendedTooltip name="ВыполнитьПроизвольныйКодРасширеннаяПодсказка" id="1645"/>
+												</Button>
+												<InputField name="РеквизитПроизвольныйКод" id="1641">
+													<DataPath>РеквизитПроизвольныйКод</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Вызов конфигуратора</v8:content>
-														</v8:item>
-														<v8:item>
-															<v8:lang>en</v8:lang>
-															<v8:content>Invoke designer</v8:content>
+															<v8:content>Произвольный код</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ДляВызоваКонфигуратораРасширеннаяПодсказка" id="1442"/>
-												</Button>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MultiLine>true</MultiLine>
+													<ContextMenu name="РеквизитПроизвольныйКодКонтекстноеМеню" id="1642"/>
+													<ExtendedTooltip name="РеквизитПроизвольныйКодРасширеннаяПодсказка" id="1643"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="ТаблицаStepDefinition" id="1649">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Таблица step definition</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Таблица step definition</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ТаблицаStepDefinitionРасширеннаяПодсказка" id="1650"/>
+											<ChildItems>
 												<Table name="ТаблицаИзвестныхStepDefinition" id="1486">
 													<Representation>List</Representation>
 													<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -3238,36 +3299,6 @@
 														</CheckBoxField>
 													</ChildItems>
 												</Table>
-											</ChildItems>
-										</Page>
-										<Page name="ГруппаСлужебноеВыполнитьКод" id="1639">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Выполнить код</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа служебное выполнить код</v8:content>
-												</v8:item>
-											</ToolTip>
-											<ExtendedTooltip name="ГруппаСлужебноеВыполнитьКодРасширеннаяПодсказка" id="1640"/>
-											<ChildItems>
-												<InputField name="РеквизитПроизвольныйКод" id="1641">
-													<DataPath>РеквизитПроизвольныйКод</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Произвольный код</v8:content>
-														</v8:item>
-													</Title>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<MultiLine>true</MultiLine>
-													<ContextMenu name="РеквизитПроизвольныйКодКонтекстноеМеню" id="1642"/>
-													<ExtendedTooltip name="РеквизитПроизвольныйКодРасширеннаяПодсказка" id="1643"/>
-												</InputField>
 											</ChildItems>
 										</Page>
 									</ChildItems>
@@ -4015,6 +4046,22 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="PID" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ЕстьЗащитаОтОпасныхДействий" id="19">
@@ -4070,6 +4117,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Реквизит произвольный код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PIDЭтогоСеанса" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>PID этого сеанса</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -5222,6 +5284,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьСкрытьИДСтроки</Action>
+		</Command>
+		<Command name="ВыполнитьПроизвольныйКод" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить произвольный код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить произвольный код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПроизвольныйКод</Action>
+		</Command>
+		<Command name="ВычислитьPIDЭтогоСеанса" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычислить PIDЭтого сеанса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычислить PIDЭтого сеанса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВычислитьPIDЭтогоСеанса</Action>
 		</Command>
 	</Commands>
 </Form>
