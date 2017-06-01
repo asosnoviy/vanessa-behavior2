@@ -49,7 +49,7 @@
 	Если НЕ ЭтоWindows Тогда
 		Если ЗначениеЗаполнено(СистемнаяИнформация.ПолучитьПеременнуюСреды("WAYLAND_DISPLAY")) Тогда
 			СистемнаяИнформация.УстановитьПеременнуюСреды("VANESSA_commandscreenshot", 
-				"dbus-send --type=method_call --print-reply --dest=org.gnome.Shell.Screenshot /org/gnome/Shell/Screenshot org.gnome.Shell.Screenshot.Screenshot boolean:true boolean:false string: ");
+				"dbus-send --type=method_call --print-reply --dest=org.gnome.Shell.Screenshot /org/gnome/Shell/Screenshot org.gnome.Shell.Screenshot.Screenshot boolean:true boolean:false string:");
 		Иначе
 			СистемнаяИнформация.УстановитьПеременнуюСреды("VANESSA_commandscreenshot", "import -window root ");
 		КонецЕсли;
