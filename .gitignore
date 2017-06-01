@@ -2,5 +2,6 @@ crowdin.yaml
 .vscode
 build/*
 .sonar/*
-.sonarlint/*
+.sonarl int/*
 log.txt
+env.json
