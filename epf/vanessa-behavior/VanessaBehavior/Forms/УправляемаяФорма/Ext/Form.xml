@@ -3143,6 +3143,20 @@
 													<ContextMenu name="КаталогФичСлужебныйКонтекстноеМеню" id="490"/>
 													<ExtendedTooltip name="КаталогФичСлужебныйРасширеннаяПодсказка" id="1440"/>
 												</InputField>
+												<CheckBoxField name="РежимСамотестирования" id="1667">
+													<DataPath>Объект.РежимСамотестирования</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РежимСамотестированияКонтекстноеМеню" id="1668"/>
+													<ExtendedTooltip name="РежимСамотестированияРасширеннаяПодсказка" id="1669"/>
+													<Events>
+														<Event name="OnChange">РежимСамотестированияПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<Button name="СохранитьНастройкиКлиент" id="1670">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СохранитьНастройкиКлиент</CommandName>
+													<ExtendedTooltip name="СохранитьНастройкиКлиентРасширеннаяПодсказка" id="1671"/>
+												</Button>
 											</ChildItems>
 										</Page>
 										<Page name="ГруппаСлужебноеВыполнитьКод" id="1639">
@@ -5314,6 +5328,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВычислитьPIDЭтогоСеанса</Action>
+		</Command>
+		<Command name="СохранитьНастройкиКлиент" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки клиент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки клиент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройкиКлиент</Action>
 		</Command>
 	</Commands>
 </Form>
