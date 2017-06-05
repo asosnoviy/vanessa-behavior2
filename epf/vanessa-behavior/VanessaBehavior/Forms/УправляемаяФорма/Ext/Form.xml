@@ -3187,7 +3187,6 @@
 															<v8:content>Произвольный код</v8:content>
 														</v8:item>
 													</Title>
-													<AutoMaxWidth>false</AutoMaxWidth>
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="РеквизитПроизвольныйКодКонтекстноеМеню" id="1642"/>
 													<ExtendedTooltip name="РеквизитПроизвольныйКодРасширеннаяПодсказка" id="1643"/>
@@ -3400,6 +3399,7 @@
 											<v8:content>Группа служебные флаги</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСлужебныеФлагиРасширеннаяПодсказка" id="1623"/>
