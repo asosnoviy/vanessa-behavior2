@@ -18,6 +18,11 @@
 			<code>Украинский</code>
 			<description>Украинский</description>
 		</languageInfo>
+		<languageInfo>
+			<id>uk</id>
+			<code>Украинский</code>
+			<description>Украинский</description>
+		</languageInfo>
 	</languageSettings>
 	<columns>
 		<size>10</size>
