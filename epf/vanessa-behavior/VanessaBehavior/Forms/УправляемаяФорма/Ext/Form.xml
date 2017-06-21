@@ -1542,10 +1542,6 @@
 										<ColumnGroup name="ДанныеКлиентовТестированияГруппа2" id="1001">
 											<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа2РасширеннаяПодсказка" id="1352"/>
 											<ChildItems>
-												<ColumnGroup name="ДанныеКлиентовТестированияГруппа3" id="1003">
-													<Group>Horizontal</Group>
-													<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа3РасширеннаяПодсказка" id="1353"/>
-												</ColumnGroup>
 												<InputField name="ДанныеКлиентовТестированияПутьКИнфобазе" id="981">
 													<DataPath>ДанныеКлиентовТестирования.ПутьКИнфобазе</DataPath>
 													<EditMode>EnterOnInput</EditMode>
@@ -1615,12 +1611,23 @@
 												</InputField>
 											</ChildItems>
 										</ColumnGroup>
-										<InputField name="ДанныеКлиентовТестированияПорт" id="984">
-											<DataPath>ДанныеКлиентовТестирования.ПортЗапускаТестКлиента</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ДанныеКлиентовТестированияПортКонтекстноеМеню" id="985"/>
-											<ExtendedTooltip name="ДанныеКлиентовТестированияПортРасширеннаяПодсказка" id="1357"/>
-										</InputField>
+										<ColumnGroup name="ДанныеКлиентовТестированияГруппа3" id="1675">
+											<ExtendedTooltip name="ДанныеКлиентовТестированияГруппа3РасширеннаяПодсказка" id="1676"/>
+											<ChildItems>
+												<InputField name="ДанныеКлиентовТестированияИмяКомпьютера" id="1677">
+													<DataPath>ДанныеКлиентовТестирования.ИмяКомпьютера</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДанныеКлиентовТестированияИмяКомпьютераКонтекстноеМеню" id="1678"/>
+													<ExtendedTooltip name="ДанныеКлиентовТестированияИмяКомпьютераРасширеннаяПодсказка" id="1679"/>
+												</InputField>
+												<InputField name="ДанныеКлиентовТестированияПорт" id="984">
+													<DataPath>ДанныеКлиентовТестирования.ПортЗапускаТестКлиента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДанныеКлиентовТестированияПортКонтекстноеМеню" id="985"/>
+													<ExtendedTooltip name="ДанныеКлиентовТестированияПортРасширеннаяПодсказка" id="1357"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
 										<InputField name="ДанныеКлиентовТестированияPID" id="1646">
 											<DataPath>ДанныеКлиентовТестирования.PID</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -4092,6 +4099,21 @@
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяКомпьютера" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя компьютера</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
