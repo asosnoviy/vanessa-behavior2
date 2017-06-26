@@ -5,7 +5,7 @@ services:
 
 before_install:
   # Fetch base image and build new container
-  - wget --continue -O - $URL_TARCLIENT | xz -d | docker load
+  - wget --nv --continue -O - $URL_TARCLIENT | xz -d | docker load
   #- wget --continue -O ./build/client32.tar.xz $URL_TARCLIENT
   #- xz -dc ./build/client32.tar.xz | docker load
   - docker pull wernight/ngrok
