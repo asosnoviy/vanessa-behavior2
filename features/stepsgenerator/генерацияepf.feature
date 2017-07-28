@@ -1,6 +1,8 @@
 ﻿# language: ru
 
 @IgnoreOnLinux
+@OneThread
+@IgnoreOnWeb
 
 Функционал: Проверка создания EPF в режиме обычных форм
 	Как Разработчик

@@ -122,7 +122,11 @@
 	СоздатьКаталог("./build/vanessa-behavior/epf");
 	Лог.Информация("Перемещаем файлы");
 	ПереместитьФайл("./build/vanessa-behavior/vanessa-behavior.epf", "./build/vanessa-behavior/epf/vanessa-behavior.epf");
-	ПереместитьФайл("./build/vanessa-behavior/vbFeatureReader.epf", "./build/vanessa-behavior/epf/vbfeaturereader.epf");
+	Попытка
+			ПереместитьФайл("./build/vanessa-behavior/vbFeatureReader.epf", "./build/vanessa-behavior/epf/vbfeaturereader.epf");
+
+	Исключение
+	КонецПопытки;
 
 	Если НЕ Новый Файл("./build/ib").Существует() Тогда
 		СтрокаВыполнения = "oscript ./tools/init.os init-dev --src ./lib/CF/83NoSync";

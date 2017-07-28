@@ -5,9 +5,22 @@
 			<v8:lang>ru</v8:lang>
 			<v8:content>Известные шаги</v8:content>
 		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Known steps</v8:content>
+		</v8:item>
 	</Title>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыгрузитьШагиВJSON" id="70">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.ВыгрузитьШагиВJSON</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьШагиВJSONРасширеннаяПодсказка" id="71"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnReopen">ПриПовторномОткрытии</Event>
@@ -21,13 +34,17 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Найти шаги</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Search</v8:content>
+				</v8:item>
 			</Title>
 			<ClearButton>true</ClearButton>
 			<ContextMenu name="НайтиШагиКонтекстноеМеню" id="50"/>
 			<ExtendedTooltip name="НайтиШагиРасширеннаяПодсказка" id="51"/>
 			<Events>
 				<Event name="OnChange">НайтиШагиПриИзменении</Event>
-				<Event name="EditTextChange">НайтиШагиИзменениеТекстаРедактирования</Event>
+				<Event name="Clearing">НайтиШагиОчистка</Event>
 			</Events>
 		</InputField>
 		<CheckBoxField name="ПоказыватьСлужебныеШаги" id="46">
@@ -40,6 +57,11 @@
 				<Event name="OnChange">ПоказыватьСлужебныеШагиПриИзменении</Event>
 			</Events>
 		</CheckBoxField>
+		<Button name="ПоказатьПеревод" id="68">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПоказатьПеревод</CommandName>
+			<ExtendedTooltip name="ПоказатьПереводРасширеннаяПодсказка" id="69"/>
+		</Button>
 		<Table name="ДеревоШагов" id="1">
 			<Representation>Tree</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
@@ -144,6 +166,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Тип</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Type</v8:content>
+						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -158,6 +184,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя процедуры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Procedure</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -174,6 +204,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Шаг</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Step</v8:content>
+						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -188,6 +222,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Описание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Description</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -204,6 +242,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Полный тип шага</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Full step type</v8:content>
+						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -218,6 +260,25 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя файла</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>File</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Язык" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Язык</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -403,6 +464,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Показывать служебные шаги</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show all steps</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -413,6 +478,60 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Фильтр дерева шагов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЯзыкГенератораGherkin" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Язык генератора gherkin</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогИнструментов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог инструментов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МакетШаблонПеревода" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макет шаблон перевода</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДвоичныеДанныеФайлПеревода" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Двоичные данные файл перевода</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -464,4 +583,36 @@
 			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
+	<Commands>
+		<Command name="ПоказатьПеревод" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать перевод</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать перевод</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПеревод</Action>
+		</Command>
+		<Command name="ВыгрузитьШагиВJSON" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить шаги ВJSON</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить шаги ВJSON</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьШагиВJSON</Action>
+		</Command>
+	</Commands>
 </Form>

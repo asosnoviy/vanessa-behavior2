@@ -11,6 +11,18 @@
 	</languageSettings>
 	<columns>
 		<size>8</size>
+		<columnsItem>
+			<index>1</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>5</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
 	</columns>
 	<rowsItem>
 		<index>0</index>
@@ -1231,9 +1243,15 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>1</defaultFormatIndex>
+	<defaultFormatIndex>3</defaultFormatIndex>
 	<height>31</height>
 	<vgRows>31</vgRows>
+	<format>
+		<width>114</width>
+	</format>
+	<format>
+		<width>175</width>
+	</format>
 	<format>
 		<width>72</width>
 	</format>
