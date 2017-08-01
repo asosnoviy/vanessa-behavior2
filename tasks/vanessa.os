@@ -16,7 +16,7 @@
 	ЭтоWindows = Найти(ВРег(СистемнаяИнформация.ВерсияОС), "WINDOWS") > 0;
 
 	УровеньЛога = УровниЛога.Информация;
-	РежимРаботы = СистемнаяИнформация.ПолучитьПеременнуюСреды("RUNNER_ENV");
+	РежимРаботы = ПолучитьПеременнуюСреды("RUNNER_ENV");
 	Если ЗначениеЗаполнено(РежимРаботы) И РежимРаботы = "debug" Тогда
 		УровеньЛога = УровниЛога.Отладка;
 	КонецЕсли;
@@ -47,7 +47,7 @@
 	КонецЕсли;
 
 	Если НЕ ЭтоWindows Тогда
-		Если ЗначениеЗаполнено(СистемнаяИнформация.ПолучитьПеременнуюСреды("WAYLAND_DISPLAY")) Тогда
+		Если ЗначениеЗаполнено(ПолучитьПеременнуюСреды("WAYLAND_DISPLAY")) Тогда
 			СистемнаяИнформация.УстановитьПеременнуюСреды("VANESSA_commandscreenshot", 
 				"dbus-send --type=method_call --print-reply --dest=org.gnome.Shell.Screenshot /org/gnome/Shell/Screenshot org.gnome.Shell.Screenshot.Screenshot boolean:true boolean:false string:");
 		Иначе
