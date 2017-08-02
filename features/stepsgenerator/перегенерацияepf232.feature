@@ -1,6 +1,8 @@
 ﻿# language: ru
 
 @IgnoreOnLinux
+@OneThread
+@IgnoreOnWeb
 
 #https://github.com/silverbulleters/vanessa-behavior/issues/232
 
