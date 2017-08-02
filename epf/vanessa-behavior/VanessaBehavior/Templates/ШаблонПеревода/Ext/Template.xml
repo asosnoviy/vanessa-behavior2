@@ -13,6 +13,11 @@
 			<code>English</code>
 			<description>English</description>
 		</languageInfo>
+		<languageInfo>
+			<id>uk</id>
+			<code>Украинский</code>
+			<description>Украинский</description>
+		</languageInfo>
 	</languageSettings>
 	<columns>
 		<size>4</size>
