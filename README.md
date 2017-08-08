@@ -19,28 +19,9 @@
 Чтобы у вас работало создание автовидеоинструкций необходимо установить дополнительный софт. Инструкция [здесь](https://github.com/silverbulleters/vanessa-behavior/blob/develop/MakeAutoVideo.md) 
 Также по автовидеоинструкциям есть вот это замечательное [видео](https://www.youtube.com/watch?v=BfXowJH5uP0)
 
-Порядок установки Vanessa-Behavior под Windows:
+Порядок установки Vanessa-Behavior:
 
-* [интерпретатор 1Script](http://oscript.io/downloads) - для работы с иходными файлами 1С с помощью проекта precommit1C
-* [утилита для формирования отчётов о проверки Allure](http://allure.qatools.ru/)
-
-Все должно быть установлено так, чтобы быть доступным через переменную `%PATH%`
-
-Клонируйте данный репозиторий с помощью **ms-git**
-
-```
-git clone https://github.com/silverbulleters/vanessa-behavior.git
-```
-
-Или используйте [шаблон работы по проекту 1С](https://github.com/silverbulleters/vanessa-bootstrap)
-
-Инициализируйте подмодули репозитория с помощью **ms-git**
-
-```
-git submodule update --init --recursive
-```
-
-при использовании `SourceTree` используйте команду `Clone (Клонировать)`
+Перейти в [раздел релизы](https://github.com/silverbulleters/vanessa-behavior-new/releases) и скачать архив с последним стабильным релизом и распаковать архив. 
 
 Обязательно ознакомьтесь с:
 
@@ -199,10 +180,9 @@ git submodule update --init --recursive
 ## Заметки для желающих поучаствовать в доработке
 
 * мы используем подход git-flow для реализации функциональности
-* мы используем precommit1c для фиксации исходников Epf обработки в git
 * мы используем принцип самопроверки через feature файлы, поэтому перед разработкой новой функциональности мы также - разрабатываем feature файлы, генерируем шаблоны сценариев и наполняем их кодом для проверки. Поэтому к доработкам без feature файлов мы относимся "холодно".
 
-более подробно в файле [CONTRIBUTING.md](https://github.com/silverbulleters/vanessa-behavior/blob/develop/CONTRIBUTING.md)
+более подробно в файле [CONTRIBUTING.md](https://github.com/silverbulleters/vanessa-behavior-new/blob/master/CONTRIBUTING.md)
 
 ## Лицензии
 
