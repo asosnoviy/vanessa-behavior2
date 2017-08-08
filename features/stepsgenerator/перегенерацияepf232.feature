@@ -3,6 +3,9 @@
 @IgnoreOnLinux
 @OneThread
 @IgnoreOnWeb
+@IgnoreOnCIMainBuild
+@NotOnSRC
+
 
 #https://github.com/silverbulleters/vanessa-behavior/issues/232
 

@@ -3,6 +3,8 @@
 @IgnoreOnLinux
 @OneThread
 @IgnoreOnWeb
+@IgnoreOnCIMainBuild
+@NotOnSRC
 
 Функционал: Проверка перегенерации EPF в режиме обычных форм
 	Как Разработчик
