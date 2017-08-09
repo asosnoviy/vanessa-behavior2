@@ -148,9 +148,6 @@
 	СтрокаЗапуска = "oscript ./tools/runner.os compileepf ./tools ./build/tools";
 	ЗапуститьИПодождать(СтрокаЗапуска);
 
-	СтрокаЗапуска = "oscript ./tools/runner.os compileepf ./vendor ./build/vendor";
-	ЗапуститьИПодождать(СтрокаЗапуска);
-
 	СтрокаЗапуска = "oscript ./tools/runner.os compileepf ./lib ./build/lib";
 	ЗапуститьИПодождать(СтрокаЗапуска);
 	
