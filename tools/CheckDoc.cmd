@@ -1,2 +1,2 @@
 
-oscript .\onescript\run-behavior-check-session.os .\JSON\CheckDoc.json
+oscript .\tools\onescript\run-behavior-check-session.os .\tools\JSON\CheckDoc.json

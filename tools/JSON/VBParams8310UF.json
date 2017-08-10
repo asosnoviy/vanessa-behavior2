@@ -7,7 +7,7 @@
    "ПутьКVanessaBehavior": "$workspaceRoot/vanessa-behavior.epf",
    "КаталогФич": "$workspaceRoot/features/",
    "КаталогиБиблиотек":[
-   "$workspaceRoot/features/Libraries/"
+   "$workspaceRoot/features/libraries/"
    ],
    "ВыполнитьСценарии": "Истина",
    "ЗавершитьРаботуСистемы": "Истина",
