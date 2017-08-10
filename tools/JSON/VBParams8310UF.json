@@ -34,7 +34,11 @@
    "IgnoreOn82Builds",
    "IgnoreOnOFBuilds",
    "IgnoreOnUFBuilds", 
-   "Ignore"
+   "Ignore",
+   "IgnoreIfNotIrfanView",
+   "NotOnSRC",
+   "IgnoreOnLinux",
+   "Video"
     ],
     "СписокТеговОтбор":[
    ]

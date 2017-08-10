@@ -3,6 +3,7 @@
 @IgnoreOn82Builds
 @IgnoreOnOFBuilds
 @IgnoreOnWeb
+@IgnoreOnLinux
 
 # т.к. на 8.3.9 не работает нажатие на кнопку Контекстного Меню
 @IgnoreOn839

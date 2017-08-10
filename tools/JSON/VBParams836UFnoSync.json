@@ -27,6 +27,10 @@
    "КаталогСкриптовСборкиВидео": ".\..\..\vanessa-ci\MakeVideoInstr",
    "СписокТеговИсключение":[
    "IgnoreOnCIMainBuild",
-   "IgnoreOnOF836"
+   "IgnoreOnOF836",
+   "IgnoreIfNotIrfanView",
+   "NotOnSRC",
+   "IgnoreOnLinux",
+   "Video"
    ]
 }

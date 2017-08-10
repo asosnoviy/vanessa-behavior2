@@ -24,6 +24,10 @@
    "IgnoreOnCIMainBuild",
    "IgnoreOnOFBuilds",
    "IgnoreOnOF836", 
-   "Ignore"
+   "Ignore",
+   "IgnoreIfNotIrfanView",
+   "NotOnSRC",
+   "IgnoreOnLinux",
+   "Video"
    ]
 }
