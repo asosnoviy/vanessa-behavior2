@@ -1,17 +1,17 @@
 ﻿{
    "КаталогиДляОчистки":[
-   ".\ServiceBases\allurereport",
-   ".\ServiceBases\cucumber",
-   ".\ServiceBases\junitreport"
+   "./build/ServiceBases/allurereport",
+   "./build/ServiceBases/cucumber",
+   "./build/ServiceBases/junitreport"
    ],
    "ВариантыСборок":[
-   ".\JSON\VBParams82OF.json",
-   ".\JSON\VBParams82UF.json",
-   ".\JSON\VBParams836OF.json",
-   ".\JSON\VBParams836UF.json",
-   ".\JSON\VBParams837UF.json",
-   ".\JSON\VBParams838UF.json",
-   ".\JSON\VBParams839UF.json",
-   ".\JSON\VBParams839UFnoSync.json"
+   "./tools/JSON/VBParams82OF.json",
+   "./tools/JSON/VBParams82UF.json",
+   "./tools/JSON/VBParams836OF.json",
+   "./tools/JSON/VBParams836UF.json",
+   "./tools/JSON/VBParams837UF.json",
+   "./tools/JSON/VBParams838UF.json",
+   "./tools/JSON/VBParams839UF.json",
+   "./tools/JSON/VBParams839UFnoSync.json"
    ]
 }

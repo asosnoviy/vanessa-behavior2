@@ -4,6 +4,7 @@
 
 @IgnoreOn82Builds
 @IgnoreOnOFBuilds
+@IgnoreOnWeb
 
 @tree
 
@@ -17,7 +18,7 @@
 
 		Когда Я открываю VanessaBehavior в режиме TestClient	
 		
-		И В поле с именем "КаталогФичСлужебный" я указываю путь к служебной фиче "ПолучениеСостоянияVanessaBehavior"
+		И В поле с именем "КаталогФичСлужебный" я указываю путь к служебной фиче "получениесостоянияvanessabehavior"
 		И в VanessaBehavoir в TestClient я загружаю и выполняю сценарии
 				И Я нажимаю на кнопку перезагрузить сценарии в Vanessa-Behavior TestClient
 				И Я нажимаю на кнопку выполнить сценарии в Vanessa-Behavior TestClient

@@ -2,10 +2,10 @@
    "ИмяСборки":"Сборка 8.3.10 UF",
    "ВерсияПлатформы":"8.3.10",
    "ВыводитьСообщенияВФайл": "$workspaceRoot/message.txt",
-   "ПутьКVanessaBehavior": "$workspaceRoot/epf/vanessa-behavior.epf",
+   "ПутьКVanessaBehavior": "$workspaceRoot/vanessa-behavior.epf",
    "КаталогФич": "$workspaceRoot/features/",
    "КаталогиБиблиотек":[
-        "$instrumentsRoot/../features/libraries/"
+        "$instrumentsRoot/./features/libraries/"
    ],
    "ВыполнитьСценарии": "Истина",
    "ЗавершитьРаботуСистемы": "Истина",
@@ -31,7 +31,11 @@
    "IgnoreOn839",
    "IgnoreOn82Builds",
    "IgnoreOnUFBuilds",
-   "Ignore"
+   "Ignore",
+   "IgnoreIfNotIrfanView",
+   "NotOnSRC",
+   "IgnoreOnLinux",
+   "Video"
    ],
     "СписокТеговОтбор":[
    ]

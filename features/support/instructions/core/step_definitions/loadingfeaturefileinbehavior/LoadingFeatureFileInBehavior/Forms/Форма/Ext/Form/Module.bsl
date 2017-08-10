@@ -85,7 +85,7 @@
 //Когда Я выполняю действия для загрузки feature-файла
 //@ЯВыполняюДействияДляЗагрузкиFeature_файла()
 Процедура ЯВыполняюДействияДляЗагрузкиFeature_файла() Экспорт
-	Команда = ПолучитьСтрокуВызоваSikuli() + Ванесса.Объект.КаталогИнструментов + "\tools\Sikuli\LoadingFeatureFileInBehavior.sikuli """ + Ванесса.Объект.КаталогИнструментов + "features\Support\Instructions\Core\Demo.feature""";
+	Команда = ПолучитьСтрокуВызоваSikuli() + Ванесса.Объект.КаталогИнструментов + "\tools\Sikuli\LoadingFeatureFileInBehavior.sikuli """ + Ванесса.Объект.КаталогИнструментов + "features\support\instructions\core\demo.feature""";
 	
 	Результат = Ванесса.ВыполнитьКомандуОСБезПоказаЧерногоОкна(Команда);
 	

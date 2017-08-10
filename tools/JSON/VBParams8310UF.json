@@ -7,7 +7,7 @@
    "ПутьКVanessaBehavior": "$workspaceRoot/vanessa-behavior.epf",
    "КаталогФич": "$workspaceRoot/features/",
    "КаталогиБиблиотек":[
-   "$workspaceRoot/features/Libraries/"
+   "$workspaceRoot/features/libraries/"
    ],
    "ВыполнитьСценарии": "Истина",
    "ЗавершитьРаботуСистемы": "Истина",
@@ -34,7 +34,11 @@
    "IgnoreOn82Builds",
    "IgnoreOnOFBuilds",
    "IgnoreOnUFBuilds", 
-   "Ignore"
+   "Ignore",
+   "IgnoreIfNotIrfanView",
+   "NotOnSRC",
+   "IgnoreOnLinux",
+   "Video"
     ],
     "СписокТеговОтбор":[
    ]

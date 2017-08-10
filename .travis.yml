@@ -5,7 +5,7 @@ services:
 
 before_install:
   # Fetch base image and build new container
-  - wget --continue -O - $URL_TARCLIENT | xz -d | docker load
+  - wget -nv --continue -O - $URL_TARCLIENT | xz -d | docker load
   #- wget --continue -O ./build/client32.tar.xz $URL_TARCLIENT
   #- xz -dc ./build/client32.tar.xz | docker load
   - docker pull wernight/ngrok
@@ -21,10 +21,9 @@ script:
   #- sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; RUNNER_ENV=debug DISPLAY=:1.0 sudo opm run vanessa"
   # Clean up
   - sudo docker stop "$(cat /tmp/container_id)"
-  - sudo docker stop "$(cat /tmp/container_idngrok)"
-  - ls && pwd
-  - pushd ./build; sudo tar -czf ../vanessa-behavior.tar.gz ./epf ./features/libraries ./vendor; popd
-  - pushd ./build; sudo zip -r ../vanessa-behavior.zip ./epf ./features/libraries ./vendor; popd
+  - sudo docker stop "$(cat /tmp/ )"
+  - pushd ./build; sudo tar -czf ../vanessa-behavior.tar.gz ./epf ./features/libraries ./vendor ./plugins; popd
+  - pushd ./build; sudo zip -r ../vanessa-behavior.zip ./epf ./features/libraries ./vendor ./plugins; popd
   
 
 notifications:

@@ -1,6 +1,11 @@
 ﻿# language: ru
 
 @IgnoreOnLinux
+@OneThread
+@IgnoreOnWeb
+@IgnoreOnCIMainBuild
+@NotOnSRC
+
 
 Функционал: Проверка перегенерации EPF
 	Как Разработчик
