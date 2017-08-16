@@ -3,8 +3,6 @@
 @IgnoreOnLinux
 @OneThread
 @IgnoreOnWeb
-@IgnoreOnCIMainBuild
-@NotOnSRC
 
 
 Функционал: Проверка создания EPF в режиме обычных форм
