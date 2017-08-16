@@ -105,9 +105,6 @@
 		Лог.Информация(СтрокаВыполнения);
 		Команда.УстановитьСтрокуЗапуска(СтрокаВыполнения);
 		Команда.Исполнить();
-
-
-
 	КонецЕсли;
 
 	СтрокаВыполнения = "runner init-dev --dev --src ./lib/CF/83NoSync --ibname /F./build/ibservice --nocacheuse";
@@ -147,9 +144,8 @@
 	СоздатьКаталог("./build/lib");
 	СоздатьКаталог("./build/plugins");
 	СоздатьКаталог("./build/vendor");
+	СоздатьКаталог("./build/lib/TemplateEpf");
 	
-	
-	Лог.Информация("compileepf");
 	СтрокаЗапуска = "opm run cepf";
 	Лог.Информация(СтрокаЗапуска);
 	ЗапуститьИПодождать(СтрокаЗапуска);
@@ -158,7 +154,12 @@
 
 	СтрокаЗапуска = "oscript ./tools/runner.os compileepf ./lib ./build/lib";
 	ЗапуститьИПодождать(СтрокаЗапуска);
+
+	СтрокаЗапуска = "oscript ./tools/runner.os compileepf ./lib/TemplateEpf ./build/lib/TemplateEpf --onlycopy";
+	ЗапуститьИПодождать(СтрокаЗапуска);
 	
+	СтрокаЗапуска = "oscript ./tools/runner.os compileepf ./lib/TemplateEpfUF ./build/lib/TemplateEpfUF --onlycopy";
+	ЗапуститьИПодождать(СтрокаЗапуска);
 
 	СтрокаЗапуска = "runner run --command VBParams=./tools/epf/init.json --execute ./build/tools/epf/init.epf";
 	Лог.Информация(СтрокаЗапуска);
