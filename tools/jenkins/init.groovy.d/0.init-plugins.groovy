@@ -45,7 +45,6 @@ pm.doCheckUpdatesServer()
     'jenkinswalldisplay', 
     'git',
     'git-client',
-    'build-flow-plugin',
     'git-parameter',
     'htmlpublisher',
     'ftppublisher',
@@ -81,7 +80,6 @@ pm.doCheckUpdatesServer()
     'job-dsl',
     'fstrigger',
     'build-timeout',
-    'AdaptivePlugin',
     'copy-data-to-workspace-plugin',
     'mask-passwords',
     'matrixtieparent',
@@ -113,7 +111,6 @@ pm.doCheckUpdatesServer()
     'build-timestamp',
     'uptime',
     'configurationslicing',
-    'scriptler',
     'simple-theme-plugin',
     'thinBackup',
     'build-pipeline-plugin',
@@ -175,16 +172,23 @@ pm.doCheckUpdatesServer()
     'blueocean-pipeline-editor'
 ].each{ plugin ->
 pm = Jenkins.instance.updateCenter.getPlugin(plugin);
- if (pm.getInstalled() == null) {
-    println ">>>> install plugin "+plugin;
-    try {
-        deployment = Jenkins.instance.updateCenter.getPlugin(plugin).deploy(true)
-        deployment.get()
-        needRestart = true;   
-    } catch (all) {
-        println "Error:"+all;
+println plugin;
+println pm.getInstalled()
+try {
+    if (pm.getInstalled() == null) {
+      println ">>>> install plugin "+plugin;
+      try {
+          deployment = Jenkins.instance.updateCenter.getPlugin(plugin).deploy(true)
+          deployment.get()
+          needRestart = true;   
+      } catch (all) {
+          println "Error:"+all;
+      }
     }
- }
+  
+} catch (e) {
+  println "${e}"
+}
 }
 
 pm = Jenkins.instance.pluginManager
