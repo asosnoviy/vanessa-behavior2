@@ -288,7 +288,7 @@
 	Если EpfДляИнициализацияБазы <> Неопределено Тогда
 		
 		СтрокаЗапуска = СтрШаблон(
-			"runner run --command VBParams=%1 --execute %2 ---ibconnection %3 --v8version %4",
+			"runner run --command VBParams=%1 --execute %2 --ibconnection %3 --v8version %4",
 			ПараметрыСборки["ПараметрыДляИнициализацияБазы"],
 			EpfДляИнициализацияБазы,
 			ПараметрыСборки["СтрокаПодключенияКБазе"],
@@ -301,7 +301,7 @@
 	ФайлПараметров = Новый Файл(ПараметрыСборки["ИмяФайлаСборки"]);
 
 	СтрокаЗапуска = СтрШаблон(
-		"runner vanessa --pathvanessa %1 --v8version %2 --ibname %3 --vanessasettings %4 --workspace ./build", 
+		"runner vanessa --pathvanessa %1 --v8version %2 --ibconnection %3 --vanessasettings %4 --workspace ./build", 
 		"./build/vanessa-behavior.epf --settings ./tools/epf/init.json",
 		ПараметрыСборки["ВерсияПлатформы"], 
 		ПараметрыСборки["СтрокаПодключенияКБазе"],
