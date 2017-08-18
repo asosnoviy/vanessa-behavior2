@@ -15,10 +15,10 @@ script:
   - sudo docker run --detach --volume="${PWD}":/home/ubuntu/code onec32/client:8.3.10.2561 client > /tmp/container_id
   - sudo docker ps && sleep 5
   - sudo docker run -d -p 4040:4040 --link "$(cat /tmp/container_id)":http wernight/ngrok ngrok http http:6080 > /tmp/container_idngrok
-  - sleep 5 && curl -s http://127.0.0.1:4040/status | grep -P "http://.*?ngrok.io" -oh
+  - sleep 5 && echo $(curl -s http://127.0.0.1:4040/status | grep -P "http://.*?ngrok.io" -oh)"/vnc_auto.html"
   - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm install && sudo opm update -all"
   - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm run init"
-  - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 VANESSA_commandscreenshot=import -window root  sudo oscript ./tools/runner.os vanessa"
+  - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm run vanessatravis"
   # Clean up
   - sudo docker stop "$(cat /tmp/container_id)"
   - sudo docker stop "$(cat /tmp/container_idngrok )"
