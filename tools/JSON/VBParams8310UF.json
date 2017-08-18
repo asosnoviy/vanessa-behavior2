@@ -30,8 +30,7 @@
    "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "$workspaceRoot/../buildstatus.log",
    "СписокТеговИсключение":[
    "IgnoreOnCIMainBuild",
-   "IgnoreOn837",
-   "IgnoreOn82Builds",
+   "IgnoreOn8310",
    "IgnoreOnOFBuilds",
    "IgnoreOnUFBuilds", 
    "Ignore",
