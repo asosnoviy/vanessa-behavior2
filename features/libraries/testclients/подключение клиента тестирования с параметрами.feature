@@ -4,7 +4,7 @@
 @IgnoreOn82Builds
 @IgnoreOnWeb
 @TestClient
-@IgnoreOnLinux 
+@IgnoreOnLinux
 
 Функционал: Несколько клиентов тестирования
 	Как разработчик
