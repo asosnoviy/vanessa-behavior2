@@ -21,7 +21,7 @@
    "ДелатьЛогВыполненияСценариевВТекстовыйФайл": "Истина",
    "КаталогOutputAllureБазовый": "$workspaceRoot/./ServiceBases/allurereport",
    "КаталогOutputjUnit": "$workspaceRoot/./ServiceBases/junitreport",
-   "КаталогOutputCucumberJson": "$workspaceRoot/./tools/ServiceBases/cucumber",
+   "КаталогOutputCucumberJson": "$workspaceRoot/./ServiceBases/cucumber",
    "СоздаватьПодкаталогВКаталогеAllureДляЭтойСборки": "Истина",
    "ДелатьСкриншотПриВозникновенииОшибки": "Истина",
    "КаталогOutputСкриншоты": "$workspaceRoot/./ServiceBases/ScreenShots",
@@ -29,7 +29,7 @@
    "КомандаСделатьСкриншот": '"C:\Program Files (x86)\IrfanView\i_view32.exe" /capture=1 /convert=',
    "ВыгружатьСтатусВыполненияСценариевВФайл": "Истина",
    "ДобавлятьКИмениСценарияУловияВыгрузки": "Истина",
-   "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "./tools/ServiceBases/BuildStatus.log",
+   "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "$workspaceRoot/./ServiceBases/BuildStatus.log",
    "СписокТеговИсключение":[
    "IgnoreOnCIMainBuild",
    "IgnoreOn838",

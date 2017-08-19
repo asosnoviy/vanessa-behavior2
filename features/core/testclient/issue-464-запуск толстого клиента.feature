@@ -4,6 +4,7 @@
 @IgnoreOnOFBuilds
 @TestClient
 @IgnoreOnWeb
+@IgnoreOnLinux
 
 
 Функционал: Проверка запуска приложения в режиме тонкого/толстого клиента
