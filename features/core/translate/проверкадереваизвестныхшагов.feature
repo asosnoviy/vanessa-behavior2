@@ -3,7 +3,7 @@
 @IgnoreOn82Builds
 @IgnoreOnOFBuilds
 @IgnoreOnWeb
-
+@IgnoreOnLinux
 
 
 Функционал: Проверка дерева известных шагов
