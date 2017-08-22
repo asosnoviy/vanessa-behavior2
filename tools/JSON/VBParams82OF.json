@@ -24,8 +24,6 @@
    "IgnoreOn82Builds",
    "IgnoreOnOFBuilds",
    "Ignore",
-   "NotOnSRC",
-   "IgnoreOnLinux",
    "Video"
    ]
 }

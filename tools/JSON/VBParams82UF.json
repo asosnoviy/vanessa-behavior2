@@ -33,8 +33,6 @@
    "IgnoreOn82Builds",
    "IgnoreOnUFBuilds",
    "Ignore",
-   "NotOnSRC",
-   "IgnoreOnLinux",
    "Video"
    ]
 }

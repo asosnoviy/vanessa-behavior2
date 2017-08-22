@@ -26,8 +26,6 @@
    "IgnoreOnOFBuilds",
    "IgnoreOnOF836", 
    "Ignore",
-   "NotOnSRC",
-   "IgnoreOnLinux",
    "Video"
    ]
 }

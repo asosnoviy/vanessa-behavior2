@@ -35,8 +35,6 @@
    "IgnoreOn836",
    "IgnoreOnUFBuilds",
    "Ignore",
-   "NotOnSRC",
-   "IgnoreOnLinux",
    "Video"
    ],
    "ВыполнятьШагиАссинхронно":"Ложь",
