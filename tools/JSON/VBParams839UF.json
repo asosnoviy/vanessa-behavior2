@@ -35,7 +35,6 @@
    "IgnoreOn839",
    "IgnoreOnUFBuilds", 
    "Ignore",
-   "IgnoreIfNotIrfanView",
    "NotOnSRC",
    "IgnoreOnLinux",
    "Video"

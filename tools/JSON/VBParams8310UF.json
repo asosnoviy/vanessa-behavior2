@@ -36,7 +36,6 @@
    "IgnoreOnOFBuilds",
    "IgnoreOnUFBuilds", 
    "Ignore",
-   "IgnoreIfNotIrfanView",
    "NotOnSRC",
    "Video"
     ],

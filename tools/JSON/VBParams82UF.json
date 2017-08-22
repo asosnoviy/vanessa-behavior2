@@ -24,7 +24,6 @@
    "IgnoreOn82Builds",
    "IgnoreOnUFBuilds",
    "Ignore",
-   "IgnoreIfNotIrfanView",
    "NotOnSRC",
    "IgnoreOnLinux",
    "Video"
