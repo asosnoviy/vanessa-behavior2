@@ -25,7 +25,6 @@
    "IgnoreOnCIMainBuild",
    "IgnoreOnOFBuilds",
    "IgnoreOnOF836", 
-   "Ignore",
-   "Video"
+   "Ignore"
    ]
 }

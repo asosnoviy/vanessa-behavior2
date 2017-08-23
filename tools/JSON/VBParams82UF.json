@@ -32,7 +32,6 @@
    "IgnoreOnCIMainBuild",
    "IgnoreOn82Builds",
    "IgnoreOnUFBuilds",
-   "Ignore",
-   "Video"
+   "Ignore"
    ]
 }
