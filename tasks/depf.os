@@ -43,7 +43,11 @@
 		МассивПутей.Добавить("./plugins");
 		
 		Для каждого Элемент из МассивПутей Цикл
-			ШаблонЗапуска = СтрШаблон("oscript ./tools/runner.os decompileepf ./build/%1 %1", Элемент);
+			Если (Элемент) = "./epf" Тогда
+				ШаблонЗапуска = СтрШаблон("oscript ./tools/runner.os decompileepf ./build/%2 %1 --ibname /F./build/ibservice", Элемент, "vanessa-behavior.epf");
+			Иначе
+				ШаблонЗапуска = СтрШаблон("oscript ./tools/runner.os decompileepf ./build/%1 %1 --ibname /F./build/ibservice", Элемент);
+			КонецЕсли;
 			Лог.Информация(ШаблонЗапуска);
 			Команда.УстановитьСтрокуЗапуска(ШаблонЗапуска);
 			Команда.Исполнить();
