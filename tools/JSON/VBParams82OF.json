@@ -19,6 +19,7 @@
    "ДобавлятьКИмениСценарияУловияВыгрузки": "Истина",
    "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "./build/ServiceBases/BuildStatus.log",
    "ВыводитьСообщенияВФайл": "./build/ServiceBases/Messages 8.2 OF.txt",
+   "ВерсияПлатформыДляГенерацииEPF": "C:/Program Files (x86)/1cv8/8.3.10.2252/bin",
    "СписокТеговИсключение":[
    "IgnoreOnCIMainBuild",
    "IgnoreOn82Builds",
