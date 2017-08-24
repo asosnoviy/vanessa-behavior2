@@ -16,7 +16,7 @@
    "ДелатьЛогВыполненияСценариевВЖР": "Истина",
    "ДелатьОтчетВФорматеАллюр": "Истина",
    "ДелатьОтчетВФорматеjUnit": "Истина",
-   "ДелатьОтчетВФорматеCucumberJson": "Истина",
+   "ДелатьОтчетВФорматеCucumberJson": "Ложь",
    "ДелатьЛогВыполненияСценариевВТекстовыйФайл": "Истина",
    "КаталогOutputAllureБазовый": "$workspaceRoot/./ServiceBases/allurereport",
    "КаталогOutputjUnit": "$workspaceRoot/./ServiceBases/junitreport",
