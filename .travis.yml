@@ -18,7 +18,7 @@ script:
   - sleep 5 && echo $(curl -s http://127.0.0.1:4040/status | grep -P "http://.*?ngrok.io" -oh)"/vnc_auto.html"
   - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm install && sudo opm update -all"
   - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm run init"
-  - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm run vanessatravis"
+  - sudo docker exec -u ubuntu "$(cat /tmp/container_id)" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm build ./"
   # Clean up
   - sudo docker stop "$(cat /tmp/container_id)"
   - sudo docker stop "$(cat /tmp/container_idngrok )"
@@ -36,6 +36,7 @@ deploy:
   file:
     - "vanessa-behavior.tar.gz"
     - "vanessa-behavior.zip"
+    - "vanessa-behavior-*.ospx"
   file_glob: "true" 
   skip_cleanup: true
   on:
