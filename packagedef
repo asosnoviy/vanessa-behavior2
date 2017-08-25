@@ -87,8 +87,6 @@
 	.ЗависитОт("logos")
 	.ЗависитОт("cmdline")
 	.ЗависитОт("tempfiles")
-	.ЗависитОт("ParserFileV8i")
-	.ЗависитОт("vanessa-runner", "0.14.0")
 	.ЗависитОт("deployka")
 	.ЗависитОт("fs")
 	.ОпределяетМодуль("Ванесса", "ospx/vanessaospx.os")
