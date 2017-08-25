@@ -3,9 +3,6 @@
 @IgnoreOnLinux
 @OneThread
 @IgnoreOnWeb
-@IgnoreOnCIMainBuild
-@NotOnSRC
-
 
 #https://github.com/silverbulleters/vanessa-behavior/issues/232
 
@@ -21,7 +18,7 @@
 	Сценарий: Перегенерация EPF
 
 	Когда я открыл форму VanessaBehavoir в режиме самотестирования
-	И я загрузил специальную тестовую фичу "ФичаДляПроверкиПерегенерацииEPF232"
+	И я загрузил специальную тестовую фичу "фичадляпроверкиперегенерацииepf232"
 	И Пауза 1
 	И я перешел на закладку генератор EPF
 	И ожидаемый файл epf уже существует issues232

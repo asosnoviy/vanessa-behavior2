@@ -5,3 +5,5 @@ build/*
 .sonarl int/*
 log.txt
 env.json
+oscript_modules/
+*.ospx

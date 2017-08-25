@@ -3,10 +3,11 @@
    "ВерсияПлатформы":"8.3.6",
    "ВыводитьСообщенияВФайл": "./build/ServiceBases/Messages 8.3.6 OF.txt",
    "КаталогПоискаВерсииПлатформы":"C:\Program Files (x86)\1cv8",
-   "СтрокаПодключенияКБазе":"/F./build/ServiceBases/v83ServiceBase836 /RunModeOrdinaryApplication",
+   "СтрокаПодключенияКБазе":"/F./build/ServiceBases/v83ServiceBase836",
+   "ДополнительныеПараметры":"/RunModeOrdinaryApplication",
    "ЗапускатьТолстыйКлиент": "Истина",
    "ПутьКVanessaBehavior": "./build/vanessa-behavior.epf",
-   "КаталогФич": "./features",
+   "КаталогФич": "./build/features",
    "ВыполнитьСценарии": "Истина",
    "ДелатьОтчетВФорматеАллюр": "Истина",
    "ДелатьОтчетВФорматеjUnit": "Истина",
@@ -18,16 +19,13 @@
    "ДелатьЛогВыполненияСценариевВЖР": "Истина",
    "ВыгружатьСтатусВыполненияСценариевВФайл": "Истина",
    "СоздаватьПодкаталогВКаталогеAllureДляЭтойСборки": "Истина",
-   "ДобавлятьКИмениСценарияУловияВыгрузки": "Истина",
+   "ДобавлятьКИмениСценарияУлсовияВыгрузки": "Истина",
    "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "./build/ServiceBases/BuildStatus.log",
+   "ВерсияПлатформыДляГенерацииEPF": "C:/Program Files (x86)/1cv8/8.3.10.2252/bin",
    "СписокТеговИсключение":[
    "IgnoreOnCIMainBuild",
    "IgnoreOnOFBuilds",
    "IgnoreOnOF836", 
-   "Ignore",
-   "IgnoreIfNotIrfanView",
-   "NotOnSRC",
-   "IgnoreOnLinux",
-   "Video"
+   "Ignore"
    ]
 }
