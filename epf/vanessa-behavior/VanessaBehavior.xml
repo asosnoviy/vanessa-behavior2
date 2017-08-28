@@ -24,7 +24,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>am</v8:lang>
-					<v8:content>Vanessa Behavior</v8:content>
+					<v8:content>ግምገማ ባህሪ</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>az</v8:lang>
@@ -32,7 +32,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>bg</v8:lang>
-					<v8:content>Vanessa Behavior</v8:content>
+					<v8:content>Ванеса Behavior</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>et</v8:lang>
@@ -44,7 +44,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>ka</v8:lang>
-					<v8:content>Vanessa Behavior</v8:content>
+					<v8:content>Vanessa ქცევა</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>de</v8:lang>
@@ -52,7 +52,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>hu</v8:lang>
-					<v8:content>Vanessa Behavior</v8:content>
+					<v8:content>Vanessa Viselkedés</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>it</v8:lang>
@@ -68,7 +68,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>mn</v8:lang>
-					<v8:content>Vanessa Behavior</v8:content>
+					<v8:content>Ванесса Зан</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>pl</v8:lang>
@@ -80,7 +80,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>sl</v8:lang>
-					<v8:content>Vanessa Behavior</v8:content>
+					<v8:content>Vanessa Vedenje</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>es</v8:lang>
@@ -88,7 +88,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>sv</v8:lang>
-					<v8:content>Vanessa Behavior</v8:content>
+					<v8:content>Vanessa Beteende</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>tr</v8:lang>
@@ -292,75 +292,75 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>am</v8:lang>
-							<v8:content>Debugger ዩአርኤል</v8:content>
+							<v8:content>አድራሻ ነው debugger</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>az</v8:lang>
-							<v8:content>Ayıklama URL-ünvanı</v8:content>
+							<v8:content>Ünvanı var ayıklama</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>bg</v8:lang>
-							<v8:content>Дебъгер URL-адрес</v8:content>
+							<v8:content>Адрес за изчистване на грешки</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>et</v8:lang>
-							<v8:content>Siluri url</v8:content>
+							<v8:content>Aadress siluri</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>fr</v8:lang>
-							<v8:content>Débogueur url</v8:content>
+							<v8:content>Adresse du débogueur</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ka</v8:lang>
-							<v8:content>Debugger url</v8:content>
+							<v8:content>მისამართი debugger</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>de</v8:lang>
-							<v8:content>Debugger url</v8:content>
+							<v8:content>Die Adresse des Debuggers</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>hu</v8:lang>
-							<v8:content>Hibakereső url</v8:content>
+							<v8:content>A cím a debugger</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>it</v8:lang>
-							<v8:content>Debugger url</v8:content>
+							<v8:content>L'indirizzo del debugger</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lv</v8:lang>
-							<v8:content>Atkļūdotājs url</v8:content>
+							<v8:content>Adrese atkļūdotājs</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lt</v8:lang>
-							<v8:content>Derintuvas url</v8:content>
+							<v8:content>Adresas debugger</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>mn</v8:lang>
-							<v8:content>Дибаг url</v8:content>
+							<v8:content>Хаяг дибаг</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>pl</v8:lang>
-							<v8:content>Debugger </v8:content>
+							<v8:content>Adres debugera</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ro</v8:lang>
-							<v8:content>Depanator url</v8:content>
+							<v8:content>Adresa depanator</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sl</v8:lang>
-							<v8:content>Iskalnik napak url</v8:content>
+							<v8:content>Naslov razhroščevalnik</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>es</v8:lang>
-							<v8:content>Depurador de url</v8:content>
+							<v8:content>La dirección del depurador</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sv</v8:lang>
-							<v8:content>Debugger url</v8:content>
+							<v8:content>Adress debugger</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>tr</v8:lang>
-							<v8:content>Hata ayıklayıcı url</v8:content>
+							<v8:content>Adresi hata ayıklayıcı</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -610,75 +610,75 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>am</v8:lang>
-							<v8:content>በቀዳሚ ግምገማዎች ላይ የሚሰጡዋቸውን ጽሑፍ ፋይል</v8:content>
+							<v8:content>ጋር ስለጀመሩ ቅድሚያ የሚሰጡዋቸውን ውስጥ ጽሑፍ ፋይል</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>az</v8:lang>
-							<v8:content>Nə jurnal mətn faylı</v8:content>
+							<v8:content>Bunu günlük yerinə ssenarilər mətn faylı</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>bg</v8:lang>
-							<v8:content>Направи регистър в текстов файл</v8:content>
+							<v8:content>Правя лог изпълнение на скрипт в текстов файл</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>et</v8:lang>
-							<v8:content>Teha logi, et teksti fail</v8:content>
+							<v8:content>Teha log skriptide täitmise tekstifaili</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>fr</v8:lang>
-							<v8:content>Faire du journal dans un fichier texte</v8:content>
+							<v8:content>Faire le journal de l'exécution des scripts dans un fichier texte</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ka</v8:lang>
-							<v8:content>რათა შესვლა ტექსტური ფაილი</v8:content>
+							<v8:content>ამის შესვლა აწარმოებს სკრიპტები ტექსტური ფაილი,</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>de</v8:lang>
-							<v8:content>Machen log to text file</v8:content>
+							<v8:content>Tun die log-Skripte in einer Textdatei</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>hu</v8:lang>
-							<v8:content>Hogy napló szöveges fájl</v8:content>
+							<v8:content>A napló scriptek futtatását egy szöveges fájl</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>it</v8:lang>
-							<v8:content>Effettuare il log in un file di testo</v8:content>
+							<v8:content>Fare un log di esecuzione di script in un file di testo</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lv</v8:lang>
-							<v8:content>Padarīt žurnālu, lai teksta failu</v8:content>
+							<v8:content>Darīt log izpildes skriptu ar teksta failu</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lt</v8:lang>
-							<v8:content>Kad prisijungti į tekstinį failą</v8:content>
+							<v8:content>Daryti žurnalo vykdymo scenarijai į tekstinį failą</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>mn</v8:lang>
-							<v8:content>Хийх нэвтэрч тулд текст файл</v8:content>
+							<v8:content>Хийх бүртгэлийн ажиллуулах скриптүүд нь текст файл</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>pl</v8:lang>
-							<v8:content>Zrobić log do pliku tekstowego</v8:content>
+							<v8:content>Zrobić log z wykonania skryptu w pliku tekstowym</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ro</v8:lang>
-							<v8:content>Face log fișier text</v8:content>
+							<v8:content>A face log script într-un fișier text</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sl</v8:lang>
-							<v8:content>Da se prijavite do besedilne datoteke</v8:content>
+							<v8:content>Da ne log zaženete skripte v besedilno datoteko</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>es</v8:lang>
-							<v8:content>Hacer el registro en un archivo de texto</v8:content>
+							<v8:content>Hacer un log de ejecución de secuencias de comandos en un archivo de texto</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sv</v8:lang>
-							<v8:content>Göra logga till en textfil</v8:content>
+							<v8:content>För att göra det loggar köra skript i en textfil</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>tr</v8:lang>
-							<v8:content>Metin dosyasına olun</v8:content>
+							<v8:content>Yapmak günlük komut dosyası bir metin dosyası</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1693,7 +1693,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>am</v8:lang>
-							<v8:content>አዳዲስ ግምገማዎች TestClient ውስጥ..</v8:content>
+							<v8:content>ቅድሚያ TestClient ውስጥ..</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>az</v8:lang>
@@ -1701,27 +1701,27 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>bg</v8:lang>
-							<v8:content>Тече TestClient в режим на отстраняване на грешки</v8:content>
+							<v8:content>Тичам TestClient в режим на отстраняване на грешки</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>et</v8:lang>
-							<v8:content>Run TestClient aastal debug mode</v8:content>
+							<v8:content>Käivitada TestClient silumisrežiimis</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>fr</v8:lang>
-							<v8:content>Exécuter TestClient en mode debug</v8:content>
+							<v8:content>Exécuter TestClient en mode de débogage</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ka</v8:lang>
-							<v8:content>Run TestClient in გამართვის რეჟიმი</v8:content>
+							<v8:content>აწარმოებს TestClient in გამართვის რეჟიმი</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>de</v8:lang>
-							<v8:content>Führen Sie TestClient im debug-Modus</v8:content>
+							<v8:content>Ausführen von Testclient im Debugmodus</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>hu</v8:lang>
-							<v8:content>Fuss TestClient debug módban</v8:content>
+							<v8:content>Hogy fut a TestClient debug módban</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>it</v8:lang>
@@ -1729,11 +1729,11 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>lv</v8:lang>
-							<v8:content>Palaist TestClient, debug režīmā</v8:content>
+							<v8:content>Palaist TestClient atkļūdošanas režīmā</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lt</v8:lang>
-							<v8:content>Paleisti TestClient į derinimo režimą,</v8:content>
+							<v8:content>Paleisti TestClient debug režimu</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>mn</v8:lang>
@@ -1745,11 +1745,11 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ro</v8:lang>
-							<v8:content>Rula TestClient în modul de depanare</v8:content>
+							<v8:content>Pentru a rula TestClient în modul de depanare</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sl</v8:lang>
-							<v8:content>Teči TestClient v debug načinu</v8:content>
+							<v8:content>Če želite zagnati TestClient v debug načinu</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>es</v8:lang>
@@ -1757,11 +1757,11 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>sv</v8:lang>
-							<v8:content>Kör TestClient i debug-läge</v8:content>
+							<v8:content>Att köra TestClient i debug-läge</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>tr</v8:lang>
-							<v8:content>Hata ayıklama modunda çalıştırın TestClient</v8:content>
+							<v8:content>Çalıştırmak TestClient hata ayıklama modunda</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2511,7 +2511,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>am</v8:lang>
-							<v8:content>አንድ ቁልፎች</v8:content>
+							<v8:content>ቁልፎች መጠቀም</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>az</v8:lang>
@@ -2523,39 +2523,39 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>et</v8:lang>
-							<v8:content>Debug võtmed</v8:content>
+							<v8:content>Võtmed silumine</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>fr</v8:lang>
-							<v8:content>Debug clés</v8:content>
+							<v8:content>Les clés de débogage</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ka</v8:lang>
-							<v8:content>გამართვის ღილაკები</v8:content>
+							<v8:content>გასაღებები გამართვის</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>de</v8:lang>
-							<v8:content>Debug-Tasten</v8:content>
+							<v8:content>Schlüssel Debuggen</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>hu</v8:lang>
-							<v8:content>Debug kulcsok</v8:content>
+							<v8:content>A kulcs, hogy hibakeresés</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>it</v8:lang>
-							<v8:content>Eseguire il Debug di tasti</v8:content>
+							<v8:content>Le chiavi di debug</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lv</v8:lang>
-							<v8:content>Atkļūdošanas atslēgas</v8:content>
+							<v8:content>Atslēgas atkļūdošanas</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lt</v8:lang>
-							<v8:content>Derinimo raktai</v8:content>
+							<v8:content>Raktai derinimo</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>mn</v8:lang>
-							<v8:content>Дибаг түлхүүрүүд</v8:content>
+							<v8:content>Түлхүүрүүд нь дибаг хийх</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>pl</v8:lang>
@@ -2563,23 +2563,23 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ro</v8:lang>
-							<v8:content>Debug chei</v8:content>
+							<v8:content>Cheile de depanare</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sl</v8:lang>
-							<v8:content>Tipke Debug</v8:content>
+							<v8:content>Tipke za razhroščevanje</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>es</v8:lang>
-							<v8:content>Depuración de las teclas</v8:content>
+							<v8:content>Las claves de depuración</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sv</v8:lang>
-							<v8:content>Felsöka nycklar</v8:content>
+							<v8:content>Nycklarna till felsökning</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>tr</v8:lang>
-							<v8:content>Hata ayıklama anahtarları</v8:content>
+							<v8:content>Anahtarlar hata ayıklama</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -3879,75 +3879,75 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>am</v8:lang>
-							<v8:content>ቅድሚያ በግራ TestClient.</v8:content>
+							<v8:content>ቅድሚያ የታዘዘ TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>az</v8:lang>
-							<v8:content>Taym-aut azn əlaqədar TestClient</v8:content>
+							<v8:content>Fasilə başlamaq TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>bg</v8:lang>
-							<v8:content>Тайм-аут за TestClient връзка</v8:content>
+							<v8:content>Изчакване на стартирането TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>et</v8:lang>
-							<v8:content>Aegumise kohta TestClient ühendus</v8:content>
+							<v8:content>Timeout käivitada TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>fr</v8:lang>
-							<v8:content>Délai de connexion TestClient</v8:content>
+							<v8:content>Délai de démarrage TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ka</v8:lang>
-							<v8:content>დროის on TestClient კავშირი</v8:content>
+							<v8:content>დროის აწარმოებს TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>de</v8:lang>
-							<v8:content>Timeout auf TestClient Verbindung</v8:content>
+							<v8:content>Timeout von Testclient starten</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>hu</v8:lang>
-							<v8:content>Időtúllépés a TestClient kapcsolat</v8:content>
+							<v8:content>Timeout fut TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>it</v8:lang>
-							<v8:content>Il Timeout di connessione TestClient</v8:content>
+							<v8:content>Il timeout di avvio TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lv</v8:lang>
-							<v8:content>Taimauts TestClient savienojums</v8:content>
+							<v8:content>Man. palaišanas TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lt</v8:lang>
-							<v8:content>Timeout dėl TestClient ryšys</v8:content>
+							<v8:content>Osd paleisti TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>mn</v8:lang>
-							<v8:content>Хугацааны хувьд TestClient холболт</v8:content>
+							<v8:content>Хугацааны хувьд ажиллуулах TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>pl</v8:lang>
-							<v8:content>Limit czasu na TestClient związku</v8:content>
+							<v8:content>Limit czasu uruchomienia TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ro</v8:lang>
-							<v8:content>Timeout pe TestClient conexiune</v8:content>
+							<v8:content>Depășirea timpului de pornire TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sl</v8:lang>
-							<v8:content>Timeout na TestClient povezava</v8:content>
+							<v8:content>Časovna omejitev za vožnjo TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>es</v8:lang>
-							<v8:content>Tiempo de espera de conexión TestClient</v8:content>
+							<v8:content>El tiempo de espera de inicio de TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sv</v8:lang>
-							<v8:content>Timeout på TestClient anslutning</v8:content>
+							<v8:content>Timeout köra TestClient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>tr</v8:lang>
-							<v8:content>TestClient bağlantıda zaman aşımı</v8:content>
+							<v8:content>Zaman aşımı başlangıç TestClient</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment>Таймаут запуска TestClient в секундах</Comment>
@@ -3994,75 +3994,75 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>am</v8:lang>
-							<v8:content>Ports ልኬት</v8:content>
+							<v8:content>ቅድሚያ የታዘዘ ነው ports testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>az</v8:lang>
-							<v8:content>Port ölçü</v8:content>
+							<v8:content>Bir sıra limanları testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>bg</v8:lang>
-							<v8:content>Пристанища за измерване</v8:content>
+							<v8:content>Диапазон на портове по testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>et</v8:lang>
-							<v8:content>Sadamate mõõde</v8:content>
+							<v8:content>Portide testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>fr</v8:lang>
-							<v8:content>Les Ports de dimension</v8:content>
+							<v8:content>La plage de ports testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ka</v8:lang>
-							<v8:content>პორტები განზომილება</v8:content>
+							<v8:content>სპექტრი პორტები testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>de</v8:lang>
-							<v8:content>Ports dimension</v8:content>
+							<v8:content>Portbereich von Testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>hu</v8:lang>
-							<v8:content>Portok dimenzió</v8:content>
+							<v8:content>A tartomány portok testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>it</v8:lang>
-							<v8:content>Porte di dimensione</v8:content>
+							<v8:content>L'intervallo di porte testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lv</v8:lang>
-							<v8:content>Ostas dimensija</v8:content>
+							<v8:content>Portu diapazonu testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lt</v8:lang>
-							<v8:content>Uostų aspektas</v8:content>
+							<v8:content>Prievadus testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>mn</v8:lang>
-							<v8:content>Портын хэмжээс</v8:content>
+							<v8:content>Тархац портын testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>pl</v8:lang>
-							<v8:content>Porty pomiaru</v8:content>
+							<v8:content>Zakres portów testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ro</v8:lang>
-							<v8:content>Porturi de dimensiune</v8:content>
+							<v8:content>Gama de porturi testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sl</v8:lang>
-							<v8:content>Vrata dimenzije</v8:content>
+							<v8:content>Območju pristanišča testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>es</v8:lang>
-							<v8:content>Los puertos de la dimensión</v8:content>
+							<v8:content>El rango de puertos testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sv</v8:lang>
-							<v8:content>Hamnar dimension</v8:content>
+							<v8:content>Utbudet av portar testclient</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>tr</v8:lang>
-							<v8:content>Port Boyutlar</v8:content>
+							<v8:content>Bağlantı noktası aralığı testclient</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -4146,75 +4146,75 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>am</v8:lang>
-							<v8:content>ቋንቋ ነው gherkin.</v8:content>
+							<v8:content>ቋንቋ ቅድሚያ gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>az</v8:lang>
-							<v8:content>Dil generator xiyarı</v8:content>
+							<v8:content>Dil generator gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>bg</v8:lang>
-							<v8:content>Език генератор на корнишони</v8:content>
+							<v8:content>Език генератор gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>et</v8:lang>
-							<v8:content>Keel kornišon generaator</v8:content>
+							<v8:content>Keel generaator gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>fr</v8:lang>
-							<v8:content>La langue de cornichon générateur</v8:content>
+							<v8:content>La langue de l'alternateur gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ka</v8:lang>
-							<v8:content>ენა gherkin გენერატორი</v8:content>
+							<v8:content>ენა გენერატორი gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>de</v8:lang>
-							<v8:content>Die Sprache Gurke generator</v8:content>
+							<v8:content>Sprache gherkin generator</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>hu</v8:lang>
-							<v8:content>Nyelv uborka generátor,</v8:content>
+							<v8:content>Nyelv generátor uborka</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>it</v8:lang>
-							<v8:content>La lingua di cetriolino generatore</v8:content>
+							<v8:content>Il linguaggio del generatore gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lv</v8:lang>
-							<v8:content>Valoda īsaugļu gurķi ģenerators</v8:content>
+							<v8:content>Valoda ģeneratora gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>lt</v8:lang>
-							<v8:content>Kalba agurku generatorius</v8:content>
+							<v8:content>Kalba generatorius gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>mn</v8:lang>
-							<v8:content>Хэл gherkin generator</v8:content>
+							<v8:content>Хэл generator gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>pl</v8:lang>
-							<v8:content>Język alternatora ogórek</v8:content>
+							<v8:content>Język alternatora gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ro</v8:lang>
-							<v8:content>Limbajul gherkin generator</v8:content>
+							<v8:content>Limba generator gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sl</v8:lang>
-							<v8:content>Jezik kumare za vlaganje generator</v8:content>
+							<v8:content>Jezik generator kumare za vlaganje</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>es</v8:lang>
-							<v8:content>El lenguaje de pepinillo generador</v8:content>
+							<v8:content>El idioma del generador gherkin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>sv</v8:lang>
-							<v8:content>Språk gurka generator</v8:content>
+							<v8:content>Språket generator gurka</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>tr</v8:lang>
-							<v8:content>Acur jeneratör dili</v8:content>
+							<v8:content>Dil jeneratör gherkin</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
