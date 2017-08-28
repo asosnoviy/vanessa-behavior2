@@ -7,8 +7,8 @@ builds.each{
     tasks["behavior ${it}"] = {
         node ("slave") {
             stage("behavior ${it}") {
-                git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
-                //checkout scm
+                //git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+                checkout scm
                 unstash "buildResults"
                 bat "chcp 65001\noscript ./tools/onescript/CloseAll1CProcess.os"
                 bat "chcp 65001\noscript ./tools/onescript/build-service-conf.os";
@@ -30,8 +30,8 @@ node("slavelinux"){
                 command = "git config --local core.longpaths true"
                 cmd(command, unix);
             }
-            git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
-            //checkout scm
+            //git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+            checkout scm
     
     }
     stage("build"){
@@ -70,10 +70,12 @@ node("slavelinux"){
     }
 }
 node("slave"){
-    git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+    //git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+    checkout scm
     dir("build"){
         deleteDir()
     }
+    bat "mkdir build"
 }
 
 parallel tasks
