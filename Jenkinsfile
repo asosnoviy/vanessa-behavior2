@@ -1,27 +1,102 @@
 #!groovy
-node("slave") {
-    def unix = isUnix()
 
-    def encoding = "-encoding=utf-8";
-    encoding="";
-
-    stage ("checkout scm") {
-        //git url: 'https://github.com/silverbulleters/vanessa-behavior-new.git'
-        checkout scm
-        
-        if (env.DISPLAY) {
-            println env.DISPLAY;
-        } else {
-            env.DISPLAY=":1"
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3'))])
+def tasks = [:]
+builds = ["82OF", "82UF", "836OF", "836UF", "837UF", "838UF", "839UF", "8310UF"]
+builds.each{
+    tasks["behavior ${it}"] = {
+        node ("slave") {
+            stage("behavior ${it}") {
+                git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+                //checkout scm
+                unstash "buildResults"
+                bat "chcp 65001\noscript ./tools/onescript/CloseAll1CProcess.os"
+                bat "chcp 65001\noscript ./tools/onescript/build-service-conf.os";
+                try{
+                    bat "chcp 65001\noscript ./tools/onescript/run-behavior-check-session.os ./tools/JSON/Main.json ./tools/JSON/VBParams82UF.json"
+                } catch (e) {
+                    echo "behavior 82OF status : ${e}"
+                }
+                stash allowEmpty: true, includes: "build/ServiceBases/allurereport/${it}/**, build/ServiceBases/cucumber, build/ServiceBases/junitreport", name: "${it}"
+            }
         }
-        command = "git config --global core.longpaths true"
+    }
+}
+
+node("slavelinux"){
+    stage ("checkout scm") {
+        unix = isUnix();
+            if (!unix) {
+                command = "git config --local core.longpaths true"
+                cmd(command, unix);
+            }
+            git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+            //checkout scm
+    
+    }
+    stage("build"){
+        dir("build"){
+            deleteDir()
+        }
+        def unix = isUnix()
+        //sh 'ls -al ./build'
+        cmd("sudo docker pull wernight/ngrok", unix)
+        command = 'sudo docker run --detach -e XVFB_RESOLUTION=1920x1080x24 --volume="${PWD}":/home/ubuntu/code onec32/client:8.3.10.2466 client > /tmp/container_id_${BUILD_NUMBER}';
+        echo command;
         cmd(command, unix);
+        sh 'sleep 10'
+        sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm install && sudo opm update -all"'
+        sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 opm run init"'
+        sh 'sudo rm -f vanessa-behavior*.ospx'
+        sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 opm build ./"'
+        sh 'sudo rm -rf vanessa-behavior.tar.gz && sudo rm -f vanessa-behavior-devel.tar.gz && sudo rm -f vanessa-behavior.zip'
+        sh 'cd ./build; tar -czf ../vanessa-behavior.tar.gz ./vanessa-behavior.epf ./lib/ ./features/libraries ./vendor ./plugins ./locales; cd ..'
+        sh 'tar -czf ./vanessa-behavior-devel.tar.gz ./build env.json;'
+        sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 pushd ./build; zip -r ../vanessa-behavior.zip ./vanessa-behavior.epf ./lib/ ./features/libraries ./vendor ./plugins ./locales; popd"'
+        sh 'sudo docker stop "$(cat /tmp/container_id_${BUILD_NUMBER})"'
+        sh 'sudo docker rm "$(cat /tmp/container_id_${BUILD_NUMBER})"'
+
+        stash includes: 'build/**, *.ospx, vanesssa-behavior-devel.tar.gz, vanessa-behavior.tar.gz, vanessa-behavior.zip, env.json', excludes: 'build/cache.txt', name: 'buildResults'
+        //stash allowEmpty: true, includes: './build/**/*', name: 'build'
+        //stash allowEmpty: true, includes: './**/*', name: 'all'
+        //stash allowEmpty: true, includes: '*.ospx', name 'ospx'
+        //sh 'ls -al'
+        //sh 'ls -al ./build'
+        
     }
 
+    stage("archive"){
+        archiveArtifacts '*.ospx,vanessa-behavior.tar.gz,vanessa-behavior-devel.tar.gz,vanessa-behavior.zip'
+    }
+}
+node("slave"){
+    git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+    dir("build"){
+        deleteDir()
+    }
+}
+
+parallel tasks
+
+node{
+    stage("report"){
+        unstash 'buildResults'
+        builds.each{
+            unstash "${it}"
+        }
+        //unstash '836UF'
+        //unstash '82UF'
+        //unstash '836OF'
+        //unstash '82OF'
+        allure commandline: 'Maven Installer', includeProperties: false, jdk: '', results: [[path: 'build/ServiceBases/allurereport/']]
+        junit 'build/ServiceBases/junitreport/*.xml'
+        cucumber buildStatus: 'UNSTABLE', fileIncludePattern: '**/*.json', jsonReportDirectory: 'build/ServiceBases/cucumber'
+    }
+}
+
+node("qanode"){
     stage ("sonar QA"){
-
         if (env.QASONAR) {
-
             try{
                 println env.QASONAR;
                 def sonarcommand = "@\"./../../../tools/hudson.plugins.sonar.SonarRunnerInstallation/Main_Classic/bin/sonar-scanner\""
@@ -74,90 +149,6 @@ node("slave") {
             echo "QA runner not installed"
         }
     }
-
-    def v8version = "--v8version 8.3.10";
-    if (env.V8VERSION) {
-        v8version = "--v8version ${env.V8VERSION}"
-    }
-    //env.RUNNER_ENV="debug"
-
-    stage ("init"){
-        def srcpath = "./lib/CF/83NoSync310";
-        if (env.SRCPATH){
-            srcpath = env.SRCPATH;
-        }
-        
-        def command = "oscript ${encoding} tools/init.os init-dev ${v8version} --src "+srcpath
-        timestamps {
-            cmd(command, unix)
-        }
-    }
-    
-    stage ("compile"){
-        //echo "build catalogs"
-        command = """oscript ${encoding} tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
-        cmd(command, unix)
-    }
-
-    def errors = []
-
-    stage ("behavior tests") {
-        def testsettings = "VBParams8310UF.json";
-        if (env.PATHSETTINGS) {
-            testsettings = env.PATHSETTINGS;
-        }
-        
-        // TODO:
-        // Придумать, как это сделать красиво и с учетом того, что задано в VBParams837UF.json
-        // Стр = Стр + " /Execute " + ПараметрыСборки["EpfДляИнициализацияБазы"] + " /C""InitDataBase;VBParams=" + ПараметрыСборки["ПараметрыДляИнициализацияБазы"] + """";
-        def VBParamsPath = pwd().replaceAll("%", "%%") + "/build/out/tools/epf/init.json"
-        command = """oscript ${encoding} tools/runner.os run ${v8version} --ibname /F"./build/ib" --execute "./build/out/tools/epf/init.epf" --command "InitDataBase;VBParams=${VBParamsPath}" """
-        
-        try{
-            cmd(command, unix)
-        } catch (e) {
-            errors << "BDD status : ${e}"
-        }
-
-        command = """oscript ${encoding} tools/runner.os vanessa ${v8version} --ibname /F"./build/ib" --pathvanessa ./build/out/vanessa-behavior.epf --vanessasettings ./tools/JSON/${testsettings} """
-        try{
-            //env.VANESSA_commandscreenshot='nircmd.exe savescreenshot '
-            cmd(command, unix)
-        } catch (e) {
-            errors << "BDD status : ${e}"
-        }
-    }
-        
-    stage("result"){
-
-        command = """allure generate ./build/allurereport -o ./build/htmlpublish"""
-        cmd(command, unix)
-        publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: './build/htmlpublish', reportFiles: 'index.html', reportName: 'Allure report'])
-        
-        step([$class: 'ArtifactArchiver', artifacts: '**/build/out/**/*.*', fingerprint: true])
-
-        if (errors.size() > 0) {
-            currentBuild.result = 'UNSTABLE'
-            for (int i = 0; i < errors.size(); i++) {
-                echo errors[i]; 
-            }
-        } else {
-        }
-        
-        junit '**/build/junitreport/*.xml'
-        echo "CucumberTestReportPublisher"
-        step([$class: 'CucumberTestReportPublisher', copyHTMLInWorkspace: true, fileExcludePattern: '', fileIncludePattern: '', ignoreUndefinedSteps: false, markAsUnstable: true, reportsDirectory: './build/cucumber/'])
-        echo "CucumberReportPublisher"
-        step([$class: 'CucumberReportPublisher', classifications: [], failedFeaturesNumber: 0, failedScenariosNumber: 0, failedStepsNumber: 0, fileExcludePattern: '', fileIncludePattern: '**/*.json', jsonReportDirectory: './build/cucumber/', parallelTesting: false, pendingStepsNumber: 0, skippedStepsNumber: 0, trendsLimit: 0, undefinedStepsNumber: 0])
-    }
-
-    stage("trigger old"){
-        if (env.TRIGGEROLD){
-            build env.TRIGGEROLD 
-        }
-        
-    }
-
 }
 
 def cmd(command, isunix) {
