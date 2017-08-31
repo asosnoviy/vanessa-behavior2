@@ -143,6 +143,7 @@ node("qanode"){
 
             
         } else {
+            println env.QASONAR
             echo "QA runner not installed"
         }
     }
