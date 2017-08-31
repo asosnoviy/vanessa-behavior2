@@ -2,7 +2,8 @@
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3'))])
 def tasks = [:]
-builds = ["82OF", "82UF", "836OF", "836UF", "837UF", "838UF", "839UF", "8310UF"]
+//builds = ["82OF", "82UF", "836OF", "836UF", "837UF", "838UF", "839UF", "8310UF"]
+builds = ["82UF", "836UF", "837UF", "838UF", "839UF", "8310UF"]
 builds.each{
     tasks["behavior ${it}"] = {
         node ("slave") {
@@ -13,11 +14,11 @@ builds.each{
                 bat "chcp 65001\noscript ./tools/onescript/CloseAll1CProcess.os"
                 bat "chcp 65001\noscript ./tools/onescript/build-service-conf.os";
                 try{
-                    bat "chcp 65001\noscript ./tools/onescript/run-behavior-check-session.os ./tools/JSON/Main.json ./tools/JSON/VBParams82UF.json"
+                    bat "chcp 65001\noscript ./tools/onescript/run-behavior-check-session.os ./tools/JSON/Main.json ./tools/JSON/VBParams${it}.json"
                 } catch (e) {
                     echo "behavior 82OF status : ${e}"
                 }
-                stash allowEmpty: true, includes: "build/ServiceBases/allurereport/${it}/**, build/ServiceBases/cucumber, build/ServiceBases/junitreport", name: "${it}"
+                stash allowEmpty: true, includes: "build/ServiceBases/allurereport/${it}/**, build/ServiceBases/cucumber/**, build/ServiceBases/junitreport/**", name: "${it}"
             }
         }
     }
@@ -44,38 +45,31 @@ node("slavelinux"){
         command = 'sudo docker run --detach -e XVFB_RESOLUTION=1920x1080x24 --volume="${PWD}":/home/ubuntu/code onec32/client:8.3.10.2466 client > /tmp/container_id_${BUILD_NUMBER}';
         echo command;
         cmd(command, unix);
-        sh 'sleep 10'
+sh 'sleep 10'
         sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 sudo opm install && sudo opm update -all"'
-        sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 opm run init"'
+        sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 opm run init && opm run clean"'
         sh 'sudo rm -f vanessa-behavior*.ospx'
         sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 opm build ./"'
         sh 'sudo rm -rf vanessa-behavior.tar.gz && sudo rm -f vanessa-behavior-devel.tar.gz && sudo rm -f vanessa-behavior.zip'
         sh 'cd ./build; tar -czf ../vanessa-behavior.tar.gz ./vanessa-behavior.epf ./lib/ ./features/libraries ./vendor ./plugins ./locales; cd ..'
+        sh 'pwd && tar -czf ./vanessa-behavior-devel.tar.gz ./build env.json;'
+        sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 pushd ./build; zip -r ../vanessa-behavior.zip ./vanessa-behavior.epf ./lib/ ./features/libraries ./vendor ./plugins ./locales; popd"'
         sh 'tar -czf ./vanessa-behavior-devel.tar.gz ./build env.json;'
         sh 'sudo docker exec -u ubuntu "$(cat /tmp/container_id_${BUILD_NUMBER})" /bin/bash -c "cd /home/ubuntu/code; DISPLAY=:1.0 pushd ./build; zip -r ../vanessa-behavior.zip ./vanessa-behavior.epf ./lib/ ./features/libraries ./vendor ./plugins ./locales; popd"'
         sh 'sudo docker stop "$(cat /tmp/container_id_${BUILD_NUMBER})"'
         sh 'sudo docker rm "$(cat /tmp/container_id_${BUILD_NUMBER})"'
 
-        stash includes: 'build/**, *.ospx, vanesssa-behavior-devel.tar.gz, vanessa-behavior.tar.gz, vanessa-behavior.zip, env.json', excludes: 'build/cache.txt', name: 'buildResults'
-        //stash allowEmpty: true, includes: './build/**/*', name: 'build'
-        //stash allowEmpty: true, includes: './**/*', name: 'all'
-        //stash allowEmpty: true, includes: '*.ospx', name 'ospx'
-        //sh 'ls -al'
-        //sh 'ls -al ./build'
-        
+        stash includes: 'build/**, *.ospx, vanessa-behavior-devel.tar.gz, vanessa-behavior.tar.gz, vanessa-behavior.zip, env.json', excludes: 'build/cache.txt', name: 'buildResults'
     }
 
     stage("archive"){
-        archiveArtifacts '*.ospx,vanessa-behavior.tar.gz,vanessa-behavior-devel.tar.gz,vanessa-behavior.zip'
+        archiveArtifacts 'vanessa-behavior*.ospx,vanessa-behavior.tar.gz,vanessa-behavior-devel.tar.gz,vanessa-behavior.zip'
     }
 }
 node("slave"){
     //git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
     checkout scm
-    dir("build"){
-        deleteDir()
-    }
-    bat "mkdir build"
+    bat "opm run clean"
 }
 
 parallel tasks
@@ -86,13 +80,14 @@ node{
         builds.each{
             unstash "${it}"
         }
-        //unstash '836UF'
-        //unstash '82UF'
-        //unstash '836OF'
-        //unstash '82OF'
-        allure commandline: 'Maven Installer', includeProperties: false, jdk: '', results: [[path: 'build/ServiceBases/allurereport/']]
+        try{
+            allure commandline: 'Maven Installer', includeProperties: false, jdk: '', results: [[path: 'build/ServiceBases/allurereport/']]
+        } catch (e) {
+            echo "behavior status : ${e}"
+        }
+        
         junit 'build/ServiceBases/junitreport/*.xml'
-        cucumber buildStatus: 'UNSTABLE', fileIncludePattern: '**/*.json', jsonReportDirectory: 'build/ServiceBases/cucumber'
+        cucumber fileIncludePattern: '**/*.json', jsonReportDirectory: 'build/ServiceBases/cucumber'
     }
 }
 
