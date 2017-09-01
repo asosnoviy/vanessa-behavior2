@@ -26,6 +26,7 @@ builds.each{
 
     node("slave"){
         stage ("sonar QA"){
+            unix = isUnix();
             checkout scm
             if (env.QASONAR) {
                 try{
