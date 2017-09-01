@@ -16,7 +16,7 @@ builds.each{
                 try{
                     bat "chcp 65001\noscript ./tools/onescript/run-behavior-check-session.os ./tools/JSON/Main.json ./tools/JSON/VBParams${it}.json"
                 } catch (e) {
-                    echo "behavior 82OF status : ${e}"
+                    echo "behavior ${it} status : ${e}"
                 }
                 stash allowEmpty: true, includes: "build/ServiceBases/allurereport/${it}/**, build/ServiceBases/cucumber/**, build/ServiceBases/junitreport/**", name: "${it}"
             }
@@ -36,9 +36,6 @@ node("slavelinux"){
     
     }
     stage("build"){
-        dir("build"){
-            deleteDir()
-        }
         def unix = isUnix()
         //sh 'ls -al ./build'
         cmd("sudo docker pull wernight/ngrok", unix)
@@ -74,80 +71,88 @@ node("slave"){
 
 parallel tasks
 
-node{
-    stage("report"){
-        unstash 'buildResults'
-        builds.each{
-            unstash "${it}"
-        }
-        try{
-            allure commandline: 'Maven Installer', includeProperties: false, jdk: '', results: [[path: 'build/ServiceBases/allurereport/']]
-        } catch (e) {
-            echo "behavior status : ${e}"
-        }
-        
-        junit 'build/ServiceBases/junitreport/*.xml'
-        cucumber fileIncludePattern: '**/*.json', jsonReportDirectory: 'build/ServiceBases/cucumber'
-    }
-}
-
-node("qanode"){
-    stage ("sonar QA"){
-        if (env.QASONAR) {
-            try{
-                println env.QASONAR;
-                def sonarcommand = "@\"./../../../tools/hudson.plugins.sonar.SonarRunnerInstallation/Main_Classic/bin/sonar-scanner\""
-                withCredentials([[$class: 'StringBinding', credentialsId: env.SonarOAuthCredentianalID, variable: 'SonarOAuth']]) {
-                    sonarcommand = sonarcommand + " -Dsonar.host.url=http://sonar.silverbulleters.org -Dsonar.login=${env.SonarOAuth}"
-                }
-                
-                // Get version
-                def configurationText = readFile encoding: 'UTF-8', file: 'vanessa-behavior/VanessaBehavior/Ext/ObjectModule.bsl'
-                def configurationVersion = (configurationText =~ /Версия = "(.*)";/)[0][1]
-                sonarcommand = sonarcommand + " -Dsonar.projectVersion=${configurationVersion}"
-
-                def makeAnalyzis = true
-                if (env.BRANCH_NAME == "develop") {
-                    echo 'Analysing develop branch'
-                } else if (env.BRANCH_NAME.startsWith("release/")) {
-                    sonarcommand = sonarcommand + " -Dsonar.branch=${BRANCH_NAME}"
-                } else if (env.BRANCH_NAME.startsWith("PR-")) {
-                    // Report PR issues           
-                    def PRNumber = env.BRANCH_NAME.tokenize("PR-")[0]
-                    def gitURLcommand = 'git config --local remote.origin.url'
-                    def gitURL = ""
-                    if (unix) {
-                        gitURL = sh(returnStdout: true, script: gitURLcommand).trim() 
-                    } else {
-                        gitURL = bat(returnStdout: true, script: gitURLcommand).trim() 
-                    }
-                    def repository = gitURL.tokenize("/")[2] + "/" + gitURL.tokenize("/")[3]
-                    repository = repository.tokenize(".")[0]
-                    withCredentials([[$class: 'StringBinding', credentialsId: env.GithubOAuthCredentianalID, variable: 'githubOAuth']]) {
-                        sonarcommand = sonarcommand + " -Dsonar.analysis.mode=issues -Dsonar.github.pullRequest=${PRNumber} -Dsonar.github.repository=${repository} -Dsonar.github.oauth=${env.githubOAuth}"
-                    }
-                } else {
-                    makeAnalyzis = false
-                }
-                if (makeAnalyzis) {
-                    if (unix) {
-                        sh '${sonarcommand}'
-                    } else {
-                        bat "${sonarcommand}"
-                    }
-                }
-    
-            } catch (e) {
-                echo "sonar status : ${e}"
+tasks = [:]
+tasks["report"] = {
+    node {
+        stage("report"){
+            unstash 'buildResults'
+            builds.each{
+                unstash "${it}"
             }
-
+            try{
+                allure commandline: 'Maven Installer', includeProperties: false, jdk: '', results: [[path: 'build/ServiceBases/allurereport/']]
+            } catch (e) {
+                echo "behavior status : ${e}"
+            }
             
-        } else {
-            println env.QASONAR
-            echo "QA runner not installed"
+            junit 'build/ServiceBases/junitreport/*.xml'
+            cucumber fileIncludePattern: '**/*.json', jsonReportDirectory: 'build/ServiceBases/cucumber'
         }
     }
 }
+
+tasks["sonar"] = {
+    node("qanode"){
+        stage ("sonar QA"){
+            checkout scm
+            if (env.QASONAR) {
+                try{
+                    println env.QASONAR;
+                    def sonarcommand = "@\"./../../../tools/hudson.plugins.sonar.SonarRunnerInstallation/Main_Classic/bin/sonar-scanner\""
+                    withCredentials([[$class: 'StringBinding', credentialsId: env.SonarOAuthCredentianalID, variable: 'SonarOAuth']]) {
+                        sonarcommand = sonarcommand + " -Dsonar.host.url=http://sonar.silverbulleters.org -Dsonar.login=${env.SonarOAuth}"
+                    }
+                    
+                    // Get version
+                    def configurationText = readFile encoding: 'UTF-8', file: 'vanessa-behavior/VanessaBehavior/Ext/ObjectModule.bsl'
+                    def configurationVersion = (configurationText =~ /Версия = "(.*)";/)[0][1]
+                    sonarcommand = sonarcommand + " -Dsonar.projectVersion=${configurationVersion}"
+
+                    def makeAnalyzis = true
+                    if (env.BRANCH_NAME == "develop") {
+                        echo 'Analysing develop branch'
+                    } else if (env.BRANCH_NAME.startsWith("release/")) {
+                        sonarcommand = sonarcommand + " -Dsonar.branch=${BRANCH_NAME}"
+                    } else if (env.BRANCH_NAME.startsWith("PR-")) {
+                        // Report PR issues           
+                        def PRNumber = env.BRANCH_NAME.tokenize("PR-")[0]
+                        def gitURLcommand = 'git config --local remote.origin.url'
+                        def gitURL = ""
+                        if (unix) {
+                            gitURL = sh(returnStdout: true, script: gitURLcommand).trim() 
+                        } else {
+                            gitURL = bat(returnStdout: true, script: gitURLcommand).trim() 
+                        }
+                        def repository = gitURL.tokenize("/")[2] + "/" + gitURL.tokenize("/")[3]
+                        repository = repository.tokenize(".")[0]
+                        withCredentials([[$class: 'StringBinding', credentialsId: env.GithubOAuthCredentianalID, variable: 'githubOAuth']]) {
+                            sonarcommand = sonarcommand + " -Dsonar.analysis.mode=issues -Dsonar.github.pullRequest=${PRNumber} -Dsonar.github.repository=${repository} -Dsonar.github.oauth=${env.githubOAuth}"
+                        }
+                    } else {
+                        makeAnalyzis = false
+                    }
+                    if (makeAnalyzis) {
+                        if (unix) {
+                            sh '${sonarcommand}'
+                        } else {
+                            bat "${sonarcommand}"
+                        }
+                    }
+        
+                } catch (e) {
+                    echo "sonar status : ${e}"
+                }
+
+                
+            } else {
+                println env.QASONAR
+                echo "QA runner not installed"
+            }
+        }
+    }
+}
+
+parallel tasks
 
 def cmd(command, isunix) {
     // TODO при запуске Jenkins не в режиме UTF-8 нужно написать chcp 1251 вместо chcp 65001
