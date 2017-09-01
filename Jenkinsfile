@@ -24,7 +24,7 @@ builds.each{
     }
 }
 
-    node("qanode"){
+    node("slave"){
         stage ("sonar QA"){
             checkout scm
             if (env.QASONAR) {
