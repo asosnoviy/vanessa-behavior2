@@ -23,7 +23,8 @@ builds.each{
         }
     }
 }
-
+firsttasks=[:]
+firsttasks["qa"] = {
     node("slave"){
         stage ("sonar QA"){
             unix = isUnix();
@@ -31,7 +32,7 @@ builds.each{
             if (env.QASONAR) {
                 try{
                     println env.QASONAR;
-                                        def sonarcommand = "@\"./../../tools/hudson.plugins.sonar.SonarRunnerInstallation/Main_Classic/bin/sonar-scanner\""
+                    def sonarcommand = "@\"./../../tools/hudson.plugins.sonar.SonarRunnerInstallation/Main_Classic/bin/sonar-scanner\""
                     withCredentials([[$class: 'StringBinding', credentialsId: env.SonarOAuthCredentianalID, variable: 'SonarOAuth']]) {
                         sonarcommand = sonarcommand + " -Dsonar.host.url=http://sonar.silverbulleters.org -Dsonar.login=${env.SonarOAuth}"
                     }
@@ -66,9 +67,9 @@ builds.each{
                     }
                     if (makeAnalyzis) {
                         if (unix) {
-                            sh '${sonarcommand}'
+                            cmd('${sonarcommand}', unix)
                         } else {
-                            bat "${sonarcommand}"
+                            cmd("${sonarcommand}", unix)
                         }
                     }
         
@@ -83,7 +84,9 @@ builds.each{
             }
         }
     }
+}
 
+firsttasks["linuxbuild"] = {
 node("slavelinux"){
     stage ("checkout scm") {
         unix = isUnix();
@@ -123,11 +126,14 @@ sh 'sleep 10'
         archiveArtifacts 'vanessa-behavior*.ospx,vanessa-behavior.tar.gz,vanessa-behavior-devel.tar.gz,vanessa-behavior.zip'
     }
 }
+}
+parallel firsttasks
 node("slave"){
     //git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
     checkout scm
     bat "opm run clean"
 }
+
 
 parallel tasks
 
