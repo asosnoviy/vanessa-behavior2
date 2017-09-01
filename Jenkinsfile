@@ -62,6 +62,7 @@ firsttasks["qa"] = {
                         withCredentials([[$class: 'StringBinding', credentialsId: env.GithubOAuthCredentianalID, variable: 'githubOAuth']]) {
                             sonarcommand = sonarcommand + " -Dsonar.analysis.mode=issues -Dsonar.github.pullRequest=${PRNumber} -Dsonar.github.repository=${repository} -Dsonar.github.oauth=${env.githubOAuth}"
                         }
+                        sonarcommand = sonarcommand + " -Dsonar.scm.disabled=true"
                     } else {
                         makeAnalyzis = false
                     }
