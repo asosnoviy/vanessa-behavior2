@@ -30,7 +30,7 @@ firsttasks["qa"] = {
             unix = isUnix();
             checkout scm
             if (env.QASONAR) {
-                try{
+                //try{
                     println env.QASONAR;
                     def sonarcommand = "@\"./../../tools/hudson.plugins.sonar.SonarRunnerInstallation/Main_Classic/bin/sonar-scanner\""
                     withCredentials([[$class: 'StringBinding', credentialsId: env.SonarOAuthCredentianalID, variable: 'SonarOAuth']]) {
@@ -71,14 +71,15 @@ firsttasks["qa"] = {
                         if (unix) {
                             cmd(sonarcommand, unix)
                         } else {
-                            bat "chcp 65001\n${sonarcommand}"
+                            echo "${sonarcommand}"
+                            bat "${sonarcommand}"
                             //cmd(sonarcommand, unix)
                         }
                     }
         
-                } catch (e) {
-                    echo "sonar status : ${e}"
-                }
+                //} catch (e) {
+                //    echo "sonar status : ${e}"
+                //}
 
                 
             } else {
