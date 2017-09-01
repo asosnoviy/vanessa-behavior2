@@ -68,9 +68,10 @@ firsttasks["qa"] = {
                     }
                     if (makeAnalyzis) {
                         if (unix) {
-                            cmd('${sonarcommand}', unix)
+                            cmd(sonarcommand, unix)
                         } else {
-                            cmd("${sonarcommand}", unix)
+                            bat "chcp 65001\n${sonarcommand}"
+                            //cmd(sonarcommand, unix)
                         }
                     }
         
