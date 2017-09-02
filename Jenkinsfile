@@ -24,7 +24,7 @@ builds.each{
     }
 }
 firsttasks=[:]
-firsttasks["qa"] = {
+//firsttasks["qa"] = {
     node("slave"){
         stage ("sonar QA"){
             unix = isUnix();
@@ -88,7 +88,7 @@ firsttasks["qa"] = {
             }
         }
     }
-}
+//}
 
 firsttasks["linuxbuild"] = {
 node("slavelinux"){
@@ -131,13 +131,14 @@ sh 'sleep 10'
     }
 }
 }
-parallel firsttasks
-node("slave"){
-    //git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
-    checkout scm
-    bat "opm run clean"
+tasks["opmrunclean"] = {
+    node("slave"){
+        //git url: 'https://github.com/silverbulleters/vanessa-behavior2.git'
+        checkout scm
+        bat "opm run clean"
+    }
 }
-
+parallel firsttasks
 
 parallel tasks
 
