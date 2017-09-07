@@ -57,13 +57,16 @@
 
 если вы разработчик
 
+* Установите oscript, git и проверьте что данные находятся в переменной PATH, т.е. git, oscript, opm вызываются без указания полного пути в коммандной строке.
+
 * сделайте `fork` репозитория
 * склонируйте репозитарий себе на машину ```git clone https://github.com/*ТУТИМЯВАШЕГОПОЛЬЗОВАТЕЛЯ*/vanessa-behavior2.git ```
-* переходим в склонированный каталог `cd vanessa-behavior2`
-* переключитесь на develop ветку 
+* переходим в склонированный каталог `cd vanessa-behavior2` и выполняем несколько магических комманд
 ```
-git checkout -b develop
-git pull origin develop
+git remote add upstream https://github.com/silverbulleters/vanessa-behavior2.git 
+git fetch upstream
+git checkout -b develop upstream/develop 
+git pull develop
 ```
 * На основании ветки develop создаем новую ветку с номером задачи или кратким описанием 
 ```
@@ -82,6 +85,7 @@ opm run init
 * отредактируйте при необходимости `vanessa-behavior2\build\vanessa-behavior.epf` 
 * разработайте step проверки в `vanessa-behavior2\build\features\*`
 * после всех доработок можете запустить в каталоге проекта `opm run vanessa` для проверки в управляемых формах, что ничего не сломали из стандартного функционала. 
+
 * **При готовности зафиксировать изменения** необходимо теперь сделать обратную операцию в виде разборки *.epf на исходники.
   1. Массово, выполнить команду `opm run depf`, разбирать будет все обработки из `plugins, features, vendor, lib `
   2. Индивидуально определенный каталог `opm run depf ./build/features/librares` разберет только `./build/features/librares` в `./features/librares`
