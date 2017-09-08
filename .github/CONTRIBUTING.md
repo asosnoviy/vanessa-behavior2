@@ -58,6 +58,7 @@
 если вы разработчик
 
 * Установите oscript, git и проверьте что данные находятся в переменной PATH, т.е. git, oscript, opm вызываются без указания полного пути в коммандной строке.
+* Дополнительно должен быть установлен пакет vanessa-runner, делать это надо в коммандной строке от имени администратора `opm install vanessa-runner`.
 
 * сделайте `fork` репозитория
 * склонируйте репозитарий себе на машину ```git clone https://github.com/*ТУТИМЯВАШЕГОПОЛЬЗОВАТЕЛЯ*/vanessa-behavior2.git ```
@@ -66,8 +67,10 @@
 git remote add upstream https://github.com/silverbulleters/vanessa-behavior2.git 
 git fetch upstream
 git checkout -b develop upstream/develop 
-git pull develop
+git pull upstream develop
 ```
+* Если до этого не установили необходимые зависимости, необходимо в консоли от имени администратора перейти в папку `vanessa-behavior2` и запустить `opm install`. Результатом будет установленные пакеты необходимые для работы скриптов. Этот шаг необходимо сделать всего 1 раз.
+
 * На основании ветки develop создаем новую ветку с номером задачи или кратким описанием 
 ```
 git checkout -b feature/issue-9999
